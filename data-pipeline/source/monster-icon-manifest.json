@@ -1,0 +1,1265 @@
+[
+  {
+    "id": "acceptance",
+    "sourcePng": "Sprites/Monsters/Acceptance/Acceptance.png",
+    "crop": null,
+    "outFile": "acceptance.png"
+  },
+  {
+    "id": "ancient-soul",
+    "sourcePng": "Sprites/Monsters/Ancient Soul/ancient_soul-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 38
+    },
+    "outFile": "ancient-soul.png"
+  },
+  {
+    "id": "angeling",
+    "sourcePng": "Sprites/Monsters/Angeling/angeling_idle.png",
+    "crop": null,
+    "outFile": "angeling.png"
+  },
+  {
+    "id": "anger",
+    "sourcePng": "Sprites/Monsters/Anger/anger_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 14
+    },
+    "outFile": "anger.png"
+  },
+  {
+    "id": "anjel",
+    "sourcePng": "Sprites/Monsters/Anjel/anjel_idle.png",
+    "crop": null,
+    "outFile": "anjel.png"
+  },
+  {
+    "id": "ashball",
+    "sourcePng": "Sprites/Monsters/Ashball/ashball_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 28,
+      "h": 27
+    },
+    "outFile": "ashball.png"
+  },
+  {
+    "id": "bananek",
+    "sourcePng": "Sprites/Monsters/Bananek/bananek_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 34,
+      "h": 28
+    },
+    "outFile": "bananek.png"
+  },
+  {
+    "id": "banshek",
+    "sourcePng": "Sprites/Monsters/Banshek/banshek_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 34,
+      "h": 28
+    },
+    "outFile": "banshek.png"
+  },
+  {
+    "id": "big-slime",
+    "sourcePng": "Sprites/Monsters/Big Slime/bigslime_idle.png",
+    "crop": null,
+    "outFile": "big-slime.png"
+  },
+  {
+    "id": "black-cloudsheep",
+    "sourcePng": "Sprites/Monsters/Cloudsheep/black_cloudsheep_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 27,
+      "h": 22
+    },
+    "outFile": "black-cloudsheep.png"
+  },
+  {
+    "id": "blaze",
+    "sourcePng": "Sprites/Monsters/Blaze/blaze_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "blaze.png"
+  },
+  {
+    "id": "blizzy",
+    "sourcePng": "Sprites/Monsters/Blizzy/Monster_snowy_mountain_blizzy_idle-Sheet.png",
+    "crop": {
+      "x": 41,
+      "y": 0,
+      "w": 41,
+      "h": 22
+    },
+    "outFile": "blizzy.png"
+  },
+  {
+    "id": "blorp",
+    "sourcePng": "Sprites/Monsters/Blorp/ghost_slime_idle_strip3.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 40
+    },
+    "outFile": "blorp.png"
+  },
+  {
+    "id": "blorpghoul",
+    "sourcePng": "Sprites/Monsters/Blorpghoul/blorpghoul_idle_strip3.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 37,
+      "h": 25
+    },
+    "outFile": "blorpghoul.png"
+  },
+  {
+    "id": "blossnek",
+    "sourcePng": "Sprites/Monsters/Blossnek/Blossnek_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 45,
+      "h": 46
+    },
+    "outFile": "blossnek.png"
+  },
+  {
+    "id": "bubble-snake",
+    "sourcePng": "Sprites/Monsters/Bubble Snake/bubblesnake_idle_strip7.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 56,
+      "h": 16
+    },
+    "outFile": "bubble-snake.png"
+  },
+  {
+    "id": "bubble-spirit",
+    "sourcePng": "Sprites/Monsters/Bubble Spirit/bubblespirit_walk_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 18,
+      "h": 18
+    },
+    "outFile": "bubble-spirit.png"
+  },
+  {
+    "id": "cactus",
+    "sourcePng": "Sprites/Monsters/Cactus/cactus_idle.png",
+    "crop": null,
+    "outFile": "cactus.png"
+  },
+  {
+    "id": "cat-golem",
+    "sourcePng": "Sprites/Monsters/Cat Golem/cat_golem_strip6.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    "outFile": "cat-golem.png"
+  },
+  {
+    "id": "cat-guardian",
+    "sourcePng": "Sprites/Monsters/Cat Golem/cat_guardian-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 64
+    },
+    "outFile": "cat-guardian.png"
+  },
+  {
+    "id": "chrono",
+    "sourcePng": "Sprites/Monsters/Chrono/chrono.png",
+    "crop": null,
+    "outFile": "chrono.png"
+  },
+  {
+    "id": "chrono-shroom",
+    "sourcePng": "Sprites/Monsters/ChronoShroom/ChronoShroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 27
+    },
+    "outFile": "chrono-shroom.png"
+  },
+  {
+    "id": "citruslime",
+    "sourcePng": "Sprites/Monsters/Citruslime/citruslime_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 43,
+      "h": 32
+    },
+    "outFile": "citruslime.png"
+  },
+  {
+    "id": "cloudsheep",
+    "sourcePng": "Sprites/Monsters/Cloudsheep/cloudsheep_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 27,
+      "h": 22
+    },
+    "outFile": "cloudsheep.png"
+  },
+  {
+    "id": "coral",
+    "sourcePng": "Sprites/Monsters/Coral/Coral_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 61,
+      "h": 36
+    },
+    "outFile": "coral.png"
+  },
+  {
+    "id": "cosmowl",
+    "sourcePng": "Sprites/Monsters/Cosmowl/cosmowl_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 39,
+      "h": 39
+    },
+    "outFile": "cosmowl.png"
+  },
+  {
+    "id": "crusher",
+    "sourcePng": "Sprites/Monsters/Crusher/crusher_idle.png",
+    "crop": null,
+    "outFile": "crusher.png"
+  },
+  {
+    "id": "cursed-cloudsheep",
+    "sourcePng": "Sprites/Monsters/CursedCloudsheep/cursed_cloudsheep_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 27,
+      "h": 22
+    },
+    "outFile": "cursed-cloudsheep.png"
+  },
+  {
+    "id": "cursed-gloopy",
+    "sourcePng": "Sprites/Monsters/CursedGloopy/cursed_gloopy_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "outFile": "cursed-gloopy.png"
+  },
+  {
+    "id": "cursed-slibbit",
+    "sourcePng": "Sprites/Monsters/CursedSlibbit/CursedSlibbit.png",
+    "crop": null,
+    "outFile": "cursed-slibbit.png"
+  },
+  {
+    "id": "cursed-slime",
+    "sourcePng": "Sprites/Monsters/CursedSlime/cursed_slime_idle.png",
+    "crop": null,
+    "outFile": "cursed-slime.png"
+  },
+  {
+    "id": "cursed-spot",
+    "sourcePng": "Sprites/Monsters/CursedSpot/Monster_cursed_spot_idle-Sheet.png",
+    "crop": {
+      "x": 31,
+      "y": 0,
+      "w": 31,
+      "h": 23
+    },
+    "outFile": "cursed-spot.png"
+  },
+  {
+    "id": "cursed-tallshroom",
+    "sourcePng": "Sprites/Monsters/CursedTallshroom/CursedTallshroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 47
+    },
+    "outFile": "cursed-tallshroom.png"
+  },
+  {
+    "id": "dark-mass",
+    "sourcePng": "Sprites/Monsters/Dark Mass/enemy_dark_slime_big_idle.png",
+    "crop": null,
+    "outFile": "dark-mass.png"
+  },
+  {
+    "id": "dark-matter",
+    "sourcePng": "Sprites/Monsters/Dark Matter/dark_matter_idle.png",
+    "crop": null,
+    "outFile": "dark-matter.png"
+  },
+  {
+    "id": "dark-pumpkin",
+    "sourcePng": "Sprites/Monsters/Dark Pumpkin/darkpumpkin_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 40
+    },
+    "outFile": "dark-pumpkin.png"
+  },
+  {
+    "id": "death-mist",
+    "sourcePng": "Sprites/Monsters/Death Mist/death_mist_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "death-mist.png"
+  },
+  {
+    "id": "deerlime",
+    "sourcePng": "Sprites/Monsters/Deerlime/Deerlime.png",
+    "crop": null,
+    "outFile": "deerlime.png"
+  },
+  {
+    "id": "denial",
+    "sourcePng": "Sprites/Monsters/Denial/denial_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 62,
+      "h": 37
+    },
+    "outFile": "denial.png"
+  },
+  {
+    "id": "depression",
+    "sourcePng": "Sprites/Monsters/Depression/Monster_Dungeon_Despressblob_idle.png",
+    "crop": null,
+    "outFile": "depression.png"
+  },
+  {
+    "id": "desert-bandit",
+    "sourcePng": "Sprites/Monsters/Desert Bandit/desert_bandit_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "outFile": "desert-bandit.png"
+  },
+  {
+    "id": "desert-bandit-fleeing",
+    "sourcePng": "Sprites/Monsters/Desert Bandit/desert_bandit_fleeing_strip5.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 48,
+      "h": 48
+    },
+    "outFile": "desert-bandit-fleeing.png"
+  },
+  {
+    "id": "deviling",
+    "sourcePng": "Sprites/Monsters/Deviling/deviling_idle.png",
+    "crop": null,
+    "outFile": "deviling.png"
+  },
+  {
+    "id": "dragonfruit",
+    "sourcePng": "Sprites/Monsters/Dragonfruit/Dragonfruit_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 30,
+      "h": 29
+    },
+    "outFile": "dragonfruit.png"
+  },
+  {
+    "id": "droppo",
+    "sourcePng": "Sprites/Monsters/Droppo/droppo_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 35,
+      "h": 23
+    },
+    "outFile": "droppo.png"
+  },
+  {
+    "id": "duniga",
+    "sourcePng": "Sprites/Monsters/Duniga/duniga_idle.png",
+    "crop": null,
+    "outFile": "duniga.png"
+  },
+  {
+    "id": "elemental",
+    "sourcePng": "Sprites/Monsters/Elemental/elemental_blue_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 56,
+      "h": 56
+    },
+    "outFile": "elemental.png"
+  },
+  {
+    "id": "fallen",
+    "sourcePng": "Sprites/Monsters/Fallen/fallen_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 56,
+      "h": 56
+    },
+    "outFile": "fallen.png"
+  },
+  {
+    "id": "fallentree",
+    "sourcePng": "Sprites/Monsters/Fallentree/fallentree_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 39,
+      "h": 41
+    },
+    "outFile": "fallentree.png"
+  },
+  {
+    "id": "fernek",
+    "sourcePng": "Sprites/Monsters/Fernek/Fernek_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 45,
+      "h": 46
+    },
+    "outFile": "fernek.png"
+  },
+  {
+    "id": "ferni",
+    "sourcePng": "Sprites/Monsters/Ferni/ferni_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 40,
+      "h": 39
+    },
+    "outFile": "ferni.png"
+  },
+  {
+    "id": "fish",
+    "sourcePng": "Sprites/Monsters/Fish/fish.png",
+    "crop": null,
+    "outFile": "fish.png"
+  },
+  {
+    "id": "flows",
+    "sourcePng": "Sprites/Monsters/Flows/flows_idle.png",
+    "crop": null,
+    "outFile": "flows.png"
+  },
+  {
+    "id": "flowsnail",
+    "sourcePng": "Sprites/Monsters/Flowsnail/Flowsnail-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 18
+    },
+    "outFile": "flowsnail.png"
+  },
+  {
+    "id": "forgotten-deerlime",
+    "sourcePng": "Sprites/Monsters/ForgottenDeerlime/ForgottenDeerlime.png",
+    "crop": null,
+    "outFile": "forgotten-deerlime.png"
+  },
+  {
+    "id": "froni",
+    "sourcePng": "Sprites/Monsters/Froni/froni_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 40,
+      "h": 39
+    },
+    "outFile": "froni.png"
+  },
+  {
+    "id": "frostfruit",
+    "sourcePng": "Sprites/Monsters/Frostfruit/frostfruit_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 30,
+      "h": 29
+    },
+    "outFile": "frostfruit.png"
+  },
+  {
+    "id": "frostmite",
+    "sourcePng": "Sprites/Monsters/Frostmite/frostmite_idle.png",
+    "crop": null,
+    "outFile": "frostmite.png"
+  },
+  {
+    "id": "frostshroom",
+    "sourcePng": "Sprites/Monsters/Frostshroom/Frostshroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 47
+    },
+    "outFile": "frostshroom.png"
+  },
+  {
+    "id": "ghost-puppet",
+    "sourcePng": "Sprites/Monsters/Ghost Puppet/ghost_puppet.png",
+    "crop": null,
+    "outFile": "ghost-puppet.png"
+  },
+  {
+    "id": "giga",
+    "sourcePng": "Sprites/Monsters/Giga/giga_idle.png",
+    "crop": null,
+    "outFile": "giga.png"
+  },
+  {
+    "id": "gilded-deerlime",
+    "sourcePng": "Sprites/Monsters/GildedDeerlime/GildedDeerlime.png",
+    "crop": null,
+    "outFile": "gilded-deerlime.png"
+  },
+  {
+    "id": "gilded-slime",
+    "sourcePng": "Sprites/Monsters/GildedSlime/gilded_slime_idle.png",
+    "crop": null,
+    "outFile": "gilded-slime.png"
+  },
+  {
+    "id": "gloopy",
+    "sourcePng": "Sprites/Monsters/Gloopy/gloopy_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "outFile": "gloopy.png"
+  },
+  {
+    "id": "glowsnail",
+    "sourcePng": "Sprites/Monsters/Glowsnail/Glowsnail-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 18
+    },
+    "outFile": "glowsnail.png"
+  },
+  {
+    "id": "goldling",
+    "sourcePng": "Sprites/Monsters/Goldling/goldling_idle.png",
+    "crop": null,
+    "outFile": "goldling.png"
+  },
+  {
+    "id": "haowl",
+    "sourcePng": "Sprites/Monsters/Haowl/Haowl.png",
+    "crop": null,
+    "outFile": "haowl.png"
+  },
+  {
+    "id": "haunted-flame",
+    "sourcePng": "Sprites/Monsters/Haunted Flame/haunted_flame_idle_strip3.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "haunted-flame.png"
+  },
+  {
+    "id": "hopper",
+    "sourcePng": "Sprites/Monsters/Hopper/hopper_idle.png",
+    "crop": null,
+    "outFile": "hopper.png"
+  },
+  {
+    "id": "humblebee",
+    "sourcePng": "Sprites/Monsters/Humblebee/humblebee_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 34
+    },
+    "outFile": "humblebee.png"
+  },
+  {
+    "id": "icyghoul",
+    "sourcePng": "Sprites/Monsters/Icyghoul/icyghoul_idle_strip3.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 37,
+      "h": 25
+    },
+    "outFile": "icyghoul.png"
+  },
+  {
+    "id": "jel",
+    "sourcePng": "Sprites/Monsters/Jel/jel_idle.png",
+    "crop": null,
+    "outFile": "jel.png"
+  },
+  {
+    "id": "kiwi",
+    "sourcePng": "Sprites/Monsters/Kiwi/Kiwi_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 53,
+      "h": 34
+    },
+    "outFile": "kiwi.png"
+  },
+  {
+    "id": "lampshroom",
+    "sourcePng": "Sprites/Monsters/Lampshroom/lampshroom_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 47
+    },
+    "outFile": "lampshroom.png"
+  },
+  {
+    "id": "lava-gloopy",
+    "sourcePng": "Sprites/Monsters/LavaGloopy/lava_gloopy_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "outFile": "lava-gloopy.png"
+  },
+  {
+    "id": "licka",
+    "sourcePng": "Sprites/Monsters/Licka/licka_Idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 36,
+      "h": 14
+    },
+    "outFile": "licka.png"
+  },
+  {
+    "id": "licke",
+    "sourcePng": "Sprites/Monsters/Licki/licke_Idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 36,
+      "h": 14
+    },
+    "outFile": "licke.png"
+  },
+  {
+    "id": "licki",
+    "sourcePng": "Sprites/Monsters/Licki/licki_Idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 36,
+      "h": 14
+    },
+    "outFile": "licki.png"
+  },
+  {
+    "id": "licku",
+    "sourcePng": "Sprites/Monsters/Licku/licku_Idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 36,
+      "h": 14
+    },
+    "outFile": "licku.png"
+  },
+  {
+    "id": "lime-guardian",
+    "sourcePng": "Sprites/Monsters/LimeGuardian/LimeGuardian_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 47,
+      "h": 46
+    },
+    "outFile": "lime-guardian.png"
+  },
+  {
+    "id": "lime-slime",
+    "sourcePng": "Sprites/Monsters/LimeSlime/LimeSlime_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 47,
+      "h": 46
+    },
+    "outFile": "lime-slime.png"
+  },
+  {
+    "id": "lost-bard",
+    "sourcePng": "Sprites/Monsters/Lost Bard/lost_bard_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 56,
+      "h": 56
+    },
+    "outFile": "lost-bard.png"
+  },
+  {
+    "id": "lost-ruins",
+    "sourcePng": "Sprites/Monsters/Lost Ruins/lost_ruins_idle.png",
+    "crop": null,
+    "outFile": "lost-ruins.png"
+  },
+  {
+    "id": "lumen-sprite",
+    "sourcePng": "Sprites/Monsters/LumenSprite/lumen_sprite_idle.png",
+    "crop": null,
+    "outFile": "lumen-sprite.png"
+  },
+  {
+    "id": "mangosteen-slime",
+    "sourcePng": "Sprites/Monsters/MangosteenSlime/mangosteen_slime_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 43,
+      "h": 32
+    },
+    "outFile": "mangosteen-slime.png"
+  },
+  {
+    "id": "minireap",
+    "sourcePng": "Sprites/Monsters/Minireap/reaperfishmini.png",
+    "crop": null,
+    "outFile": "minireap.png"
+  },
+  {
+    "id": "molten-shroom",
+    "sourcePng": "Sprites/Monsters/MoltenShroom/MoltenShroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 27
+    },
+    "outFile": "molten-shroom.png"
+  },
+  {
+    "id": "monoghoul",
+    "sourcePng": "Sprites/Monsters/Monoghoul/monoghoul_idle_strip3.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 37,
+      "h": 25
+    },
+    "outFile": "monoghoul.png"
+  },
+  {
+    "id": "overripe-bananek",
+    "sourcePng": "Sprites/Monsters/OverripeBananek/overripe_bananek_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 34,
+      "h": 28
+    },
+    "outFile": "overripe-bananek.png"
+  },
+  {
+    "id": "phantom",
+    "sourcePng": "Sprites/Monsters/Phantom/phantom_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "phantom.png"
+  },
+  {
+    "id": "pimchy",
+    "sourcePng": "Sprites/Monsters/Pimchy/pimchy_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 42,
+      "h": 42
+    },
+    "outFile": "pimchy.png"
+  },
+  {
+    "id": "pin-pin",
+    "sourcePng": "Sprites/Monsters/Pin Pin/pinpin_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 32
+    },
+    "outFile": "pin-pin.png"
+  },
+  {
+    "id": "puppet-reaper",
+    "sourcePng": "Sprites/Monsters/Puppet Reaper/puppet_reaper_idle_strip12.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 68,
+      "h": 64
+    },
+    "outFile": "puppet-reaper.png"
+  },
+  {
+    "id": "puppet-reaper-panic",
+    "sourcePng": "Sprites/Monsters/Puppet Reaper (Panic)/puppet_reaper_panic_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 19,
+      "h": 19
+    },
+    "outFile": "puppet-reaper-panic.png"
+  },
+  {
+    "id": "puppet-reaper-wandering",
+    "sourcePng": "Sprites/Monsters/Puppet Reaper (Wandering)/puppet_reaper_wandering_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 14,
+      "h": 12
+    },
+    "outFile": "puppet-reaper-wandering.png"
+  },
+  {
+    "id": "pyramid-guardian",
+    "sourcePng": "Sprites/Monsters/PyramidGuardian/pyramid_guardian_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 23,
+      "h": 31
+    },
+    "outFile": "pyramid-guardian.png"
+  },
+  {
+    "id": "rainbow-cloudsheep",
+    "sourcePng": "Sprites/Monsters/Cloudsheep/rainbow_cloudsheep_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 27,
+      "h": 22
+    },
+    "outFile": "rainbow-cloudsheep.png"
+  },
+  {
+    "id": "reaperfish",
+    "sourcePng": "Sprites/Monsters/Reaperfish/reaperfish_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 186,
+      "h": 145
+    },
+    "outFile": "reaperfish.png"
+  },
+  {
+    "id": "red-shroom",
+    "sourcePng": "Sprites/Monsters/RedShroom/RedShroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 27
+    },
+    "outFile": "red-shroom.png"
+  },
+  {
+    "id": "rocky",
+    "sourcePng": "Sprites/Monsters/Rocky/rocky_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 41,
+      "h": 24
+    },
+    "outFile": "rocky.png"
+  },
+  {
+    "id": "rokkak",
+    "sourcePng": "Sprites/Monsters/Rokkik/rokkak_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "rokkak.png"
+  },
+  {
+    "id": "rokkik",
+    "sourcePng": "Sprites/Monsters/Rokkik/rokkik_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 32,
+      "h": 32
+    },
+    "outFile": "rokkik.png"
+  },
+  {
+    "id": "sadling",
+    "sourcePng": "Sprites/Monsters/Sadling/Monster_Dungeon_Despresslime_Idle.png",
+    "crop": null,
+    "outFile": "sadling.png"
+  },
+  {
+    "id": "sandball",
+    "sourcePng": "Sprites/Monsters/Sandball/sandball_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 28,
+      "h": 27
+    },
+    "outFile": "sandball.png"
+  },
+  {
+    "id": "saowl",
+    "sourcePng": "Sprites/Monsters/Haowl/Saowl_hurt-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 45,
+      "h": 41
+    },
+    "outFile": "saowl.png"
+  },
+  {
+    "id": "scythe-reaper",
+    "sourcePng": "Sprites/Monsters/Scythe Reaper/scythereaper_idle_strip9.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 101,
+      "h": 119
+    },
+    "outFile": "scythe-reaper.png"
+  },
+  {
+    "id": "seeker-reaper",
+    "sourcePng": "Sprites/Monsters/Seeker Reaper/seeker_reaper_bite_strip11.png",
+    "crop": {
+      "x": 336,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "outFile": "seeker-reaper.png"
+  },
+  {
+    "id": "seeker-reaper-mini",
+    "sourcePng": "Sprites/Monsters/Seeker Reaper Mini/seeker_reaper_mini_1_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 112,
+      "h": 112
+    },
+    "outFile": "seeker-reaper-mini.png"
+  },
+  {
+    "id": "seeker-reaper-wandering",
+    "sourcePng": "Sprites/Monsters/Seeker Reaper/seeker_reaper_hiding_idle.png",
+    "crop": null,
+    "outFile": "seeker-reaper-wandering.png"
+  },
+  {
+    "id": "shadow-golem",
+    "sourcePng": "Sprites/Monsters/Shadow Golem/shadow_golem_idle_strip6.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 71,
+      "h": 80
+    },
+    "outFile": "shadow-golem.png"
+  },
+  {
+    "id": "shadow-sprite",
+    "sourcePng": "Sprites/Monsters/Shadow Sprite/enemy_dark_slime_small_idle.png",
+    "crop": null,
+    "outFile": "shadow-sprite.png"
+  },
+  {
+    "id": "shroomie",
+    "sourcePng": "Sprites/Monsters/Shroomie/Shroomie_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 27
+    },
+    "outFile": "shroomie.png"
+  },
+  {
+    "id": "slabbit",
+    "sourcePng": "Sprites/Monsters/Slabbit/Slabbit_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 22
+    },
+    "outFile": "slabbit.png"
+  },
+  {
+    "id": "slibbit",
+    "sourcePng": "Sprites/Monsters/Slibbit/Slibbit.png",
+    "crop": null,
+    "outFile": "slibbit.png"
+  },
+  {
+    "id": "slime",
+    "sourcePng": "Sprites/Monsters/Slime/slime_idle.png",
+    "crop": null,
+    "outFile": "slime.png"
+  },
+  {
+    "id": "slip",
+    "sourcePng": "Sprites/Monsters/Slip/slip_idle.png",
+    "crop": null,
+    "outFile": "slip.png"
+  },
+  {
+    "id": "snapper",
+    "sourcePng": "Sprites/Monsters/Snapper/snapper_idle.png",
+    "crop": null,
+    "outFile": "snapper.png"
+  },
+  {
+    "id": "snowball",
+    "sourcePng": "Sprites/Monsters/Snowball/monster_snowy_mountain_snowball_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 28,
+      "h": 27
+    },
+    "outFile": "snowball.png"
+  },
+  {
+    "id": "soulfish",
+    "sourcePng": "Sprites/Monsters/Soulfish/soulfish_idle_strip5.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 64,
+      "h": 38
+    },
+    "outFile": "soulfish.png"
+  },
+  {
+    "id": "soulpling",
+    "sourcePng": "Sprites/Monsters/Soulpling/soulpling_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 12,
+      "h": 24
+    },
+    "outFile": "soulpling.png"
+  },
+  {
+    "id": "soul-squid",
+    "sourcePng": "Sprites/Monsters/Soul Squid/soul_squid_Idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 96,
+      "h": 99
+    },
+    "outFile": "soul-squid.png"
+  },
+  {
+    "id": "soultree",
+    "sourcePng": "Sprites/Monsters/Soultree/soultree_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 39,
+      "h": 41
+    },
+    "outFile": "soultree.png"
+  },
+  {
+    "id": "spot-slime",
+    "sourcePng": "Sprites/Monsters/Spot Slime/Monster_sulfuric_plains_spot_slime_idle-Sheet.png",
+    "crop": {
+      "x": 31,
+      "y": 0,
+      "w": 31,
+      "h": 23
+    },
+    "outFile": "spot-slime.png"
+  },
+  {
+    "id": "squishling",
+    "sourcePng": "Sprites/Monsters/Squishling/squishling_idle.png",
+    "crop": null,
+    "outFile": "squishling.png"
+  },
+  {
+    "id": "stinky-sheep",
+    "sourcePng": "Sprites/Monsters/Stinky Sheep/stinky_sheep_idle.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 27,
+      "h": 22
+    },
+    "outFile": "stinky-sheep.png"
+  },
+  {
+    "id": "sweel",
+    "sourcePng": "Sprites/Monsters/Sweel/sweel_idle_strip4.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 40,
+      "h": 30
+    },
+    "outFile": "sweel.png"
+  },
+  {
+    "id": "tallshroom",
+    "sourcePng": "Sprites/Monsters/Tallshroom/TallShroom_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 26,
+      "h": 47
+    },
+    "outFile": "tallshroom.png"
+  },
+  {
+    "id": "tantrum-gloopy",
+    "sourcePng": "Sprites/Monsters/Gloopy/gloopy_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 128,
+      "h": 128
+    },
+    "outFile": "tantrum-gloopy.png"
+  },
+  {
+    "id": "test-dummy",
+    "sourcePng": "Sprites/Map/Map Objects/New Map Objects 2023/ScareCrow.png",
+    "crop": null,
+    "outFile": "test-dummy.png"
+  },
+  {
+    "id": "troppo",
+    "sourcePng": "Sprites/Monsters/Troppo/troppo_idle_strip2.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 35,
+      "h": 23
+    },
+    "outFile": "troppo.png"
+  },
+  {
+    "id": "upsivase",
+    "sourcePng": "Sprites/Monsters/Upsivase/Monster_deep_ocean_Upsivase_idle-Sheet.png",
+    "crop": {
+      "x": 0,
+      "y": 0,
+      "w": 24,
+      "h": 41
+    },
+    "outFile": "upsivase.png"
+  },
+  {
+    "id": "verduniga",
+    "sourcePng": "Sprites/Monsters/Verduniga/verduniga_idle.png",
+    "crop": null,
+    "outFile": "verduniga.png"
+  },
+  {
+    "id": "water-spot",
+    "sourcePng": "Sprites/Monsters/WaterSpot/Monster_water_spot_idle-Sheet.png",
+    "crop": {
+      "x": 31,
+      "y": 0,
+      "w": 31,
+      "h": 23
+    },
+    "outFile": "water-spot.png"
+  }
+]

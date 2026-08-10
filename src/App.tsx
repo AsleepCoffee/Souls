@@ -9,6 +9,8 @@ import { HomePage } from "./pages/HomePage";
 import { SkillsPage } from "./pages/SkillsPage";
 import { ItemsPage } from "./pages/ItemsPage";
 import { ItemDetail } from "./components/Items/ItemDetail";
+import { MonstersPage } from "./pages/MonstersPage";
+import { MonsterDetail } from "./components/Monsters/MonsterDetail";
 import "./App.css";
 
 const siteData = rawSiteData as unknown as SiteData;
@@ -28,10 +30,8 @@ function App() {
           <Route path="/skills" element={<SkillsPage />} />
           <Route path="/items" element={<ItemsPage />} />
           <Route path="/items/:slug" element={<ItemDetail />} />
-          <Route
-            path="/monsters"
-            element={<ComingSoon title="Monsters" note="Monster database coming in a later phase." />}
-          />
+          <Route path="/monsters" element={<MonstersPage />} />
+          <Route path="/monsters/:slug" element={<MonsterDetail />} />
           <Route path="/maps" element={<ComingSoon title="Maps" note="Maps page coming in a later phase." />} />
           <Route
             path="/leveling"

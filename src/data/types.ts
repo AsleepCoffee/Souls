@@ -152,6 +152,37 @@ export interface ItemsData {
   items: ItemRecord[];
 }
 
+export interface MonsterStats {
+  level: StatField;
+  hp: StatField;
+  mp: StatField;
+  attack: StatField;
+  defense: StatField;
+  speed: StatField;
+  exp_reward: StatField;
+}
+
+export interface MonsterRecord {
+  slug: string;
+  monster_id: Field<number | null>;
+  name: Field<string>;
+  icon: Field<string | null>;
+  behavior_scene: Field<string | null>;
+  stats: MonsterStats;
+  drop_table: { value: null; provenance: Provenance; note?: string };
+  found_in: { value: null; provenance: Provenance; note?: string };
+  source: { resource_path: string; texture_path: string | null };
+}
+
+export interface MonstersData {
+  meta: {
+    generated_at: string;
+    pipeline_version: string;
+    total_monsters: number;
+  };
+  monsters: MonsterRecord[];
+}
+
 export interface SiteData {
   meta: {
     steam_app: number;
