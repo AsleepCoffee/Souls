@@ -5,8 +5,9 @@ export interface PanZoomState {
   zoom: number;
 }
 
-const MIN_ZOOM = 0.6;
-const MAX_ZOOM = 5;
+const MIN_ZOOM = 0.5;
+const MAX_ZOOM = 6;
+const SMOOTH_MS = 260;
 
 function clamp(v: number, min: number, max: number) {
   return Math.min(max, Math.max(min, v));
@@ -22,8 +23,22 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const [baseScale, setBaseScale] = useState(1);
   const [state, setState] = useState<PanZoomState>({ pan: { x: 0, y: 0 }, zoom: 1 });
+  const [smooth, setSmooth] = useState(false);
   const dragState = useRef<{ startX: number; startY: number; panX: number; panY: number } | null>(null);
   const pinchState = useRef<{ startDist: number; startZoom: number; midX: number; midY: number } | null>(null);
+  const smoothTimer = useRef<number | null>(null);
+
+  /** Marks the next state update(s) as animatable (button zoom, reset, keyboard-focus pan) —
+   * as opposed to drag/wheel/pinch, which must track the pointer 1:1 with no transition lag. */
+  const triggerSmooth = useCallback(() => {
+    setSmooth(true);
+    if (smoothTimer.current) window.clearTimeout(smoothTimer.current);
+    smoothTimer.current = window.setTimeout(() => setSmooth(false), SMOOTH_MS + 40);
+  }, []);
+
+  useEffect(() => () => {
+    if (smoothTimer.current) window.clearTimeout(smoothTimer.current);
+  }, []);
 
   const fit = useCallback(() => {
     const el = viewportRef.current;
@@ -39,6 +54,11 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
       zoom: 1,
     });
   }, [worldWidth, worldHeight]);
+
+  const resetSmooth = useCallback(() => {
+    triggerSmooth();
+    fit();
+  }, [triggerSmooth, fit]);
 
   useEffect(() => {
     fit();
@@ -80,15 +100,28 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
       const el = viewportRef.current;
       if (!el) return;
       const rect = el.getBoundingClientRect();
+      triggerSmooth();
       zoomAt(rect.left + rect.width / 2, rect.top + rect.height / 2, factor);
     },
-    [zoomAt]
+    [zoomAt, triggerSmooth]
+  );
+
+  /** Double-click/double-tap: zoom in a step centered on the click point. Shift+double-click zooms out. */
+  const zoomAtPoint = useCallback(
+    (clientX: number, clientY: number, factor: number) => {
+      triggerSmooth();
+      zoomAt(clientX, clientY, factor);
+    },
+    [zoomAt, triggerSmooth]
   );
 
   const onWheel = useCallback(
     (e: React.WheelEvent) => {
       e.preventDefault();
-      const factor = Math.exp(-e.deltaY * 0.0015);
+      // Finer-grained than a raw 1:1 deltaY mapping so a single mouse-wheel
+      // notch (~100-120 units) or trackpad scroll reads as a gentle step
+      // rather than a jump.
+      const factor = Math.exp(-e.deltaY * 0.001);
       zoomAt(e.clientX, e.clientY, factor);
     },
     [zoomAt]
@@ -182,8 +215,9 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
         if (dx === 0 && dy === 0) return prev;
         return { ...prev, pan: { x: prev.pan.x + dx, y: prev.pan.y + dy } };
       });
+      triggerSmooth();
     },
-    [baseScale]
+    [baseScale, triggerSmooth]
   );
 
   return {
@@ -191,6 +225,7 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
     scale: baseScale * state.zoom,
     zoomLevel: state.zoom,
     pan: state.pan,
+    smooth,
     isDragging: () => dragState.current !== null,
     handlers: {
       onWheel,
@@ -202,9 +237,10 @@ export function usePanZoom(worldWidth: number, worldHeight: number) {
       onTouchMove,
       onTouchEnd,
     },
-    zoomIn: () => zoomButton(1.35),
-    zoomOut: () => zoomButton(1 / 1.35),
-    reset: fit,
+    zoomIn: () => zoomButton(1.25),
+    zoomOut: () => zoomButton(1 / 1.25),
+    reset: resetSmooth,
     ensureVisible,
+    zoomAtPoint,
   };
 }

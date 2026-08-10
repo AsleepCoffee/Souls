@@ -79,11 +79,12 @@ export function SkillTree({
         onTouchStart={pz.handlers.onTouchStart}
         onTouchMove={pz.handlers.onTouchMove}
         onTouchEnd={pz.handlers.onTouchEnd}
+        onDoubleClick={(e) => pz.zoomAtPoint(e.clientX, e.clientY, e.shiftKey ? 1 / 1.8 : 1.8)}
         role="application"
-        aria-label="Combat skill tree map. Use Tab to move between skills, Enter or Space to open details. Scroll or pinch to zoom, drag to pan."
+        aria-label="Combat skill tree map. Use Tab to move between skills, Enter or Space to open details. Scroll or pinch to zoom, drag to pan. Double-click to zoom in, shift+double-click to zoom out."
       >
         <div
-          className="skill-tree__world"
+          className={`skill-tree__world ${pz.smooth ? "skill-tree__world--smooth" : ""}`}
           style={{
             width: worldWidth,
             height: worldHeight,
@@ -112,9 +113,10 @@ export function SkillTree({
       </div>
 
       <p className="skill-tree__hint">
-        Scroll or pinch to zoom, drag to pan, Tab to move between skills. Badges mark{" "}
-        <strong>B</strong>asic attacks, <strong>P</strong>assives, and toggle/<strong>T</strong>oggle buffs — plain
-        rings are regular active skills. This tree shows every combat node with no progression locking.
+        Scroll or pinch to zoom, drag to pan, double-click to zoom in (shift+double-click to zoom out), Tab to move
+        between skills. Badges mark <strong>B</strong>asic attacks, <strong>P</strong>assives, and toggle/
+        <strong>T</strong>oggle buffs — plain rings are regular active skills. This tree shows every combat node
+        with no progression locking.
       </p>
 
       {hovered && (

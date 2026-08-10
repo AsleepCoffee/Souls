@@ -1,6 +1,7 @@
 .skill-tree {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 10px;
   height: 100%;
 }
@@ -73,8 +74,15 @@
 
 .skill-tree__viewport {
   position: relative;
-  flex: 1;
-  min-height: 420px;
+  /* Shaped to match the 576x546 tree art itself (instead of stretching to
+     fill an arbitrarily wide/tall flex box) so the tree sits centered with
+     no dead gutters, and zoom/pan math has a predictable box to work in. */
+  width: 100%;
+  max-width: 860px;
+  aspect-ratio: 576 / 546;
+  min-height: 340px;
+  max-height: 78vh;
+  margin: 0 auto;
   background: radial-gradient(ellipse at center, #1a1c24 0%, #0a0b0f 100%);
   border: 1px solid var(--border-default);
   border-radius: var(--radius-lg);
@@ -93,6 +101,13 @@
   left: 0;
   transform-origin: 0 0;
   will-change: transform;
+}
+
+/* Only applied for button/reset/keyboard-focus pans — drag, wheel, and
+   pinch stay transition-free so they track the pointer 1:1. Keep this
+   duration in sync with SMOOTH_MS in usePanZoom.ts. */
+.skill-tree__world--smooth {
+  transition: transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .skill-tree__bg {
@@ -115,10 +130,4 @@
   font-size: 0.72rem;
   color: var(--text-muted);
   line-height: 1.5;
-}
-
-@media (max-width: 720px) {
-  .skill-tree__viewport {
-    min-height: 320px;
-  }
 }
