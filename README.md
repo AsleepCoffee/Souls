@@ -1,11 +1,12 @@
-# Soul's Remnant — Combat Skill Reference
+# Soul's Remnant Reference
 
-An unofficial, fan-made interactive reference for Soul's Remnant's combat skill tree, rebuilt from a locally
-recovered game client (Steam playtest **build 24640923**). It reproduces the original 576×546 combat tree
-layout and pixel-art icons, and adds sortable/filterable tables and comparison tools on top.
+An unofficial, fan-made reference wiki for Soul's Remnant — skills, items, monsters, maps, leveling, and a
+loadout planner — rebuilt from a locally recovered game client (Steam playtest **build 24640923**).
 
 Not affiliated with the developer. No installed game files were modified — only the specific icon and
 background assets the site renders were copied out, into `public/assets/`.
+
+Live at: https://asleepcoffee.github.io/Souls/
 
 ## Running locally
 
@@ -24,35 +25,27 @@ npm run preview   # serve the production build locally
 npm run lint       # oxlint
 ```
 
-## Regenerating the site data
-
-The tree/table/tool UI never hard-codes skill data — it reads `src/data/skills.generated.json`, produced by:
-
-```
-node data-pipeline/build-site-data.mjs
-```
-
-See [`data-pipeline/README.md`](data-pipeline/README.md) for exactly where every field comes from, what's
-verified vs. inferred vs. unknown, and how to point the pipeline at a future game build.
-
 ## What's here
 
-- **Skill Tree tab** — the full 79-node combat tree (Melee/Range/Magic/Faith), pannable and zoomable
-  (scroll/pinch/drag), with keyboard focus support, a hover tooltip, and a persistent detail panel on click.
-  No progression locking is reproduced — every combat node is shown, including any normally hidden ones.
-- **Skills Table tab** — all 79 combat skills, sortable by every numeric/text column, searchable, and
-  filterable by branch/classification/damage type (damage type supports multiple selections).
-- **Buffs & Toggles tab** — the 16 buff/toggle/passive-stance skills, with affected stats, regen penalties,
-  party-sharing, and stacking behavior mined from their in-game descriptions.
-- **Compare Tools tab** — an attacks-per-second calculator with a visible formula, a branch structural
-  comparison, and a "known scaling values" explorer listing every level-scaling/multiplier number that
-  appears in the game's own skill description text.
+| Route | Contents |
+|---|---|
+| `/skills` | The full 79-node combat skill tree (pan/zoom, keyboard nav, hover tooltip, detail panel), a sortable skills table, a buffs/toggles table, and attack-speed/scaling compare tools. |
+| `/items` | 1,181 items + 320 equipment pieces, sortable/searchable/filterable by category and equipment slot, each with a detail page at `/items/:slug`. |
+| `/monsters` | 135 monsters, sortable/searchable, each with a detail page at `/monsters/:slug`. |
+| `/maps` | An honest "here's what little we know" page — no zone database exists client-side. |
+| `/leveling` | Same treatment — no EXP curve or level cap exists in any recovered file. |
+| `/build-planner` | A shareable equipment + skill loadout composer (not a DPS calculator — see below). |
+
+None of the UI hard-codes game data — every page reads a generated JSON file (`src/data/*.generated.json`)
+produced by a standalone pipeline script. See [`data-pipeline/README.md`](data-pipeline/README.md) for exactly
+where every field comes from, per domain, and how to point the pipeline at a future game build.
 
 ## Publishing to a wiki.gg wiki
 
-`wiki-export/` generates plain MediaWiki wikitext from the same data — sortable wiki-tables plus a clickable
-`<imagemap>` tree — for wikis where you only have regular editing rights (no admin, no extensions, no JS).
-See [`wiki-export/README.md`](wiki-export/README.md) for what it produces and how to paste it in.
+`wiki-export/` generates plain MediaWiki wikitext (sortable wiki-tables plus a clickable `<imagemap>` tree) for
+the combat skill tree specifically — for wikis where you only have regular editing rights (no admin, no
+extensions, no JS). See [`wiki-export/README.md`](wiki-export/README.md). (Items/monsters aren't covered by
+this export yet.)
 
 ```
 node wiki-export/build-wiki-export.mjs
@@ -60,22 +53,28 @@ node wiki-export/build-wiki-export.mjs
 
 ## On missing data
 
-A large share of a skill's numeric balance — `base_power`, `power_per_level`, `cooldown`, `attack_per_second`,
-`attack_count`, `duration`, full per-stat scaling tables, and exact unlock prerequisites — is assigned by
-Soul's Remnant's MMO server at runtime and genuinely does not exist anywhere in the recovered client files
-(confirmed by reading `Resources/Skills/Skill.gd`: those are plain, never-assigned fields on the runtime
-`Skill` class). This site does not invent values for them. Every such field is shown as "Unknown" with a
-tooltip explaining why, and tagged with its provenance (`client_structured` / `client_description` /
-`observed_live` / `server_runtime` / `inferred` / `unknown`) everywhere it appears — in the tree tooltip, the
-detail panel, and every table cell.
+A large share of this game's numeric data — combat stats (base power, cooldowns, durations, scaling tables),
+item rarity/required level/stat modifiers, monster HP/ATK/DEF/SPD/EXP/drop tables, and the entire EXP/leveling
+curve — is assigned by Soul's Remnant's MMO server at runtime and genuinely does not exist anywhere in the
+recovered client files (confirmed per-domain by reading the relevant `.gd` scripts — e.g. `Skill.gd`'s
+never-assigned runtime fields, `Item.gd`'s placeholder defaults, `monster_info_window.gd` literally rendering
+`"???"` until the server responds). This site never invents values for these. Every such field is shown as
+"Unknown" with a tooltip explaining why, and tagged with its provenance (`client_structured` /
+`client_description` / `observed_live` / `server_runtime` / `inferred` / `unknown`) everywhere it appears.
 
-Those fields *are* visible in-game, though (the skill window displays them once a skill's server data has
-loaded) — `data-pipeline/live-capture/` has a hook for recording them from your own live-connected client, and
-`data-pipeline/observations/` is where the pipeline picks up whatever you capture. See
+Combat skill stats specifically *are* visible in-game (the skill window displays them once a skill's server
+data has loaded) — `data-pipeline/live-capture/` has a hook for recording them from your own live-connected
+client, and `data-pipeline/observations/` is where the pipeline picks them up. See
 [`data-pipeline/README.md`](data-pipeline/README.md#recovering-the-server-runtime-fields-live-capture--observations)
-for how it works and the ToS/account-risk caveat that comes with running a modified client.
+for how it works and the ToS/account-risk caveat that comes with running a modified client. (The monster stats
+data model is shaped to support the same pattern later; that capture hook doesn't exist yet.)
+
+The Build Planner is a loadout composer, not a stat calculator, for the same reason — there's no honest number
+to compute a "build score" from.
 
 ## Tech
 
-Vite + React + TypeScript, no UI framework. Data pipeline is a small standalone Node script (see above) so
-the game-data refresh path stays independent of the UI code.
+Vite + React 19 + TypeScript + React Router (client-side routing, with the standard GitHub Pages 404.html
+SPA-fallback trick since Pages has no server-side routing). No UI framework. The data pipeline is a set of
+standalone Node scripts under `data-pipeline/` — see its README for the full breakdown — so the game-data
+refresh path stays independent of the UI code.

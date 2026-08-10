@@ -1,0 +1,19 @@
+.not-found-page {
+  max-width: 500px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.not-found-page h2 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  margin: 0 0 8px;
+}
+
+.not-found-page a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--link);
+}

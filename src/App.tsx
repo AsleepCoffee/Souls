@@ -4,8 +4,8 @@ import type { SiteData } from "./data/types";
 import { Header } from "./components/Header";
 import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
-import { ComingSoon } from "./components/common/ComingSoon";
 import { HomePage } from "./pages/HomePage";
+import { NotFoundPage } from "./pages/NotFoundPage";
 import { SkillsPage } from "./pages/SkillsPage";
 import { ItemsPage } from "./pages/ItemsPage";
 import { ItemDetail } from "./components/Items/ItemDetail";
@@ -38,7 +38,7 @@ function App() {
           <Route path="/maps" element={<MapsStub />} />
           <Route path="/leveling" element={<LevelingStub />} />
           <Route path="/build-planner" element={<BuildPlannerPage />} />
-          <Route path="*" element={<ComingSoon title="Not found" note="That page doesn't exist." />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
 
