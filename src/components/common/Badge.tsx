@@ -29,6 +29,15 @@ export function ClassificationBadge({ classification }: { classification: Classi
   );
 }
 
+/** Generic colored pill for anything without its own dedicated badge (item categories, equipment slots, etc.). */
+export function ColorBadge({ label, color }: { label: string; color: string }) {
+  return (
+    <span className="badge badge--generic" style={{ color, borderColor: color, background: `${color}22` }}>
+      {label}
+    </span>
+  );
+}
+
 export function DamageTypeBadges({ types }: { types: string[] }) {
   return (
     <span className="damage-type-badges">

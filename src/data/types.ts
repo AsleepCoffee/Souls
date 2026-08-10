@@ -116,6 +116,42 @@ export interface SkillRecord {
   source: { resource_path: string; texture_path: string };
 }
 
+export type ItemCategory = "general" | "weapon" | "gathering_material" | "crafting_material";
+
+export interface EquipmentSlot {
+  type: number;
+  label: string | null;
+}
+
+export interface ItemStats {
+  rarity: { value: string | null; provenance: Provenance; note?: string };
+  required_level: StatField;
+  modifiers: { value: string | null; provenance: Provenance; note?: string };
+}
+
+export interface ItemRecord {
+  slug: string;
+  item_id: Field<number | null>;
+  name: Field<string>;
+  description: Field<string | null>;
+  category: Field<ItemCategory>;
+  icon: Field<string>;
+  equipment_slot: Field<EquipmentSlot | null>;
+  stats: ItemStats;
+  source: { resource_path: string; texture_path: string };
+}
+
+export interface ItemsData {
+  meta: {
+    generated_at: string;
+    pipeline_version: string;
+    total_items: number;
+    total_equipment_merged: number;
+    category_counts: Record<string, number>;
+  };
+  items: ItemRecord[];
+}
+
 export interface SiteData {
   meta: {
     steam_app: number;

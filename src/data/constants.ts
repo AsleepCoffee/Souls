@@ -1,4 +1,4 @@
-import type { Branch, Classification, Provenance } from "./types";
+import type { Branch, Classification, ItemCategory, Provenance } from "./types";
 
 // Matched to the actual in-game skill_tree_combat_color_overlay.png quadrant
 // colors (sampled: Melee #ff7777 top, Faith #cc9eff right, Range #fdff77
@@ -60,3 +60,19 @@ export const CLASSIFICATIONS: Classification[] = [
   "passive_stance",
   "proficiency",
 ];
+
+export const ITEM_CATEGORY_LABEL: Record<ItemCategory, string> = {
+  general: "General",
+  weapon: "Weapon",
+  gathering_material: "Gathering Material",
+  crafting_material: "Crafting Material",
+};
+
+export const ITEM_CATEGORY_COLOR: Record<ItemCategory, string> = {
+  general: "#8fb7e8",
+  weapon: "#e0685a",
+  gathering_material: "#7fc26b",
+  crafting_material: "#cf9d4f",
+};
+
+export const ITEM_CATEGORIES: ItemCategory[] = ["general", "weapon", "gathering_material", "crafting_material"];

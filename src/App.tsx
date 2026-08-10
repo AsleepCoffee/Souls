@@ -7,6 +7,8 @@ import { Footer } from "./components/Footer";
 import { ComingSoon } from "./components/common/ComingSoon";
 import { HomePage } from "./pages/HomePage";
 import { SkillsPage } from "./pages/SkillsPage";
+import { ItemsPage } from "./pages/ItemsPage";
+import { ItemDetail } from "./components/Items/ItemDetail";
 import "./App.css";
 
 const siteData = rawSiteData as unknown as SiteData;
@@ -24,7 +26,8 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/items" element={<ComingSoon title="Items" note="Item database coming in a later phase." />} />
+          <Route path="/items" element={<ItemsPage />} />
+          <Route path="/items/:slug" element={<ItemDetail />} />
           <Route
             path="/monsters"
             element={<ComingSoon title="Monsters" note="Monster database coming in a later phase." />}
