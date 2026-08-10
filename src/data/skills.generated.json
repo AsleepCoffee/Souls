@@ -2,8 +2,8 @@
   "meta": {
     "steam_app": 3479090,
     "build_id": "24640923",
-    "generated_at": "2026-08-10T06:21:20.878Z",
-    "pipeline_version": "1.0.0",
+    "generated_at": "2026-08-10T07:11:08.059Z",
+    "pipeline_version": "1.1.0",
     "source_file": "data-pipeline/source/souls-remnant-skill-tree.json",
     "total_combat_nodes": 79,
     "branch_counts": {

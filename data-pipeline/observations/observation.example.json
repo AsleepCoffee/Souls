@@ -1,0 +1,19 @@
+{
+  "4": {
+    "skill_id": 4,
+    "name": "Revitalize",
+    "recorded_level": 5,
+    "base_power": 12.0,
+    "power_per_level": 1.5,
+    "cooldown_ms": 8000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "max_level": 20,
+    "size": 1.0,
+    "mob_count": 0,
+    "scaling": [{ "id": "faith_damage", "amount": 0.1, "per_level": 0.02 }],
+    "level_requirements": [{ "skill_id": 61, "level": 10 }],
+    "recorded_at_unix": 1754812345
+  }
+}

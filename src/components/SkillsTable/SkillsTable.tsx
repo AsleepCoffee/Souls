@@ -133,7 +133,7 @@ export function SkillsTable({
         accessor: (s) => computeAttacksPerSecond(s).value,
         render: (s) => {
           const r = computeAttacksPerSecond(s);
-          return <StatValue value={r.value ? r.value.toFixed(2) : null} provenance="server_runtime" note={r.formula} />;
+          return <StatValue value={r.value ? r.value.toFixed(2) : null} provenance={r.provenance} note={r.formula} />;
         },
         width: "110px",
         align: "right",

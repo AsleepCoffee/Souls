@@ -1,9 +1,11 @@
-import type { SkillRecord } from "../data/types";
+import type { Provenance, SkillRecord } from "../data/types";
 
 export interface ApsResult {
   value: number | null;
   formula: string;
   basis: "cooldown" | "duration" | null;
+  /** Provenance of the timing field the computation actually used — a computed value can only be as trusted as its input. */
+  provenance: Provenance;
 }
 
 /**
@@ -22,11 +24,13 @@ export function computeAttacksPerSecond(skill: SkillRecord): ApsResult {
 
   const basisMs = cooldownMs ?? durationMs;
   const basis: ApsResult["basis"] = cooldownMs != null ? "cooldown" : durationMs != null ? "duration" : null;
+  const basisProvenance = basis === "cooldown" ? skill.stats.cooldown_ms.provenance : basis === "duration" ? skill.stats.duration_ms.provenance : "server_runtime";
 
   if (basisMs === null || basisMs <= 0) {
     return {
       value: null,
       basis: null,
+      provenance: "server_runtime",
       formula: "attack_count / (cooldown_ms / 1000) — unknown: cooldown_ms and duration_ms are both server-runtime-only for this skill",
     };
   }
@@ -34,7 +38,13 @@ export function computeAttacksPerSecond(skill: SkillRecord): ApsResult {
   return {
     value: attackCount / (basisMs / 1000),
     basis,
-    formula: `${attackCount} hit${attackCount === 1 ? "" : "s"} / (${basisMs}ms ${basis} / 1000) = ${(attackCount / (basisMs / 1000)).toFixed(2)}/s`,
+    // A computed value inherits its confidence from the least-certain input;
+    // attack_count silently defaults to 1 when unknown, so note that here
+    // rather than letting the result look more verified than it is.
+    provenance: skill.stats.attack_count.value == null ? "inferred" : basisProvenance,
+    formula: `${attackCount} hit${attackCount === 1 ? "" : "s"} / (${basisMs}ms ${basis} / 1000) = ${(attackCount / (basisMs / 1000)).toFixed(2)}/s${
+      skill.stats.attack_count.value == null ? " (attack_count unknown, assumed 1)" : ""
+    }`,
   };
 }
 

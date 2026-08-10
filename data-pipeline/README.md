@@ -87,3 +87,25 @@ To update for a future game build: replace
 if icons/positions changed) with a fresh export, then re-run the script. The
 UI reads only the generated JSON, so no component code needs to change for a
 data refresh.
+
+## Recovering the server-runtime fields: `live-capture/` + `observations/`
+
+Everything tagged `"server_runtime"` above is genuinely absent from every recovered
+file — but it *is* visible in-game, since `skill_window.gd` renders it (`"Power: "`,
+`"Duration: "`, etc.) once a skill's server data has arrived. `data-pipeline/live-capture/`
+has a small GDScript hook (`skill_logger_patch.gd`) that a locally-running, live-connected
+client can paste in to dump those now-populated `Skill` fields to a JSON file as you open
+each skill in the tree — no network/protocol reverse-engineering involved, just reading
+values the client already has in memory after the server sent them.
+
+Drop the resulting dump(s) into `data-pipeline/observations/*.json` and re-run
+`node data-pipeline/build-site-data.mjs` — any field present there overrides the matching
+"Unknown (server-only)" stat with a real value tagged `"observed_live"`, distinct from
+`"client_structured"` (static file) and `"server_runtime"` (confirmed still missing).
+Multiple dumps merge automatically, field-by-field, in filename-sort order. See
+`data-pipeline/live-capture/skill_logger_patch.gd` and `data-pipeline/observations/README.md`
+for the exact patch and file format.
+
+This only works against your own account and requires accepting the risk that a
+modified/instrumented client may not be permitted by the game's ToS/EULA — that's a call
+for whoever runs the capture to make, not something this pipeline enforces or assumes.

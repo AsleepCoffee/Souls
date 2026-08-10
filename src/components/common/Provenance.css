@@ -23,6 +23,10 @@
   color: #8fb7e8;
   border-color: rgba(143, 183, 232, 0.35);
 }
+.prov-tag--observed_live {
+  color: #7fe0c9;
+  border-color: rgba(127, 224, 201, 0.4);
+}
 .prov-tag--server_runtime,
 .prov-tag--unknown {
   color: var(--text-muted);

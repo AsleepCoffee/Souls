@@ -66,8 +66,14 @@ Soul's Remnant's MMO server at runtime and genuinely does not exist anywhere in 
 (confirmed by reading `Resources/Skills/Skill.gd`: those are plain, never-assigned fields on the runtime
 `Skill` class). This site does not invent values for them. Every such field is shown as "Unknown" with a
 tooltip explaining why, and tagged with its provenance (`client_structured` / `client_description` /
-`server_runtime` / `inferred` / `unknown`) everywhere it appears — in the tree tooltip, the detail panel, and
-every table cell.
+`observed_live` / `server_runtime` / `inferred` / `unknown`) everywhere it appears — in the tree tooltip, the
+detail panel, and every table cell.
+
+Those fields *are* visible in-game, though (the skill window displays them once a skill's server data has
+loaded) — `data-pipeline/live-capture/` has a hook for recording them from your own live-connected client, and
+`data-pipeline/observations/` is where the pipeline picks up whatever you capture. See
+[`data-pipeline/README.md`](data-pipeline/README.md#recovering-the-server-runtime-fields-live-capture--observations)
+for how it works and the ToS/account-risk caveat that comes with running a modified client.
 
 ## Tech
 

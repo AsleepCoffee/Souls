@@ -5,6 +5,7 @@
 export type Provenance =
   | "client_structured"
   | "client_description"
+  | "observed_live"
   | "server_runtime"
   | "inferred"
   | "unknown";
@@ -49,7 +50,7 @@ export interface SkillStats {
   attack_per_second: StatField;
   attack_count: StatField;
   max_level: StatField;
-  scaling_attributes: { value: null; provenance: Provenance; note?: string };
+  scaling_attributes: { value: string | null; provenance: Provenance; note?: string };
 }
 
 export interface SkillTags {

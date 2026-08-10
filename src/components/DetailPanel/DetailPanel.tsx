@@ -1,7 +1,8 @@
 import { useEffect, useRef } from "react";
 import type { SkillRecord } from "../../data/types";
 import { SkillSummary } from "../common/SkillSummary";
-import { ProvenanceTag } from "../common/Provenance";
+import { ProvenanceTag, StatValue } from "../common/Provenance";
+import { computeAttacksPerSecond, formatMs } from "../../utils/combat";
 import "./DetailPanel.css";
 
 export function DetailPanel({
@@ -131,11 +132,47 @@ export function DetailPanel({
 
             <section className="detail-panel__section">
               <h4>Numeric combat stats</h4>
+              <dl className="detail-panel__dl">
+                <dt>Base power</dt>
+                <dd>
+                  <StatValue value={skill.stats.base_power.value} provenance={skill.stats.base_power.provenance} note={skill.stats.base_power.note} />
+                </dd>
+                <dt>Power / level</dt>
+                <dd>
+                  <StatValue value={skill.stats.power_per_level.value} provenance={skill.stats.power_per_level.provenance} note={skill.stats.power_per_level.note} />
+                </dd>
+                <dt>Cooldown</dt>
+                <dd>
+                  <StatValue value={formatMs(skill.stats.cooldown_ms.value)} provenance={skill.stats.cooldown_ms.provenance} note={skill.stats.cooldown_ms.note} />
+                </dd>
+                <dt>Duration</dt>
+                <dd>
+                  <StatValue value={formatMs(skill.stats.duration_ms.value)} provenance={skill.stats.duration_ms.provenance} note={skill.stats.duration_ms.note} />
+                </dd>
+                <dt>Hits per use</dt>
+                <dd>
+                  <StatValue value={skill.stats.attack_count.value} provenance={skill.stats.attack_count.provenance} note={skill.stats.attack_count.note} />
+                </dd>
+                <dt>Attacks / sec (computed)</dt>
+                <dd>
+                  {(() => {
+                    const aps = computeAttacksPerSecond(skill);
+                    return <StatValue value={aps.value ? aps.value.toFixed(2) : null} provenance={aps.provenance} note={aps.formula} />;
+                  })()}
+                </dd>
+                <dt>Max level</dt>
+                <dd>
+                  <StatValue value={skill.stats.max_level.value} provenance={skill.stats.max_level.provenance} note={skill.stats.max_level.note} />
+                </dd>
+                <dt>Damage scaling</dt>
+                <dd>
+                  <StatValue value={skill.stats.scaling_attributes.value} provenance={skill.stats.scaling_attributes.provenance} note={skill.stats.scaling_attributes.note} />
+                </dd>
+              </dl>
               <p className="detail-panel__stats-note">
-                Base power, per-level power, cooldown, animation duration, hit count, and full scaling tables are
-                assigned by the MMO server at runtime (`Skill.gd`'s non-exported fields) and are not present in the
-                recovered client. They are intentionally left unknown here rather than guessed — see the Skills
-                table and Compare tools for how this is handled everywhere in the site.
+                Fields marked "Unknown" are assigned by the MMO server at runtime (`Skill.gd`'s non-exported
+                fields) and are not present in the recovered client — see{" "}
+                <code>data-pipeline/live-capture/</code> for how to record them from a running, connected client.
               </p>
             </section>
 

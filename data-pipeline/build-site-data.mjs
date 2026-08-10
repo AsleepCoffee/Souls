@@ -2,16 +2,17 @@
 // versioned data file. See data-pipeline/README.md for full provenance
 // notes. Re-run with: node data-pipeline/build-site-data.mjs
 
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 
-const PIPELINE_VERSION = "1.0.0";
+const PIPELINE_VERSION = "1.1.0";
 const SOURCE_PATH = path.join(__dirname, "source", "souls-remnant-skill-tree.json");
 const ICON_MAP_PATH = path.join(__dirname, "icon_mapping.json");
+const OBSERVATIONS_DIR = path.join(__dirname, "observations");
 const OUT_PATH = path.join(ROOT, "src", "data", "skills.generated.json");
 
 const COMBAT_BRANCHES = ["Melee", "Range", "Magic", "Faith"];
@@ -20,6 +21,55 @@ const TREE_HEIGHT = 546;
 
 const REQUIREMENTS_PLACEHOLDER =
   "Provided by the game server at runtime; not stored in the PCK";
+
+/**
+ * Loads hand-captured runtime data from data-pipeline/observations/*.json —
+ * dumps produced by the logging hook in data-pipeline/live-capture/, or any
+ * file following the same { "<skill_id>": { base_power, cooldown_ms, ... } }
+ * shape. Multiple files merge field-by-field; later files (sorted by name)
+ * win on conflicts, so a fresher capture supersedes an older one per field
+ * without needing to hand-merge JSON yourself.
+ */
+function loadObservations() {
+  const merged = {};
+  if (!existsSync(OBSERVATIONS_DIR)) return merged;
+  const files = readdirSync(OBSERVATIONS_DIR)
+    .filter((f) => f.endsWith(".json") && !f.includes(".example."))
+    .sort();
+  for (const file of files) {
+    const parsed = JSON.parse(readFileSync(path.join(OBSERVATIONS_DIR, file), "utf-8"));
+    for (const [skillId, fields] of Object.entries(parsed)) {
+      merged[skillId] = { ...(merged[skillId] || {}), ...fields, _source_file: file };
+    }
+  }
+  return merged;
+}
+
+function observedStat(obs, key, note) {
+  if (obs == null || obs[key] === undefined || obs[key] === null) return null;
+  return {
+    value: obs[key],
+    provenance: "observed_live",
+    note: `${note} Captured from the running client (see data-pipeline/live-capture/) in ${obs._source_file}${
+      obs.recorded_at_unix ? ` on ${new Date(obs.recorded_at_unix * 1000).toISOString().slice(0, 10)}` : ""
+    }${obs.recorded_level ? ` at skill level ${obs.recorded_level}` : ""}.`,
+  };
+}
+
+function formatLevelRequirements(reqs) {
+  if (!Array.isArray(reqs) || reqs.length === 0) return null;
+  return reqs
+    .map((r) => (r && r.skill_id === -2 ? `Character level ${r.level}` : `Skill #${r?.skill_id} at level ${r?.level}`))
+    .join(", ");
+}
+
+function formatScaling(scaling) {
+  if (!Array.isArray(scaling) || scaling.length === 0) return null;
+  return scaling
+    .filter((s) => s && s.id)
+    .map((s) => `${s.id}: ${s.amount ?? 0}${s.per_level ? ` (+${s.per_level}/lv)` : ""}`)
+    .join("; ");
+}
 
 /**
  * Pull "NUMBER(+NUMBER/lv)%?" / "NUMBER(-NUMBER/lv)%?" and bare "xNUMBER"
@@ -176,7 +226,8 @@ function unknownStat(note) {
   return { value: null, provenance: "server_runtime", note };
 }
 
-function buildSkillRecord(skill, iconMap) {
+function buildSkillRecord(skill, iconMap, observations) {
+  const obs = observations[String(skill.skill_id)] ?? null;
   const damage_types = (skill.types || "")
     .split(",")
     .map((t) => t.trim())
@@ -220,28 +271,57 @@ function buildSkillRecord(skill, iconMap) {
     description: { value: skill.description, provenance: "client_structured" },
     parsed_effects,
     stats: {
-      base_power: unknownStat("Skill.base_power is populated by the server at runtime; not present in any recovered .tres/.tscn/.gd file."),
-      power_per_level: unknownStat("Skill.power_per_level is server-supplied at runtime."),
-      cooldown_ms: unknownStat("Skill.cooldown is server-supplied at runtime."),
-      duration_ms: unknownStat("Skill.duration is server-supplied at runtime."),
-      attack_per_second: unknownStat("Skill.attack_per_second is server-supplied at runtime."),
-      attack_count: unknownStat("Skill.attack_count is server-supplied at runtime (client default is 1, but true value is per-skill and server-assigned)."),
-      max_level: {
+      base_power:
+        observedStat(obs, "base_power", "Skill.base_power is server-supplied at runtime; not present in any recovered .tres/.tscn/.gd file.") ??
+        unknownStat("Skill.base_power is populated by the server at runtime; not present in any recovered .tres/.tscn/.gd file."),
+      power_per_level:
+        observedStat(obs, "power_per_level", "Skill.power_per_level is server-supplied at runtime.") ??
+        unknownStat("Skill.power_per_level is server-supplied at runtime."),
+      cooldown_ms:
+        observedStat(obs, "cooldown_ms", "Skill.cooldown is server-supplied at runtime.") ??
+        unknownStat("Skill.cooldown is server-supplied at runtime."),
+      duration_ms:
+        observedStat(obs, "duration_ms", "Skill.duration is server-supplied at runtime.") ??
+        unknownStat("Skill.duration is server-supplied at runtime."),
+      attack_per_second:
+        observedStat(obs, "attack_per_second", "Skill.attack_per_second is server-supplied at runtime.") ??
+        unknownStat("Skill.attack_per_second is server-supplied at runtime."),
+      attack_count:
+        observedStat(obs, "attack_count", "Skill.attack_count is server-supplied at runtime.") ??
+        unknownStat("Skill.attack_count is server-supplied at runtime (client default is 1, but true value is per-skill and server-assigned)."),
+      max_level: observedStat(obs, "max_level", "Skill.max_level is server-supplied at runtime.") ?? {
         value: 20,
         provenance: "inferred",
         note: "Skill.gd declares `var max_level: int = 20` as a class-level default. The server may override this per skill; the recovered client never assigns a per-skill value, so this is a fallback, not a verified per-skill max.",
       },
-      scaling_attributes: {
+      scaling_attributes: (() => {
+        const formatted = obs ? formatScaling(obs.scaling) : null;
+        if (formatted) {
+          return observedStat({ ...obs, scaling: formatted }, "scaling", "Skill.PztI65W (per-stat damage scaling table) is server-supplied at runtime.");
+        }
+        return {
+          value: null,
+          provenance: "unknown",
+          note: "Skill.PztI65W (per-stat scaling table used for melee/range/magic/faith/max_hp/max_mp damage contributions) is populated at runtime by the server and is empty in the recovered client.",
+        };
+      })(),
+    },
+    unlock_requirement: (() => {
+      const formatted = obs ? formatLevelRequirements(obs.level_requirements) : null;
+      if (formatted) {
+        return {
+          value: formatted,
+          raw: formatted,
+          provenance: "observed_live",
+          note: `Captured from the running client's Skill.vOYoJ1G (see data-pipeline/live-capture/) in ${obs._source_file}.`,
+        };
+      }
+      return {
         value: null,
-        provenance: "unknown",
-        note: "Skill.PztI65W (per-stat scaling table used for melee/range/magic/faith/max_hp/max_mp damage contributions) is populated at runtime by the server and is empty in the recovered client.",
-      },
-    },
-    unlock_requirement: {
-      value: null,
-      raw: skill.requirements || REQUIREMENTS_PLACEHOLDER,
-      provenance: "server_runtime",
-    },
+        raw: skill.requirements || REQUIREMENTS_PLACEHOLDER,
+        provenance: "server_runtime",
+      };
+    })(),
     buff_details,
     source: {
       resource_path: skill.resource_path,
@@ -258,6 +338,7 @@ function main() {
   const iconMap = existsSync(ICON_MAP_PATH)
     ? JSON.parse(readFileSync(ICON_MAP_PATH, "utf-8"))
     : {};
+  const observations = loadObservations();
 
   const combat = raw.skills.filter((s) => COMBAT_BRANCHES.includes(s.branch));
 
@@ -268,7 +349,7 @@ function main() {
   }
 
   const skills = combat
-    .map((s) => buildSkillRecord(s, iconMap))
+    .map((s) => buildSkillRecord(s, iconMap, observations))
     .sort((a, b) => a.skill_id - b.skill_id);
 
   const branchCounts = {};
@@ -300,6 +381,12 @@ function main() {
   writeFileSync(OUT_PATH, JSON.stringify(output, null, 2) + "\n", "utf-8");
   console.log(`Wrote ${skills.length} combat skills to ${path.relative(ROOT, OUT_PATH)}`);
   console.log("Branch counts:", branchCounts);
+  const observedCount = Object.keys(observations).length;
+  if (observedCount > 0) {
+    console.log(`Applied live-captured observations for ${observedCount} skill(s) from data-pipeline/observations/.`);
+  } else {
+    console.log("No files in data-pipeline/observations/ yet — all server-runtime stats remain Unknown.");
+  }
 }
 
 main();

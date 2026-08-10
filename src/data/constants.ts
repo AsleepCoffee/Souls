@@ -36,6 +36,7 @@ export const CLASSIFICATION_COLOR: Record<Classification, string> = {
 export const PROVENANCE_LABEL: Record<Provenance, string> = {
   client_structured: "Verified — client data",
   client_description: "From in-game description text",
+  observed_live: "Verified — recorded in-game",
   server_runtime: "Unknown — server runtime only",
   inferred: "Inferred / derived",
   unknown: "Unknown",
@@ -44,6 +45,7 @@ export const PROVENANCE_LABEL: Record<Provenance, string> = {
 export const PROVENANCE_SHORT: Record<Provenance, string> = {
   client_structured: "Client",
   client_description: "Description",
+  observed_live: "In-game",
   server_runtime: "Server-only",
   inferred: "Inferred",
   unknown: "Unknown",
