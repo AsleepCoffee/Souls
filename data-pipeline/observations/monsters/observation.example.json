@@ -1,0 +1,16 @@
+{
+  "1": {
+    "monster_id": 1,
+    "level": 3,
+    "hp": 50,
+    "mp": 0,
+    "attack": 5,
+    "defense": 2,
+    "speed": 10,
+    "kills": 120,
+    "shinies_killed": 2,
+    "found_in": "Plains",
+    "drops": [{ "item_id": 9, "chance": 12.5, "source": "Common drop" }],
+    "recorded_at_unix": 1754812345
+  }
+}

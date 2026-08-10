@@ -57,21 +57,7 @@ network by the MMO server when the skill window opens. Consequently:
 Regenerate: `node data-pipeline/build-site-data.mjs` (reads the pre-parsed JSON above; no
 `RECOVERED_PROJECT_ROOT` needed for this one script since its source is already an intermediate export).
 
-### Recovering skill server-runtime fields: `live-capture/` + `observations/`
-
-Everything tagged `"server_runtime"` above *is* visible in-game — `skill_window.gd` renders it once a skill's
-server data has arrived. `data-pipeline/live-capture/skill_logger_patch.gd` is a GDScript hook a locally-running,
-live-connected client can paste in to dump those now-populated `Skill` fields to a JSON file as you open each
-skill in the tree — no network/protocol reverse-engineering, just reading values the client already has in
-memory after the server sent them.
-
-Drop the resulting dump(s) into `data-pipeline/observations/*.json` and re-run
-`node data-pipeline/build-site-data.mjs` — any field present there overrides the matching "Unknown" stat with a
-real value tagged `"observed_live"`. Multiple dumps merge automatically, field-by-field, in filename-sort order.
-
-This only works against your own account and requires accepting the risk that a modified/instrumented client
-may not be permitted by the game's ToS/EULA — that's a call for whoever runs the capture to make, not something
-this pipeline enforces or assumes.
+See "Recovering server-runtime fields" below — skills have a capture hook too.
 
 ## Items
 
@@ -115,10 +101,6 @@ legitimate "Target Dummy" entry with a real name/scene/sprite, not a dev artifac
   `"server_runtime"`/unknown — confirmed by `Scenes/UI/monster_info_window.gd` literally rendering `"???"` for
   each of these fields until the server responds to an on-demand per-monster request.
 
-The stats object is shaped to parallel the skills pipeline (one `StatField` per stat), leaving room for a
-future `data-pipeline/observations/monsters/*.json` + `observed_live` capture path mirroring skills' — **not
-built yet**; there is no `live-capture/` hook for monsters at this time.
-
 Regenerate:
 
 ```
@@ -127,6 +109,35 @@ RECOVERED_PROJECT_ROOT=/path/to/souls_remnant_recovered python data-pipeline/ext
 ```
 
 (`extract-icons.py` handles both items' and monsters' manifests in one run if both exist.)
+
+## Recovering server-runtime fields: `live-capture/` + `observations/`
+
+Everything tagged `"server_runtime"` above genuinely doesn't exist in any recovered file — but all of it *is*
+visible in-game, since the client's own UI renders it once the server has sent it for whatever you're currently
+looking at. Three GDScript hooks under `data-pipeline/live-capture/`, one per domain, patch into the exact
+function each UI screen already calls to display that data, and dump the now-populated fields to a JSON file:
+
+| Domain | Patch | Hooks | Fires when |
+|---|---|---|---|
+| Skills | `skill_logger_patch.gd` | `Scenes/UI/skill_window.gd`'s `SpzcYip` | You click a skill in the skill tree. |
+| Items | `item_logger_patch.gd` | `Scenes/UI/description_box.gd`'s `Xd_G9rg` | You hover any item (inventory, equipment, auction house, ground drops). |
+| Monsters | `monster_logger_patch.gd` | `Scenes/UI/monster_info_window.gd`'s per-stat setters + drop callback | You open Monster Info on a monster (several stats arrive independently, hence several small insertion points instead of one). |
+
+No network/protocol reverse-engineering is involved in any of the three — each hook just reads values the
+client already has in memory after the server sent them, the same moment the game's own UI would show them to
+you.
+
+Drop the resulting dump(s) into the matching `data-pipeline/observations/{skills,items,monsters}/` subfolder
+and re-run that domain's `build-*-data.mjs` — any field present there overrides the matching "Unknown" stat
+with a real value tagged `"observed_live"`. Multiple dumps merge automatically, field-by-field, in
+filename-sort order, so repeated play sessions accumulate without any manual merging.
+
+One thing every domain's capture *doesn't* get you: monster EXP reward isn't shown anywhere in the Monster Info
+window, so there's no UI call to hook for it — it stays unknown regardless of how much you play.
+
+This only works against your own account and requires accepting the risk that a modified/instrumented client
+may not be permitted by the game's ToS/EULA — that's a call for whoever runs the capture to make, not something
+this pipeline enforces or assumes.
 
 ## Maps & Leveling
 

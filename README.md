@@ -62,12 +62,12 @@ never-assigned runtime fields, `Item.gd`'s placeholder defaults, `monster_info_w
 "Unknown" with a tooltip explaining why, and tagged with its provenance (`client_structured` /
 `client_description` / `observed_live` / `server_runtime` / `inferred` / `unknown`) everywhere it appears.
 
-Combat skill stats specifically *are* visible in-game (the skill window displays them once a skill's server
-data has loaded) — `data-pipeline/live-capture/` has a hook for recording them from your own live-connected
-client, and `data-pipeline/observations/` is where the pipeline picks them up. See
-[`data-pipeline/README.md`](data-pipeline/README.md#recovering-the-server-runtime-fields-live-capture--observations)
-for how it works and the ToS/account-risk caveat that comes with running a modified client. (The monster stats
-data model is shaped to support the same pattern later; that capture hook doesn't exist yet.)
+All of it *is* visible in-game, though — the client's own UI shows it once the server has sent it for whatever
+you're looking at. `data-pipeline/live-capture/` has one GDScript hook per domain (skills, items, monsters) for
+recording it from your own live-connected client, and `data-pipeline/observations/` is where each domain's
+pipeline picks up whatever you capture. See
+[`data-pipeline/README.md`](data-pipeline/README.md#recovering-server-runtime-fields-live-capture--observations)
+for how it works and the ToS/account-risk caveat that comes with running a modified client.
 
 The Build Planner is a loadout composer, not a stat calculator, for the same reason — there's no honest number
 to compute a "build score" from.

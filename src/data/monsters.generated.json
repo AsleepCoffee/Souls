@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated_at": "2026-08-10T14:43:39.861Z",
-    "pipeline_version": "1.0.0",
+    "generated_at": "2026-08-10T15:21:11.206Z",
+    "pipeline_version": "1.1.0",
     "total_monsters": 135
   },
   "monsters": [
@@ -57,7 +57,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -127,7 +127,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -197,7 +197,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -267,7 +267,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -337,7 +337,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -407,7 +407,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -477,7 +477,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -547,7 +547,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -617,7 +617,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -687,7 +687,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -757,7 +757,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -827,7 +827,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -897,7 +897,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -967,7 +967,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1037,7 +1037,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1107,7 +1107,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1177,7 +1177,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1247,7 +1247,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1317,7 +1317,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1387,7 +1387,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1457,7 +1457,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1527,7 +1527,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1597,7 +1597,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1667,7 +1667,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1737,7 +1737,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1807,7 +1807,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1877,7 +1877,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -1947,7 +1947,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2017,7 +2017,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2087,7 +2087,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2157,7 +2157,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2227,7 +2227,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2297,7 +2297,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2367,7 +2367,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2437,7 +2437,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2507,7 +2507,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2577,7 +2577,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2647,7 +2647,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2717,7 +2717,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2787,7 +2787,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2857,7 +2857,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2927,7 +2927,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -2997,7 +2997,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3067,7 +3067,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3137,7 +3137,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3207,7 +3207,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3277,7 +3277,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3347,7 +3347,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3417,7 +3417,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3487,7 +3487,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3557,7 +3557,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3627,7 +3627,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3697,7 +3697,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3767,7 +3767,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3837,7 +3837,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3907,7 +3907,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -3977,7 +3977,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4047,7 +4047,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4117,7 +4117,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4187,7 +4187,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4258,7 +4258,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4328,7 +4328,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4398,7 +4398,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4468,7 +4468,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4538,7 +4538,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4608,7 +4608,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4678,7 +4678,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4748,7 +4748,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4818,7 +4818,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4888,7 +4888,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -4958,7 +4958,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5028,7 +5028,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5098,7 +5098,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5168,7 +5168,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5238,7 +5238,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5308,7 +5308,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5378,7 +5378,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5448,7 +5448,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5518,7 +5518,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5588,7 +5588,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5658,7 +5658,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5728,7 +5728,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5798,7 +5798,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5868,7 +5868,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -5938,7 +5938,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6008,7 +6008,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6078,7 +6078,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6148,7 +6148,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6218,7 +6218,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6288,7 +6288,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6358,7 +6358,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6428,7 +6428,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6498,7 +6498,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6569,7 +6569,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6639,7 +6639,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6709,7 +6709,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6779,7 +6779,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6849,7 +6849,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6919,7 +6919,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -6989,7 +6989,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7059,7 +7059,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7129,7 +7129,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7199,7 +7199,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7269,7 +7269,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7339,7 +7339,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7409,7 +7409,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7479,7 +7479,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7549,7 +7549,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7619,7 +7619,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7689,7 +7689,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7759,7 +7759,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7829,7 +7829,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7899,7 +7899,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -7969,7 +7969,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8039,7 +8039,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8109,7 +8109,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8179,7 +8179,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8249,7 +8249,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8319,7 +8319,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8389,7 +8389,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8459,7 +8459,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8529,7 +8529,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8599,7 +8599,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8669,7 +8669,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8739,7 +8739,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8809,7 +8809,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8879,7 +8879,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -8949,7 +8949,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9019,7 +9019,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9089,7 +9089,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9159,7 +9159,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9229,7 +9229,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9299,7 +9299,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9369,7 +9369,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {
@@ -9439,7 +9439,7 @@
         "exp_reward": {
           "value": null,
           "provenance": "server_runtime",
-          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill."
+          "note": "No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."
         }
       },
       "drop_table": {

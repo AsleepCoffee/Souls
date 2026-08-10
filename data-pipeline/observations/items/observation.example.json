@@ -1,0 +1,21 @@
+{
+  "1259": {
+    "item_id": 1259,
+    "name": "Halo of Faith",
+    "rarity": 4,
+    "required_level": 20,
+    "modifiers": [
+      {
+        "modifier_id": "faith_damage",
+        "type": 0,
+        "value": 5.0,
+        "tier": 2,
+        "line": 1,
+        "scales_per_level": false,
+        "upgrades": 0,
+        "description": "+5% Faith Damage"
+      }
+    ],
+    "recorded_at_unix": 1754812345
+  }
+}

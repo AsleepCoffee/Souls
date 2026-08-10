@@ -14,12 +14,14 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { readTres, scalarField, extResourcePath } from "./lib/tres.mjs";
 import { resolveIcon } from "./lib/resolve-icon.mjs";
+import { loadObservations, observedField } from "./lib/observations.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const OUT_PATH = path.join(ROOT, "src", "data", "items.generated.json");
 const MANIFEST_PATH = path.join(__dirname, "source", "item-icon-manifest.json");
-const PIPELINE_VERSION = "1.0.0";
+const OBSERVATIONS_DIR = path.join(__dirname, "observations", "items");
+const PIPELINE_VERSION = "1.1.0";
 
 // Cross-referenced from Scenes/UI/dps_calculator_window.gd's O8FB39N label
 // array, corroborated independently by Scenes/UI/equipment_window.gd's
@@ -75,6 +77,16 @@ function unknownField(note) {
   return { value: null, provenance: "server_runtime", note };
 }
 
+function formatModifiers(modifiers) {
+  if (!Array.isArray(modifiers) || modifiers.length === 0) return null;
+  // Prefer each modifier's own captured `description` — that's the literal
+  // in-game tooltip line for it, more readable than reconstructing one from
+  // modifier_id/value/tier ourselves.
+  return modifiers
+    .map((m) => (m && m.description) || `${m?.modifier_id ?? "?"}: ${m?.value ?? "?"}`)
+    .join("; ");
+}
+
 function main() {
   const recoveredRoot = process.env.RECOVERED_PROJECT_ROOT;
   if (!recoveredRoot) {
@@ -84,6 +96,8 @@ function main() {
 
   const itemsDbDir = path.join(recoveredRoot, "Resources", "Items", "Database");
   const equipDbDir = path.join(recoveredRoot, "Resources", "Equipment", "Database");
+
+  const observations = loadObservations(OBSERVATIONS_DIR);
 
   const itemFiles = walkTres(itemsDbDir);
   console.log(`Found ${itemFiles.length} item .tres files.`);
@@ -138,11 +152,16 @@ function main() {
       // stats section, ItemsTable's column header tooltips), not per-record —
       // repeating a ~150-char note on all 1,181 items would needlessly bloat
       // the generated JSON (this alone was ~27% of its total size).
-      stats: {
-        rarity: unknownField(),
-        required_level: unknownField(),
-        modifiers: unknownField(),
-      },
+      stats: (() => {
+        const obs = itemId !== null ? observations[String(itemId)] : null;
+        return {
+          rarity: observedField(obs, "rarity", "Item.rarity is server-supplied per instance.") ?? unknownField(),
+          required_level: observedField(obs, "required_level", "Item.required_level is server-supplied per instance.") ?? unknownField(),
+          modifiers: obs
+            ? observedField({ ...obs, modifiers: formatModifiers(obs.modifiers) }, "modifiers", "ItemModifier data is server-supplied per instance.") ?? unknownField()
+            : unknownField(),
+        };
+      })(),
       source: { resource_path: relFromRoot, texture_path: icon.sourcePath },
     };
 
@@ -200,6 +219,12 @@ function main() {
   console.log(`Wrote ${items.length} items to ${path.relative(ROOT, OUT_PATH)}`);
   console.log(`Wrote icon manifest (${iconManifest.length} entries) to ${path.relative(ROOT, MANIFEST_PATH)}`);
   console.log("Category counts:", categoryCounts);
+  const observedCount = Object.keys(observations).length;
+  if (observedCount > 0) {
+    console.log(`Applied live-captured observations for ${observedCount} item(s) from data-pipeline/observations/items/.`);
+  } else {
+    console.log("No files in data-pipeline/observations/items/ yet — all item stats remain Unknown.");
+  }
 }
 
 main();

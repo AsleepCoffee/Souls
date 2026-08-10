@@ -2,9 +2,10 @@
 // versioned data file. See data-pipeline/README.md for full provenance
 // notes. Re-run with: node data-pipeline/build-site-data.mjs
 
-import { readFileSync, writeFileSync, existsSync, readdirSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { loadObservations } from "./lib/observations.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -12,7 +13,7 @@ const ROOT = path.resolve(__dirname, "..");
 const PIPELINE_VERSION = "1.1.0";
 const SOURCE_PATH = path.join(__dirname, "source", "souls-remnant-skill-tree.json");
 const ICON_MAP_PATH = path.join(__dirname, "icon_mapping.json");
-const OBSERVATIONS_DIR = path.join(__dirname, "observations");
+const OBSERVATIONS_DIR = path.join(__dirname, "observations", "skills");
 const OUT_PATH = path.join(ROOT, "src", "data", "skills.generated.json");
 
 const COMBAT_BRANCHES = ["Melee", "Range", "Magic", "Faith"];
@@ -21,29 +22,6 @@ const TREE_HEIGHT = 546;
 
 const REQUIREMENTS_PLACEHOLDER =
   "Provided by the game server at runtime; not stored in the PCK";
-
-/**
- * Loads hand-captured runtime data from data-pipeline/observations/*.json —
- * dumps produced by the logging hook in data-pipeline/live-capture/, or any
- * file following the same { "<skill_id>": { base_power, cooldown_ms, ... } }
- * shape. Multiple files merge field-by-field; later files (sorted by name)
- * win on conflicts, so a fresher capture supersedes an older one per field
- * without needing to hand-merge JSON yourself.
- */
-function loadObservations() {
-  const merged = {};
-  if (!existsSync(OBSERVATIONS_DIR)) return merged;
-  const files = readdirSync(OBSERVATIONS_DIR)
-    .filter((f) => f.endsWith(".json") && !f.includes(".example."))
-    .sort();
-  for (const file of files) {
-    const parsed = JSON.parse(readFileSync(path.join(OBSERVATIONS_DIR, file), "utf-8"));
-    for (const [skillId, fields] of Object.entries(parsed)) {
-      merged[skillId] = { ...(merged[skillId] || {}), ...fields, _source_file: file };
-    }
-  }
-  return merged;
-}
 
 function observedStat(obs, key, note) {
   if (obs == null || obs[key] === undefined || obs[key] === null) return null;
@@ -338,7 +316,7 @@ function main() {
   const iconMap = existsSync(ICON_MAP_PATH)
     ? JSON.parse(readFileSync(ICON_MAP_PATH, "utf-8"))
     : {};
-  const observations = loadObservations();
+  const observations = loadObservations(OBSERVATIONS_DIR);
 
   const combat = raw.skills.filter((s) => COMBAT_BRANCHES.includes(s.branch));
 
@@ -383,9 +361,9 @@ function main() {
   console.log("Branch counts:", branchCounts);
   const observedCount = Object.keys(observations).length;
   if (observedCount > 0) {
-    console.log(`Applied live-captured observations for ${observedCount} skill(s) from data-pipeline/observations/.`);
+    console.log(`Applied live-captured observations for ${observedCount} skill(s) from data-pipeline/observations/skills/.`);
   } else {
-    console.log("No files in data-pipeline/observations/ yet — all server-runtime stats remain Unknown.");
+    console.log("No files in data-pipeline/observations/skills/ yet — all server-runtime stats remain Unknown.");
   }
 }
 

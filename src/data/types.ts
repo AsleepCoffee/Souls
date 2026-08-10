@@ -124,7 +124,8 @@ export interface EquipmentSlot {
 }
 
 export interface ItemStats {
-  rarity: { value: string | null; provenance: Provenance; note?: string };
+  /** Raw 0-6 rarity tier (Item.rarity in the client). Utils.gd maps it to a color ramp (gray→white→green→blue→purple→orange→pink) but no tier *names* are confirmed anywhere in the recovered client — do not invent them. */
+  rarity: StatField;
   required_level: StatField;
   modifiers: { value: string | null; provenance: Provenance; note?: string };
 }
@@ -169,8 +170,8 @@ export interface MonsterRecord {
   icon: Field<string | null>;
   behavior_scene: Field<string | null>;
   stats: MonsterStats;
-  drop_table: { value: null; provenance: Provenance; note?: string };
-  found_in: { value: null; provenance: Provenance; note?: string };
+  drop_table: { value: string | null; provenance: Provenance; note?: string };
+  found_in: { value: string | null; provenance: Provenance; note?: string };
   source: { resource_path: string; texture_path: string | null };
 }
 

@@ -13,12 +13,14 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { readTres, scalarField, extResourcePath } from "./lib/tres.mjs";
 import { resolveIcon } from "./lib/resolve-icon.mjs";
+import { loadObservations, observedField } from "./lib/observations.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const OUT_PATH = path.join(ROOT, "src", "data", "monsters.generated.json");
 const MANIFEST_PATH = path.join(__dirname, "source", "monster-icon-manifest.json");
-const PIPELINE_VERSION = "1.0.0";
+const OBSERVATIONS_DIR = path.join(__dirname, "observations", "monsters");
+const PIPELINE_VERSION = "1.1.0";
 
 function walkTres(dir) {
   const out = [];
@@ -40,13 +42,32 @@ function slugify(filename) {
     .toLowerCase();
 }
 
-// Same-shaped stats object as the skills pipeline's unknownStat() — kept
-// parallel so a future observations-merge feature (mirroring
-// data-pipeline/observations/ + observedStat() for skills) could slot in
-// without a schema change. Not built this phase; see plan's explicit
-// out-of-scope note.
+// Same-shaped stats object as the skills pipeline's unknownStat().
 function unknownStat(note) {
   return { value: null, provenance: "server_runtime", note };
+}
+
+function unknownDropField() {
+  return {
+    value: null,
+    provenance: "server_runtime",
+    note: "monster_info_window_drop.gd's item_id/chance fields are populated by a per-monster server query when the Monster Info window is opened — no drop table exists in any recovered file.",
+  };
+}
+
+function unknownFoundInField() {
+  return {
+    value: null,
+    provenance: "server_runtime",
+    note: "The \"Found in\" location shown in monster_info_window.gd is server-supplied on request; no zone/spawn data exists client-side (see the Maps page).",
+  };
+}
+
+function formatDrops(drops) {
+  if (!Array.isArray(drops) || drops.length === 0) return null;
+  return drops
+    .map((d) => `Item #${d?.item_id ?? "?"} (${d?.chance != null ? `${d.chance}%` : "?"}${d?.source ? `, ${d.source}` : ""})`)
+    .join("; ");
 }
 
 function main() {
@@ -59,6 +80,8 @@ function main() {
   const monstersDbDir = path.join(recoveredRoot, "Resources", "Monsters", "Database");
   const monsterFiles = walkTres(monstersDbDir);
   console.log(`Found ${monsterFiles.length} monster .tres files.`);
+
+  const observations = loadObservations(OBSERVATIONS_DIR);
 
   const monsters = [];
   const iconManifest = [];
@@ -115,18 +138,35 @@ function main() {
       // All of these are shown as "???" in Scenes/UI/monster_info_window.gd
       // until the server responds to an on-demand per-monster query — none
       // exist in any recovered .tres/.gd file. Same treatment as skills'
-      // server-runtime combat stats: never fabricated.
-      stats: {
-        level: unknownStat("Shown as \"???\" in monster_info_window.gd until the server responds; no monster level exists in any recovered file."),
-        hp: unknownStat("Same — monster_info_window.gd's HP field is server-populated on request."),
-        mp: unknownStat("Same — server-populated on request."),
-        attack: unknownStat("Same — monster_info_window.gd's ATK field is server-populated on request."),
-        defense: unknownStat("Same — monster_info_window.gd's DEF field is server-populated on request."),
-        speed: unknownStat("Same — monster_info_window.gd's SPD field is server-populated on request."),
-        exp_reward: unknownStat("No EXP-reward value exists in any recovered file — server-supplied on kill."),
-      },
-      drop_table: { value: null, provenance: "server_runtime", note: "monster_info_window_drop.gd's item_id/chance fields are populated by a per-monster server query when the Monster Info window is opened — no drop table exists in any recovered file." },
-      found_in: { value: null, provenance: "server_runtime", note: "The \"Found in\" location shown in monster_info_window.gd is server-supplied on request; no zone/spawn data exists client-side (see the Maps page)." },
+      // server-runtime combat stats: never fabricated. Overridden below with
+      // real observed_live values wherever data-pipeline/observations/monsters/
+      // has a capture for this monster_id.
+      stats: (() => {
+        const obs = monsterId !== null ? observations[String(monsterId)] : null;
+        return {
+          level: observedField(obs, "level", "Shown as \"???\" in monster_info_window.gd until the server responds.") ?? unknownStat("Shown as \"???\" in monster_info_window.gd until the server responds; no monster level exists in any recovered file."),
+          hp: observedField(obs, "hp", "Same — HP field is server-populated on request.") ?? unknownStat("Same — monster_info_window.gd's HP field is server-populated on request."),
+          mp: observedField(obs, "mp", "Same — MP field is server-populated on request.") ?? unknownStat("Same — server-populated on request."),
+          attack: observedField(obs, "attack", "Same — ATK field is server-populated on request.") ?? unknownStat("Same — monster_info_window.gd's ATK field is server-populated on request."),
+          defense: observedField(obs, "defense", "Same — DEF field is server-populated on request.") ?? unknownStat("Same — monster_info_window.gd's DEF field is server-populated on request."),
+          speed: observedField(obs, "speed", "Same — SPD field is server-populated on request.") ?? unknownStat("Same — monster_info_window.gd's SPD field is server-populated on request."),
+          exp_reward: unknownStat("No EXP-reward value exists in any recovered file — server-supplied on kill, and the monster_logger_patch.gd hook doesn't capture it (not shown in Monster Info)."),
+        };
+      })(),
+      drop_table: (() => {
+        const obs = monsterId !== null ? observations[String(monsterId)] : null;
+        const formatted = obs ? formatDrops(obs.drops) : null;
+        return formatted
+          ? observedField({ ...obs, drops: formatted }, "drops", "monster_info_window_drop.gd's item_id/chance fields are server-supplied per query.") ?? unknownDropField()
+          : unknownDropField();
+      })(),
+      found_in: (() => {
+        const obs = monsterId !== null ? observations[String(monsterId)] : null;
+        return (
+          observedField(obs, "found_in", "The \"Found in\" location is server-supplied on request.") ??
+          unknownFoundInField()
+        );
+      })(),
       source: { resource_path: relFromRoot, texture_path: icon ? icon.sourcePath : null },
     });
   }
@@ -146,6 +186,12 @@ function main() {
   writeFileSync(OUT_PATH, JSON.stringify(output, null, 2) + "\n", "utf-8");
   console.log(`Wrote ${monsters.length} monsters to ${path.relative(ROOT, OUT_PATH)}`);
   console.log(`Wrote icon manifest (${iconManifest.length} entries) to ${path.relative(ROOT, MANIFEST_PATH)}`);
+  const observedCount = Object.keys(observations).length;
+  if (observedCount > 0) {
+    console.log(`Applied live-captured observations for ${observedCount} monster(s) from data-pipeline/observations/monsters/.`);
+  } else {
+    console.log("No files in data-pipeline/observations/monsters/ yet — all monster stats remain Unknown.");
+  }
 }
 
 main();
