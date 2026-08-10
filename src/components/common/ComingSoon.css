@@ -1,0 +1,19 @@
+.coming-soon {
+  max-width: 60ch;
+  margin: 40px auto;
+  padding: 24px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.coming-soon h2 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+
+.coming-soon__note {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

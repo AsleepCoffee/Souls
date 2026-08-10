@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Soul's Remnant Reference</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA fallback: https://github.com/rafgraph/spa-github-pages
+      // GH Pages serves this file for any path that isn't a real file (i.e. every
+      // client-side route). It encodes the intended path into a query string and
+      // redirects to the app's real entry point, where index.html's inline script
+      // decodes it back before React Router ever sees window.location.
+      // pathSegmentsToKeep = 1 because the site is hosted under /Souls/ (one path
+      // segment) as a GitHub Pages project site — update if the repo/base path changes.
+      var pathSegmentsToKeep = 1;
+
+      var l = window.location;
+      l.replace(
+        l.protocol + "//" + l.hostname + (l.port ? ":" + l.port : "") +
+        l.pathname.split("/").slice(0, 1 + pathSegmentsToKeep).join("/") + "/?/" +
+        l.pathname.split("/").slice(1 + pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
+        (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

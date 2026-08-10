@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Interactive combat skill-tree reference for Soul's Remnant, rebuilt from a recovered game client (build 24640923)."
+      content="Unofficial Soul's Remnant reference wiki — skills, items, monsters, and more — rebuilt from a recovered game client (build 24640923)."
     />
-    <title>Soul's Remnant — Combat Skill Reference</title>
+    <title>Soul's Remnant Reference</title>
+    <script type="text/javascript">
+      // GitHub Pages SPA fallback, part 2: decode the path 404.html encoded and
+      // rewrite the address bar back to it *before* React Router mounts, so the
+      // router sees a normal window.location on first render.
+      // https://github.com/rafgraph/spa-github-pages
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, "", l.pathname.slice(0, -1) + decoded + l.hash);
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
     <div id="root"></div>
