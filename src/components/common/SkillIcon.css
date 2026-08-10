@@ -1,0 +1,17 @@
+.skill-icon {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  display: block;
+  border-radius: 3px;
+  background: var(--bg-input);
+  flex-shrink: 0;
+}
+
+.skill-icon--missing {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-faint);
+  border: 1px dashed var(--border-strong);
+  font-size: 0.75rem;
+}

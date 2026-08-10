@@ -1,0 +1,21 @@
+.buffs-table__code {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--accent-strong);
+}
+
+.buffs-table__yes {
+  color: #8fd6a3;
+  font-size: 0.78rem;
+}
+
+.buffs-table__note {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin: 0;
+}

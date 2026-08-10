@@ -1,0 +1,18 @@
+.tree-tooltip {
+  position: fixed;
+  z-index: 60;
+  width: min(320px, 88vw);
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-tooltip);
+  padding: 12px 14px;
+  pointer-events: none;
+  transition: opacity var(--transition-fast);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tree-tooltip {
+    transition: none;
+  }
+}

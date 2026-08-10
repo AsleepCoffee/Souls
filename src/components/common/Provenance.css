@@ -1,0 +1,45 @@
+.prov-tag {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  border-radius: 3px;
+  margin-left: 6px;
+  border: 1px solid var(--border-default);
+  color: var(--text-muted);
+  cursor: help;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.prov-tag--client_structured {
+  color: #8fd6a3;
+  border-color: rgba(143, 214, 163, 0.35);
+}
+.prov-tag--client_description {
+  color: #8fb7e8;
+  border-color: rgba(143, 183, 232, 0.35);
+}
+.prov-tag--server_runtime,
+.prov-tag--unknown {
+  color: var(--text-muted);
+  border-color: var(--border-default);
+}
+.prov-tag--inferred {
+  color: #d6b98f;
+  border-color: rgba(214, 185, 143, 0.35);
+}
+
+.stat-unknown {
+  color: var(--text-faint);
+  cursor: help;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-value {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

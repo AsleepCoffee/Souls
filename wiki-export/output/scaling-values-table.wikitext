@@ -1,0 +1,494 @@
+{| class="wikitable sortable" style="font-size:90%;"
+|+ Known scaling values, mined from description text (not a complete damage model)
+! Skill !! Branch !! Kind !! Base !! Per level !! In context
+|-
+| [[#Arrow Infusion|Arrow Infusion]]
+| Range
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| mental Potency. Lowers your MP regen by 1(+0.15/lv) per tick. Trains fro
+|-
+| [[#Blood Sacrifice|Blood Sacrifice]]
+| Magic
+| Level scaling
+| data-sort-value="3.48" | 3.48%
+| data-sort-value="1.08" | +1.08%
+| hield. Your Melee and Magic damage rise 3.48(+1.08/lv)%, multiplying with y
+|-
+| [[#Bloodlust|Bloodlust]]
+| Melee
+| Level scaling
+| data-sort-value="5" | 5
+| data-sort-value="2.5" | +2.5
+| damage and +1 HP regen per tick, up to 5(+2.5/lv) stacks, but you take
+|-
+| [[#Blue Moon|Blue Moon]]
+| Melee
+| Level scaling
+| data-sort-value="5" | 5
+| data-sort-value="0.37" | +0.37
+| f that, and everyone gains 80 Speed for 5(+0.37/lv) seconds. Attack spee
+|-
+| [[#Bullseye|Bullseye]]
+| Range
+| Level scaling
+| data-sort-value="9" | 9
+| data-sort-value="2" | +2
+| Steady your aim, adding 9(+2/lv) Crit Rate plus a bon
+|-
+| [[#Burst Shield|Burst Shield]]
+| Faith
+| Level scaling
+| data-sort-value="30" | 30%
+| data-sort-value="2.5" | +2.5%
+| rs for a moment: the next hit is cut by 30(+2.5/lv)% and the damage prev
+|-
+| [[#Clarity|Clarity]]
+| Range
+| Level scaling
+| data-sort-value="1.1008" | 1.1008
+| data-sort-value="1.68" | +1.68
+| suffering from any status effect take x1.1008(+1.68%/lv) damage from you. Low
+|-
+| [[#Clarity|Clarity]]
+| Range
+| Level scaling
+| data-sort-value="2" | 2
+| data-sort-value="0.15" | +0.15
+| amage from you. Lowers your MP regen by 2(+0.15/lv) per tick. Trains fro
+|-
+| [[#Clarity|Clarity]]
+| Range
+| Multiplier
+| data-sort-value="1.1008" | 1.1008
+| data-sort-value="0" | —
+| s suffering from any status effect take x1.1008(+1.68%/lv) damage from you. Lo
+|-
+| [[#Companion|Companion]]
+| Range
+| Level scaling
+| data-sort-value="6" | 6%
+| data-sort-value="1.74" | +1.74%
+| flies at your side: your attacks have a 6(+1.74/lv)% chance to strike ag
+|-
+| [[#Companion|Companion]]
+| Range
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.32" | +0.32
+| , and you and nearby party members gain 1(+0.32/lv) Accuracy and 1(+0.37
+|-
+| [[#Companion|Companion]]
+| Range
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.37" | +0.37
+| y members gain 1(+0.32/lv) Accuracy and 1(+0.37/lv) Damage Balance. Lowe
+|-
+| [[#Companion|Companion]]
+| Range
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| Damage Balance. Lowers your MP regen by 1(+0.15/lv) per tick.
+|-
+| [[#Cross Strike|Cross Strike]]
+| Faith
+| Multiplier
+| data-sort-value="1.6" | 1.6
+| data-sort-value="0" | —
+| g it hits, bosses included, and dealing x1.6 damage to bosses. Y
+|-
+| [[#Dedication|Dedication]]
+| Faith
+| Level scaling
+| data-sort-value="25" | 25%
+| data-sort-value="5" | +5%
+| care: everything you heal or shield is 25(+5/lv)% stronger.
+|-
+| [[#Divine Benevolence|Divine Benevolence]]
+| Faith
+| Level scaling
+| data-sort-value="7" | 7%
+| data-sort-value="0.95" | +0.95%
+| rty members within range are healed for 7(+0.95/lv)% of the blow before
+|-
+| [[#Divine Benevolence|Divine Benevolence]]
+| Faith
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| nses soften it. Lowers your MP regen by 1(+0.15/lv) per tick.
+|-
+| [[#Divine Blessing|Divine Blessing]]
+| Faith
+| Level scaling
+| data-sort-value="2.5" | 2.5%
+| data-sort-value="1.75" | +1.75%
+| Bless yourself with 2.5(+1.75/lv)% EXP, 1.5(+1.5/lv)%
+|-
+| [[#Divine Blessing|Divine Blessing]]
+| Faith
+| Level scaling
+| data-sort-value="1.5" | 1.5%
+| data-sort-value="1.5" | +1.5%
+| Bless yourself with 2.5(+1.75/lv)% EXP, 1.5(+1.5/lv)% Skill EXP and 2.369
+|-
+| [[#Divine Blessing|Divine Blessing]]
+| Faith
+| Level scaling
+| data-sort-value="2.369" | 2.369%
+| data-sort-value="0.79" | +0.79%
+| 5/lv)% EXP, 1.5(+1.5/lv)% Skill EXP and 2.369(+0.79/lv)% Faith damage. Nearb
+|-
+| [[#Divine Protection|Divine Protection]]
+| Faith
+| Level scaling
+| data-sort-value="13.11" | 13.11%
+| data-sort-value="5.24" | +5.24%
+| each of you takes is cancelled, leaving 13.11(+5.24/lv)% of max HP instead.
+|-
+| [[#Divine Thorn|Divine Thorn]]
+| Faith
+| Level scaling
+| data-sort-value="50" | 50%
+| data-sort-value="25" | +25%
+| and up to 2 other nearby monsters take 50(+25/lv)% of the blow before
+|-
+| [[#Divine Thorn|Divine Thorn]]
+| Faith
+| Level scaling
+| data-sort-value="4" | 4%
+| data-sort-value="2" | +2%
+| ow before your defenses soften it, plus 4(+2/lv)% of your max HP. The
+|-
+| [[#Divine Thorn|Divine Thorn]]
+| Faith
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| wn dark flames. Lowers your MP regen by 1(+0.15/lv) per tick.
+|-
+| [[#Elemental Charge|Elemental Charge]]
+| Faith
+| Level scaling
+| data-sort-value="10" | 10%
+| data-sort-value="3" | +3%
+| gle. Arms your weapon's element, adding 10(+3/lv)% Elemental Effect Ch
+|-
+| [[#Elemental Charge|Elemental Charge]]
+| Faith
+| Level scaling
+| data-sort-value="2.88" | 2.88
+| data-sort-value="0.48" | +0.48
+| s with the hit. Lowers your MP regen by 2.88(+0.48/lv) per tick while activ
+|-
+| [[#Empower|Empower]]
+| Magic
+| Level scaling
+| data-sort-value="1.272" | 1.272
+| data-sort-value="0.039" | +0.039
+| another skill to permanently boost it: x1.272(+0.039/lv) damage and 1.25x siz
+|-
+| [[#Empower|Empower]]
+| Magic
+| Multiplier
+| data-sort-value="1.272" | 1.272
+| data-sort-value="0" | —
+| another skill to permanently boost it: x1.272(+0.039/lv) damage and 1.25x si
+|-
+| [[#Familiar|Familiar]]
+| Magic
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| skill's level. Lowers your MP regen by 1(+0.15/lv) per tick.
+|-
+| [[#Feather Jump|Feather Jump]]
+| Range
+| Level scaling
+| data-sort-value="7" | 7%
+| data-sort-value="2.31" | +2.31%
+| h upward and drift down slowly, gaining 7(+2.31/lv)% global damage while
+|-
+| [[#Focused Mind|Focused Mind]]
+| Magic
+| Level scaling
+| data-sort-value="15" | 15%
+| data-sort-value="2.368" | +2.368%
+| le edge: your highest damage stat rises 15(+2.368/lv)%, and your other dam
+|-
+| [[#Focused Mind|Focused Mind]]
+| Magic
+| Level scaling
+| data-sort-value="10" | 10%
+| data-sort-value="1.05" | +1.05%
+| /lv)%, and your other damage stats fall 10(+1.05/lv)%. Nearby party membe
+|-
+| [[#Focused Mind|Focused Mind]]
+| Magic
+| Level scaling
+| data-sort-value="4.8" | 4.8%
+| data-sort-value="0.22" | +0.22%
+| 0(+1.05/lv)%. Nearby party members gain 4.8(+0.22/lv)% to their own highes
+|-
+| [[#Focused Mind|Focused Mind]]
+| Magic
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| st damage stat. Lowers your MP regen by 1(+0.15/lv) per tick.
+|-
+| [[#Force of Will|Force of Will]]
+| Range
+| Level scaling
+| data-sort-value="15" | 15
+| data-sort-value="2.368" | +2.368
+| re untouched. Your will hardens you for 15(+2.368/lv) Defense while it las
+|-
+| [[#Life Line|Life Line]]
+| Faith
+| Level scaling
+| data-sort-value="3" | 3%
+| data-sort-value="0.63" | +0.63%
+| chosen party member: each of you gains 3(+0.63/lv)% of the other's dama
+|-
+| [[#Life Line|Life Line]]
+| Faith
+| Level scaling
+| data-sort-value="5" | 5%
+| data-sort-value="1.05" | +1.05%
+| 63/lv)% of the other's damage stats and 5(+1.05/lv)% of their Defense an
+|-
+| [[#Magic Slash|Magic Slash]]
+| Melee
+| Multiplier
+| data-sort-value="1.35" | 1.35
+| data-sort-value="0" | —
+| rescent wave; the third swing lands for x1.35 damage and every hi
+|-
+| [[#Mana Shield|Mana Shield]]
+| Magic
+| Level scaling
+| data-sort-value="6" | 6
+| data-sort-value="3.5" | +3.5
+| billed to your MP instead. Also grants 6(+3.5/lv)(+0.25 per INT) Shie
+|-
+| [[#Mana Shield|Mana Shield]]
+| Magic
+| Level scaling
+| data-sort-value="1.8" | 1.8
+| data-sort-value="0.3" | +0.3
+| rants 6(+3.5/lv)(+0.25 per INT) Shield, 1.8(+0.3/lv) MP regen per tick, a
+|-
+| [[#Mana Shield|Mana Shield]]
+| Magic
+| Level scaling
+| data-sort-value="3.48" | 3.48%
+| data-sort-value="1.08" | +1.08%
+| ld, 1.8(+0.3/lv) MP regen per tick, and 3.48(+1.08/lv)% Magic and Faith dam
+|-
+| [[#Medishot|Medishot]]
+| Faith
+| Level scaling
+| data-sort-value="3" | 3
+| data-sort-value="1.5" | +1.5
+| second for 6 seconds. Each pulse heals 3(+1.5/lv), raised 5% for ever
+|-
+| [[#Medishot|Medishot]]
+| Faith
+| Level scaling
+| data-sort-value="18" | 18
+| data-sort-value="9" | +9
+| ct Potency you have, so a full field is 18(+9/lv). The burst heals 1.
+|-
+| [[#Messenger|Messenger]]
+| Range
+| Level scaling
+| data-sort-value="15" | 15
+| data-sort-value="5" | +5
+| chosen party member, shielding them for 15(+5/lv) plus 3(+0.5/lv)% of
+|-
+| [[#Messenger|Messenger]]
+| Range
+| Level scaling
+| data-sort-value="3" | 3%
+| data-sort-value="0.5" | +0.5%
+| mber, shielding them for 15(+5/lv) plus 3(+0.5/lv)% of your Range and F
+|-
+| [[#Nimble|Nimble]]
+| Range
+| Level scaling
+| data-sort-value="12" | 12
+| data-sort-value="-0.26" | -0.26
+| Passive stance. Stay unhit for 12(-0.26/lv)s to prime a perfect
+|-
+| [[#Nimble|Nimble]]
+| Range
+| Level scaling
+| data-sort-value="3.48" | 3.48%
+| data-sort-value="1.08" | +1.08%
+| primed your Range and Magic damage rise 3.48(+1.08/lv)% (multiplying with y
+|-
+| [[#Perseverance|Perseverance]]
+| Faith
+| Level scaling
+| data-sort-value="8.6" | 8.6%
+| data-sort-value="0.6" | +0.6%
+| l with resolve: grow 1.5x in size, gain 8.6(+0.6/lv)% Max HP (healing for
+|-
+| [[#Perseverance|Perseverance]]
+| Faith
+| Level scaling
+| data-sort-value="6" | 6
+| data-sort-value="1.1" | +1.1
+| /lv)% Max HP (healing for the gain) and 6(+1.1/lv) Defense, plus Melee
+|-
+| [[#Perseverance|Perseverance]]
+| Faith
+| Level scaling
+| data-sort-value="16.08" | 16.08%
+| data-sort-value="1.68" | +1.68%
+| that rises the healthier you are, up to 16.08(+1.68/lv)%. Multiplies with yo
+|-
+| [[#Phasing|Phasing]]
+| Range
+| Level scaling
+| data-sort-value="18" | 18
+| data-sort-value="2.21" | +2.21
+| fter-images behind as you move, gaining 18(+2.21/lv) Speed and global dam
+|-
+| [[#Phasing|Phasing]]
+| Range
+| Level scaling
+| data-sort-value="8.1" | 8.1%
+| data-sort-value="1.94" | +1.94%
+| that grows with how fast you are, up to 8.1(+1.94/lv)%. Your Dodge Chance
+|-
+| [[#Phasing|Phasing]]
+| Range
+| Level scaling
+| data-sort-value="10" | 10%
+| data-sort-value="1.316" | +1.316%
+| Dodge Chance grows the same way, up to 10(+1.316/lv)% at full speed. Lowe
+|-
+| [[#Phasing|Phasing]]
+| Range
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| at full speed. Lowers your MP regen by 1(+0.15/lv) per tick. Multiplies
+|-
+| [[#Shadow Step|Shadow Step]]
+| Range
+| Level scaling
+| data-sort-value="38" | 38
+| data-sort-value="2" | +2
+| n invisible, evading every attack, with 38(+2/lv) Speed and 7.1(+0.375
+|-
+| [[#Shadow Step|Shadow Step]]
+| Range
+| Level scaling
+| data-sort-value="7.1" | 7.1
+| data-sort-value="0.375" | +0.375
+| every attack, with 38(+2/lv) Speed and 7.1(+0.375/lv) Jump while hidden. W
+|-
+| [[#Shadow Step|Shadow Step]]
+| Range
+| Level scaling
+| data-sort-value="6.48" | 6.48%
+| data-sort-value="3.402" | +3.402%
+| idden. When you reappear, Ambush grants 6.48(+3.402/lv)% global damage. Mult
+|-
+| [[#Shadow Twin|Shadow Twin]]
+| Range
+| Level scaling
+| data-sort-value="7.2" | 7.2%
+| data-sort-value="2.4" | +2.4%
+| shadow repeats every skill you cast for 7.2(+2.4/lv)% of your damage, and
+|-
+| [[#Shield Slam|Shield Slam]]
+| Melee
+| Level scaling
+| data-sort-value="7" | 7
+| data-sort-value="2" | +2
+| nockback in the game. Every slam grants 7(+2/lv) Shield plus 8% of yo
+|-
+| [[#Siphon|Siphon]]
+| Range
+| Level scaling
+| data-sort-value="1.5" | 1.5
+| data-sort-value="1.5" | +1.5
+| hem to you as drifting wisps, restoring 1.5(+1.5/lv) HP plus 5% of your m
+|-
+| [[#Siphon|Siphon]]
+| Range
+| Level scaling
+| data-sort-value="0.5" | 0.5
+| data-sort-value="0.5" | +0.5
+| +1.5/lv) HP plus 5% of your max HP, and 0.5(+0.5/lv) MP plus 3% of your m
+|-
+| [[#Slash|Slash]]
+| Melee
+| Multiplier
+| data-sort-value="1.35" | 1.35
+| data-sort-value="0" | —
+| swing chain whose third swing lands for x1.35 damage.
+|-
+| [[#Soul Shot|Soul Shot]]
+| Range
+| Multiplier
+| data-sort-value="1.3" | 1.3
+| data-sort-value="0" | —
+| ting harder the farther it flies, up to x1.3. Tap for a third of
+|-
+| [[#Taunt|Taunt]]
+| Melee
+| Level scaling
+| data-sort-value="3" | 3
+| data-sort-value="1" | +1
+| d +1.35% global damage per stack, up to 3(+1/lv) stacks. The damage m
+|-
+| [[#Undying|Undying]]
+| Melee
+| Level scaling
+| data-sort-value="20" | 20%
+| data-sort-value="3.68" | +3.68%
+| Toggle. Refuse to fall: 20(+3.68/lv)% of the damage you t
+|-
+| [[#Undying|Undying]]
+| Melee
+| Level scaling
+| data-sort-value="1" | 1
+| data-sort-value="0.15" | +0.15
+| ss cleanses 2%. Lowers your MP regen by 1(+0.15/lv) per tick. Healing pa
+|-
+| [[#Vanguard|Vanguard]]
+| Faith
+| Level scaling
+| data-sort-value="21.25" | 21.25%
+| data-sort-value="1.25" | +1.25%
+| ctive bubble: party members inside take 21.25(+1.25/lv)% less damage (you ab
+|-
+| [[#Vanguard|Vanguard]]
+| Faith
+| Level scaling
+| data-sort-value="1.042" | 1.042
+| data-sort-value="1.55" | +1.55
+| fense, and monsters in the bubble take x1.042(+1.55%/lv) damage from you. Tra
+|-
+| [[#Vanguard|Vanguard]]
+| Faith
+| Multiplier
+| data-sort-value="1.042" | 1.042
+| data-sort-value="0" | —
+| efense, and monsters in the bubble take x1.042(+1.55%/lv) damage from you. Tr
+|-
+| [[#Whirlwind|Whirlwind]]
+| Melee
+| Level scaling
+| data-sort-value="25" | 25
+| data-sort-value="5" | +5
+| d casting grants +18 Speed, +5 Jump and 25(+5/lv)(+0.15 per INT) Shie
+|}

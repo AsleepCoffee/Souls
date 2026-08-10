@@ -1,0 +1,231 @@
+{| class="wikitable sortable" style="font-size:90%;"
+|+ Buffs, toggles, and passive stances
+! class="unsortable" | Icon
+! Name !! ID !! Branch !! Affected stats !! Base bonus !! Per level !! Duration !! Cooldown !! MP/HP cost !! Party sharing !! Stacking !! Restrictions
+|-
+| [[File:Arrow Infusion icon.png|24px]]
+| [[#Arrow Infusion|Arrow Infusion]]
+| 94
+| Range
+| MP regen, Crit Rate, Crit Damage
+| data-sort-value="1" | 1(+0.15/lv) 
+| data-sort-value="0.15" | +0.15/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Blood Sacrifice icon.png|24px]]
+| [[#Blood Sacrifice|Blood Sacrifice]]
+| 62
+| Magic
+| Max HP, Shield, Magic damage
+| data-sort-value="3.48" | 3.48(+1.08/lv)%
+| data-sort-value="1.08" | +1.08%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Shares with party
+| Unspecified
+| Skill costs you cannot afford with MP are paid in HP instead, damage you take converts to MP, every MP cost you pay rebounds as Shield, and 30% of your max HP becomes max Shield.
+|-
+| [[File:Clarity icon.png|24px]]
+| [[#Clarity|Clarity]]
+| 95
+| Range
+| MP regen
+| data-sort-value="1.1008" | 1.1008(+1.68%/lv) 
+| data-sort-value="1.68" | +1.68/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −2 (+0.15/lv) MP regen/tick
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Companion icon.png|24px]]
+| [[#Companion|Companion]]
+| 104
+| Range
+| MP regen, Accuracy, Damage Balance
+| data-sort-value="6" | 6(+1.74/lv)%
+| data-sort-value="1.74" | +1.74%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Shares with party
+| Unspecified
+| None found
+|-
+| [[File:Dedication icon.png|24px]]
+| [[#Dedication|Dedication]]
+| 106
+| Faith
+| Shield
+| data-sort-value="25" | 25(+5/lv)%
+| data-sort-value="5" | +5%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Divine Benevolence icon.png|24px]]
+| [[#Divine Benevolence|Divine Benevolence]]
+| 105
+| Faith
+| MP regen
+| data-sort-value="7" | 7(+0.95/lv)%
+| data-sort-value="0.95" | +0.95%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Shares with party
+| Unspecified
+| None found
+|-
+| [[File:Divine Thorn icon.png|24px]]
+| [[#Divine Thorn|Divine Thorn]]
+| 107
+| Faith
+| Max HP, MP regen
+| data-sort-value="50" | 50(+25/lv)%
+| data-sort-value="25" | +25%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Elemental Charge icon.png|24px]]
+| [[#Elemental Charge|Elemental Charge]]
+| 22
+| Faith
+| MP regen, Elemental Effect Chance
+| data-sort-value="10" | 10(+3/lv)%
+| data-sort-value="3" | +3%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −2.88 (+0.48/lv) MP regen/tick
+| Shares with party
+| Unspecified
+| None found
+|-
+| [[File:Familiar icon.png|24px]]
+| [[#Familiar|Familiar]]
+| 103
+| Magic
+| MP regen, Shield, Defense, Speed
+| data-sort-value="1" | 1(+0.15/lv) 
+| data-sort-value="0.15" | +0.15/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Focused Mind icon.png|24px]]
+| [[#Focused Mind|Focused Mind]]
+| 102
+| Magic
+| MP regen
+| data-sort-value="15" | 15(+2.368/lv)%
+| data-sort-value="2.368" | +2.368%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Shares with party
+| Unspecified
+| None found
+|-
+| [[File:Mana Shield icon.png|24px]]
+| [[#Mana Shield|Mana Shield]]
+| 28
+| Magic
+| INT, MP regen, Shield, Faith damage
+| data-sort-value="6" | 6(+3.5/lv)
+| data-sort-value="3.5" | +3.5/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Shares with party
+| Multiplicative
+| None found
+|-
+| [[File:Nimble icon.png|24px]]
+| [[#Nimble|Nimble]]
+| 108
+| Range
+| Dodge Chance, Magic damage
+| data-sort-value="12" | 12(-0.26/lv)
+| data-sort-value="-0.26" | -0.26/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Shares with party
+| Unspecified
+| None found
+|-
+| [[File:Phasing icon.png|24px]]
+| [[#Phasing|Phasing]]
+| 86
+| Range
+| MP regen, Speed, Dodge Chance, global damage
+| data-sort-value="18" | 18(+2.21/lv) 
+| data-sort-value="2.21" | +2.21/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Shares with party
+| Multiplicative
+| None found
+|-
+| [[File:Shadow Twin icon.png|24px]]
+| [[#Shadow Twin|Shadow Twin]]
+| 46
+| Range
+| Unclear from text
+| data-sort-value="7.2" | 7.2(+2.4/lv)%
+| data-sort-value="2.4" | +2.4%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Undying icon.png|24px]]
+| [[#Undying|Undying]]
+| 100
+| Melee
+| MP regen
+| data-sort-value="20" | 20(+3.68/lv)%
+| data-sort-value="3.68" | +3.68%/lv
+| 4 seconds
+| data-sort-value="-1" | Unknown (server-only)
+| −1 (+0.15/lv) MP regen/tick
+| Solo only
+| Unspecified
+| None found
+|-
+| [[File:Vanguard icon.png|24px]]
+| [[#Vanguard|Vanguard]]
+| 88
+| Faith
+| Defense
+| data-sort-value="21.25" | 21.25(+1.25/lv)%
+| data-sort-value="1.25" | +1.25%/lv
+| data-sort-value="-1" | Unknown (server) / not stated
+| data-sort-value="-1" | Unknown (server-only)
+| None stated
+| Shares with party
+| Unspecified
+| None found
+|}
+
+All values above are mined from each skill's in-game description text (the only place per-level buff numbers exist in the recovered client) — see each skill's detail section below for the full source sentence.

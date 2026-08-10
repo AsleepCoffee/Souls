@@ -1,0 +1,124 @@
+.skill-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.skill-tree__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.skill-tree__legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.skill-tree__legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-tree__legend-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skill-tree__zoom-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skill-tree__zoom-controls button {
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-default);
+  color: var(--text-primary);
+  border-radius: var(--radius-sm);
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+}
+
+.skill-tree__zoom-controls button:hover {
+  background: var(--bg-panel-hover);
+  border-color: var(--border-strong);
+}
+
+.skill-tree__reset {
+  width: auto !important;
+  padding: 0 10px;
+  font-size: 0.76rem !important;
+}
+
+.skill-tree__zoom-level {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  min-width: 42px;
+  text-align: center;
+}
+
+.skill-tree__viewport {
+  position: relative;
+  flex: 1;
+  min-height: 420px;
+  background: radial-gradient(ellipse at center, #1a1c24 0%, #0a0b0f 100%);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  touch-action: none;
+  cursor: grab;
+}
+
+.skill-tree__viewport:active {
+  cursor: grabbing;
+}
+
+.skill-tree__world {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  will-change: transform;
+}
+
+.skill-tree__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+.skill-tree__bg--overlay {
+  mix-blend-mode: soft-light;
+  opacity: 0.85;
+}
+
+.skill-tree__hint {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 720px) {
+  .skill-tree__viewport {
+    min-height: 320px;
+  }
+}

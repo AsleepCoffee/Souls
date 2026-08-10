@@ -1,0 +1,1865 @@
+{
+  "steam_app": 3479090,
+  "build_id": "24640923",
+  "skills": [
+    {
+      "skill_id": 4,
+      "name": "Revitalize",
+      "description": "Pulse a wave of restoring light, healing yourself and the most wounded nearby players for this skill's power plus 1.5% (+0.5%/lv) of your max HP and 2.4% (+0.8%/lv) of your max MP, while searing enemies caught in the pulse.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/revitalize.png",
+      "resource_path": "Resources/Skills/Database/4_Revitalize.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 388.0,
+      "y": 270.0,
+      "node_name": "Revitalize",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 5,
+      "name": "Nova",
+      "description": "A basic attack: release a pulse of spirit that hits everything in a circle around you, even enemies at your back.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/frost.png",
+      "resource_path": "Resources/Skills/Database/5_Nova.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 334.0,
+      "y": 246.0,
+      "node_name": "Nova",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 22,
+      "name": "Elemental Charge",
+      "description": "Toggle. Arms your weapon's element, adding 10(+3/lv)% Elemental Effect Chance, and every proc deals bonus elemental damage that grows with the hit. Lowers your MP regen by 2.88(+0.48/lv) per tick while active. Nearby party members gain half of the elemental chance while you have it on.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/Elemental_charge.png",
+      "resource_path": "Resources/Skills/Database/22_ElementalCharge.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 449.0,
+      "y": 230.0,
+      "node_name": "ElementalCharge",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 27,
+      "name": "Armor Link",
+      "description": "Pick a party member on your map: they take 35% less damage and you take that damage for them, rising to 45% at 100 CON, while half of every heal you receive flows to them too. The link never expires and follows them between maps, though it only works while you're together.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/armor_link.png",
+      "resource_path": "Resources/Skills/Database/27_ArmorLink.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 392.0,
+      "y": 241.0,
+      "node_name": "ArmorLink",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 29,
+      "name": "Burst Shield",
+      "description": "Shield yourself and nearby party members for a moment: the next hit is cut by 30(+2.5/lv)% and the damage prevented is hurled back at the attacker five-fold, splashing nearby monsters.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/burst_shield.png",
+      "resource_path": "Resources/Skills/Database/29_BurstShield.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 378.0,
+      "y": 295.0,
+      "node_name": "BurstShield",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 30,
+      "name": "Medishot",
+      "description": "Fire a healing shot that seeks your most wounded party member, bursting into a heal for nearby allies, damage to nearby monsters, and a mending field that follows them, pulsing every second for 6 seconds. Each pulse heals 3(+1.5/lv), raised 5% for every 10% Elemental Effect Potency you have, so a full field is 18(+9/lv). The burst heals 1.4 times a pulse, or 2.5 times when it lands on you. Charge it for up to three times the healing.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/medishot.png",
+      "resource_path": "Resources/Skills/Database/30_Medishot.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 443.0,
+      "y": 311.0,
+      "node_name": "Medishot",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 47,
+      "name": "Divine Protection",
+      "description": "Ward yourself and nearby party members: the first killing blow each of you takes is cancelled, leaving 13.11(+5.24/lv)% of max HP instead.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/divine_protection.png",
+      "resource_path": "Resources/Skills/Database/47_DivineProtection.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 452.0,
+      "y": 258.0,
+      "node_name": "DivineProtection",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 52,
+      "name": "Smite",
+      "description": "Call your wrath down on the nearest enemies, striking through walls and floors with no line of sight needed.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/smite.png",
+      "resource_path": "Resources/Skills/Database/52_Smite.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 447.0,
+      "y": 205.0,
+      "node_name": "Smite",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 61,
+      "name": "Faith",
+      "description": "Your Faith proficiency. It levels on its own as you deal Faith damage, gates which Faith skills you can learn, and lifts your Faith damage as it grows. Caps at 99.",
+      "type_ids": [
+        3
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/UI/Icons/Attribute/faith_icon_2.png",
+      "resource_path": "Resources/Skills/Database/61_Faith.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 300.0,
+      "y": 246.0,
+      "node_name": "Faith",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 64,
+      "name": "Divine Blessing",
+      "description": "Bless yourself with 2.5(+1.75/lv)% EXP, 1.5(+1.5/lv)% Skill EXP and 2.369(+0.79/lv)% Faith damage. Nearby party members share the EXP and Skill EXP bonuses at half strength. The Faith damage multiplies with your other buff bonuses.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/divine_blessing.png",
+      "resource_path": "Resources/Skills/Database/64_DivineBlessing.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 386.0,
+      "y": 212.0,
+      "node_name": "DivineBlessing",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 82,
+      "name": "Dark Fire",
+      "description": "Wreathe yourself in dark flame that scorches the nearest enemies twice a second, gaining +3% damage per enemy in the circle (up to +15%). It burns 5% of your max HP and 7% of your max Shield every second, but can never kill you; while Undying is lit the health burn bleeds out over 4 seconds like any other hit. Stays lit until you use the skill again, which you can only do once its cooldown is ready; putting it out starts the cooldown too. While it is lit, your Shield does not recover on its own and your HP regen no longer speeds up while resting.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Effect/skill_darkness_fire_icon.png",
+      "resource_path": "Resources/Skills/Database/82_DarkFire.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 438.0,
+      "y": 177.0,
+      "node_name": "DarkFire",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 87,
+      "name": "Shield Bash",
+      "description": "A basic attack: rock back, then lunge shield-first, bulldozing enemies out of your way into a pile. Bosses bounce you off instead.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/shield_bash_icon.png",
+      "resource_path": "Resources/Skills/Database/87_ShieldBash.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 310.0,
+      "y": 197.0,
+      "node_name": "ShieldBash",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 88,
+      "name": "Vanguard",
+      "description": "Toggle. Project a protective bubble: party members inside take 21.25(+1.25/lv)% less damage (you absorb it for them), everything caught inside raises your Defense, and monsters in the bubble take x1.042(+1.55%/lv) damage from you. Trains from damage you deal to monsters inside the bubble, and from damage you absorb for allies.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/vanguard_icon.png",
+      "resource_path": "Resources/Skills/Database/88_Vanguard.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 357.0,
+      "y": 158.0,
+      "node_name": "Vanguard",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 89,
+      "name": "Cross Strike",
+      "description": "Slam a blazing cross into the ground, stunning everything it hits, bosses included, and dealing x1.6 damage to bosses. Your melee and faith attack speed multiply its damage instead of shortening its cooldown.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/cross_strike_icon.png",
+      "resource_path": "Resources/Skills/Database/89_CrossStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 410.0,
+      "y": 124.0,
+      "node_name": "CrossStrike",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 90,
+      "name": "Perseverance",
+      "description": "Swell with resolve: grow 1.5x in size, gain 8.6(+0.6/lv)% Max HP (healing for the gain) and 6(+1.1/lv) Defense, plus Melee and Faith damage that rises the healthier you are, up to 16.08(+1.68/lv)%. Multiplies with your other buff bonuses. Trains from the damage you deal while it is up. Nearby party members gain half the Max HP you gained and a quarter of your damage bonus.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/perseverance_icon.png",
+      "resource_path": "Resources/Skills/Database/90_Perseverance.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 423.0,
+      "y": 149.0,
+      "node_name": "Perseverance",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 97,
+      "name": "Punishment",
+      "description": "Drive your weapon into the ground, launching and stunning non-boss enemies, then erupt twice more at the impact point.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/punishment_icon.png",
+      "resource_path": "Resources/Skills/Database/97_Punishment.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 376.0,
+      "y": 182.0,
+      "node_name": "Punishment",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 105,
+      "name": "Divine Benevolence",
+      "description": "Passive stance. Suffering becomes succor: when you take damage, party members within range are healed for 7(+0.95/lv)% of the blow before your defenses soften it. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/divine_benelovent.png",
+      "resource_path": "Resources/Skills/Database/105_DivineBenevolent.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 438.0,
+      "y": 77.0,
+      "node_name": "DivineBenevolent",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 106,
+      "name": "Dedication",
+      "description": "Passive stance. Your devotion magnifies your care: everything you heal or shield is 25(+5/lv)% stronger.",
+      "type_ids": [
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/dedication.png",
+      "resource_path": "Resources/Skills/Database/106_Dedication.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 453.0,
+      "y": 285.0,
+      "node_name": "Dedication",
+      "types": "Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 107,
+      "name": "Divine Thorn",
+      "description": "Passive stance. Thorns of light answer every wound: your attacker and up to 2 other nearby monsters take 50(+25/lv)% of the blow before your defenses soften it, plus 4(+2/lv)% of your max HP. The thorns can crit, carry your element, and answer even the blood price of your own dark flames. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/divine_thorn.png",
+      "resource_path": "Resources/Skills/Database/107_DivineThorn.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 389.0,
+      "y": 99.0,
+      "node_name": "DivineThorn",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 109,
+      "name": "Life Line",
+      "description": "Bind your fate to a chosen party member: each of you gains 3(+0.63/lv)% of the other's damage stats and 5(+1.05/lv)% of their Defense and Max HP. If your partner would die, they are saved at 15% HP and you take half your Max HP instead, breaking the link. The bond cannot coexist with Armor Link.",
+      "type_ids": [
+        3,
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/lifeline.png",
+      "resource_path": "Resources/Skills/Database/109_LifeLine.tres",
+      "tree": "Combat Skills",
+      "branch": "Faith",
+      "x": 413.0,
+      "y": 361.0,
+      "node_name": "LifeLine",
+      "types": "Faith, Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 6,
+      "name": "Gravity Well",
+      "description": "Pin a gravity well onto the enemy you strike, dragging everything nearby toward its center and crushing whatever reaches the core 3 times a second. Bosses are too heavy to drag.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/gravitywell.png",
+      "resource_path": "Resources/Skills/Database/6_GravityWell.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 76.0,
+      "y": 212.0,
+      "node_name": "GravityWell",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 19,
+      "name": "Flame Barrage",
+      "description": "Hold a jet of fire that spits out 7 fireballs while you steer the stream up and down. Each fireball hits as its own strike with heavy knockback.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/flame_barrage.png",
+      "resource_path": "Resources/Skills/Database/19_FlameBarrage.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 143.0,
+      "y": 302.0,
+      "node_name": "FlameBarrage",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 28,
+      "name": "Mana Shield",
+      "description": "Toggle. Damage that would reach your HP is halved and billed to your MP instead. Also grants 6(+3.5/lv)(+0.25 per INT) Shield, 1.8(+0.3/lv) MP regen per tick, and 3.48(+1.08/lv)% Magic and Faith damage. The damage bonus multiplies with your other buff bonuses. Nearby party members gain the full Shield bonus while you have it on.",
+      "type_ids": [
+        3,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/mana_shield.png",
+      "resource_path": "Resources/Skills/Database/28_ManaShield.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 133.0,
+      "y": 274.0,
+      "node_name": "ManaShield",
+      "types": "Faith, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 41,
+      "name": "Magic Burst",
+      "description": "A basic attack: loose a cone of raw magic that detonates on its targets nearest-first, rolling outward through the group.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/skill_magic_burst.png",
+      "resource_path": "Resources/Skills/Database/41_MagicBurst.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 195.0,
+      "y": 247.0,
+      "node_name": "MagicBurst",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 42,
+      "name": "Blink",
+      "description": "Teleport a short distance in the direction you hold, even straight up or down, phasing clean through walls.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blink.png",
+      "resource_path": "Resources/Skills/Database/42_Blink.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 132.0,
+      "y": 249.0,
+      "node_name": "Blink",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 51,
+      "name": "Gust",
+      "description": "Blast a sheet of wind that shoves everything in front of you with the hardest knockback in the game. Perfect for clearing a lane or pushing a pack off a ledge.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/Gust.png",
+      "resource_path": "Resources/Skills/Database/51_Gust.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 144.0,
+      "y": 189.0,
+      "node_name": "Gust",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 53,
+      "name": "Star Fall",
+      "description": "Hang a starfield over the nearest monster that rains 15 homing stars, each landing as its own strike.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/star_fall.png",
+      "resource_path": "Resources/Skills/Database/53_StarFall.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 87.0,
+      "y": 186.0,
+      "node_name": "StarFall",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 54,
+      "name": "Arcane Surge",
+      "description": "Roll a hunting ball of raw magic that rumbles forward, homing onto enemies and battering everything it touches every 0.4 seconds.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/arcane_surge_icon.png",
+      "resource_path": "Resources/Skills/Database/54_ArcaneSurge.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 89.0,
+      "y": 313.0,
+      "node_name": "ArcaneSurge",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 57,
+      "name": "Soul Bomb",
+      "description": "Lob a soul-charged orb that detonates when a monster comes near, catching everything in the blast. Throw it into a clump.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/soul_bomb.png",
+      "resource_path": "Resources/Skills/Database/57_SoulBomb.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 133.0,
+      "y": 217.0,
+      "node_name": "SoulBomb",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 60,
+      "name": "Magic",
+      "description": "Your Magic proficiency. It levels on its own as you deal Magic damage, gates which Magic skills you can learn, and lifts your Magic damage as it grows. Caps at 99.",
+      "type_ids": [
+        2
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/UI/Icons/Attribute/int_damage_icon.png",
+      "resource_path": "Resources/Skills/Database/60_Magic.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 229.0,
+      "y": 247.0,
+      "node_name": "Magic",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 62,
+      "name": "Blood Sacrifice",
+      "description": "Toggle. Skill costs you cannot afford with MP are paid in HP instead, damage you take converts to MP, every MP cost you pay rebounds as Shield, and 30% of your max HP becomes max Shield. Your Melee and Magic damage rise 3.48(+1.08/lv)%, multiplying with your other buff bonuses. The 2 closest party members nearby also gain half of the MP you convert and half of the Shield rebound. Nearby party members also gain half of that Shield capacity.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blood_sacrifice.png",
+      "resource_path": "Resources/Skills/Database/62_BloodSacrifice.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 210.0,
+      "y": 126.0,
+      "node_name": "BloodSacrifice",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 63,
+      "name": "Empower",
+      "description": "Bind Empower to another skill to permanently boost it: x1.272(+0.039/lv) damage and 1.25x size.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/skill_Empower.png",
+      "resource_path": "Resources/Skills/Database/63_Empower.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 96.0,
+      "y": 162.0,
+      "node_name": "Empower",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 102,
+      "name": "Focused Mind",
+      "description": "Toggle. Sharpen your mind to a single edge: your highest damage stat rises 15(+2.368/lv)%, and your other damage stats fall 10(+1.05/lv)%. Nearby party members gain 4.8(+0.22/lv)% to their own highest damage stat. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/focused_mind.png",
+      "resource_path": "Resources/Skills/Database/102_FocusedMind.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 72.0,
+      "y": 244.0,
+      "node_name": "FocusedMind",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 103,
+      "name": "Familiar",
+      "description": "Toggle. Summon up to two familiars (chosen when you activate the skill): Turtle grants Shield and Defense, Cat grants Speed and attack speed, Rabbit gathers nearby drops and finds more soul crystals, Bat bites enemies and steals their life and mana, Snake spits poison clouds. Familiars grow with the skill's level. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/familiar_skill_icon.png",
+      "resource_path": "Resources/Skills/Database/103_Familiar.tres",
+      "tree": "Combat Skills",
+      "branch": "Magic",
+      "x": 77.0,
+      "y": 279.0,
+      "node_name": "Familiar",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 1,
+      "name": "Heavy Strike",
+      "description": "Bring your weapon down in one heavy overhead swing that sends enemies flying with about three times the knockback of a normal attack. Hold the button to keep swinging.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/heavystrike.png",
+      "resource_path": "Resources/Skills/Database/1_HeavyStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 240.0,
+      "y": 119.0,
+      "node_name": "HeavyStrike",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 3,
+      "name": "Taunt",
+      "description": "Roar and force nearby monsters to attack you, then keep roaring automatically every 3 seconds for 90 seconds. Every monster hit stacks Berserk: +2 Speed, +2.5 Defense and +1.35% global damage per stack, up to 3(+1/lv) stacks. The damage multiplies with your other buff bonuses.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/taunt.png",
+      "resource_path": "Resources/Skills/Database/3_Taunt.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 272.0,
+      "y": 116.0,
+      "node_name": "Taunt",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 21,
+      "name": "Upward Strike",
+      "description": "Swing skyward, launching non-boss enemies straight up and stunning them for the duration. Nothing resists the launch; bosses ignore it.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/upward_strike.png",
+      "resource_path": "Resources/Skills/Database/21_UpwardStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 263.0,
+      "y": 55.0,
+      "node_name": "UpwardStrike",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 35,
+      "name": "Grapple Strike",
+      "description": "Fling your hook at an enemy and yank yourself to it, stunning it on impact and riding it until you press jump to kick off.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/grapple.png",
+      "resource_path": "Resources/Skills/Database/35_GrappleStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 335.0,
+      "y": 68.0,
+      "node_name": "GrappleStrike",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 40,
+      "name": "Slash",
+      "description": "The default basic attack: a fast three-swing chain whose third swing lands for x1.35 damage.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/slash.png",
+      "resource_path": "Resources/Skills/Database/40_Slash.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 265.0,
+      "y": 179.0,
+      "node_name": "Slash",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 48,
+      "name": "Shield Slam",
+      "description": "Charge shield-first at the nearest enemy, invulnerable on the way, sending it flying with the hardest knockback in the game. Every slam grants 7(+2/lv) Shield plus 8% of your max HP, even past your Shield cap.",
+      "type_ids": [
+        1,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/shield_slam.png",
+      "resource_path": "Resources/Skills/Database/48_ShieldSlam.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 335.0,
+      "y": 136.0,
+      "node_name": "ShieldSlam",
+      "types": "Melee, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 50,
+      "name": "Onslaught",
+      "description": "Explode into a flurry, striking the nearest enemy about 14 times a second for the duration. Free to cast while Slash is your basic attack.",
+      "type_ids": [
+        4,
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/Onslaught.png",
+      "resource_path": "Resources/Skills/Database/50_Onslaught.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 222.0,
+      "y": 58.0,
+      "node_name": "Onslaught",
+      "types": "Range, Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 55,
+      "name": "Whirlwind",
+      "description": "Spin up a whirlwind you can walk with. Every hit drags enemies into your face instead of scattering them, and casting grants +18 Speed, +5 Jump and 25(+5/lv)(+0.15 per INT) Shield.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/Skill Tree/whirlwind_icon.png",
+      "resource_path": "Resources/Skills/Database/55_Whirlwind.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 184.0,
+      "y": 71.0,
+      "node_name": "Whirlwind",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 56,
+      "name": "Crescent Slash",
+      "description": "Throw your sword arc forward as a travelling crescent of energy that cuts through the enemies in its path.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/crescent_slash_icon.png",
+      "resource_path": "Resources/Skills/Database/56_CrescentSlash.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 157.0,
+      "y": 166.0,
+      "node_name": "CrescentStrike",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 58,
+      "name": "Melee",
+      "description": "Your Melee proficiency. It levels on its own as you deal Melee damage, gates which Melee skills you can learn, and lifts your Melee damage as it grows. Caps at 99.",
+      "type_ids": [
+        1
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/melee.png",
+      "resource_path": "Resources/Skills/Database/58_Melee.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 265.0,
+      "y": 213.0,
+      "node_name": "Melee",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 76,
+      "name": "Bloodlust",
+      "description": "Embrace pain: every 5 damage you take adds a stack worth +1.34% global damage and +1 HP regen per tick, up to 5(+2.5/lv) stacks, but you take 35% more damage while it lasts. Multiplies with your other buff bonuses. Nearby party members gain 25% of your current damage bonus.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/bloodlust.png",
+      "resource_path": "Resources/Skills/Database/76_Bloodlust.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 304.0,
+      "y": 59.0,
+      "node_name": "Bloodlust",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 83,
+      "name": "Magic Slash",
+      "description": "A basic attack: a magic-infused three-swing chain that throws a piercing crescent wave; the third swing lands for x1.35 damage and every hit grants a little Shield.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/magic_slash.png",
+      "resource_path": "Resources/Skills/Database/83_MagicSlash.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 218.0,
+      "y": 196.0,
+      "node_name": "MagicSlash",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 84,
+      "name": "Lunar Step",
+      "description": "Step through the moonlight to the farthest enemy ahead and land 5 rapid strikes, stepping onward to a new target if the first one dies.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/luna_step_icon.png",
+      "resource_path": "Resources/Skills/Database/84_LunarStep.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 181.0,
+      "y": 142.0,
+      "node_name": "LunaStep",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 85,
+      "name": "Flash Strike",
+      "description": "Send out a mirage of yourself to blur between nearby enemies, striking 7 times in a flash of blades. You never move an inch and stay free to fight, completely invulnerable until the mirage fades.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/flash_stike_icon.png",
+      "resource_path": "Resources/Skills/Database/85_FlashStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 133.0,
+      "y": 111.0,
+      "node_name": "FlashStrike",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 96,
+      "name": "Crimson Moon",
+      "description": "Leap beneath a crimson moon and hang in the air, raining 15 homing crescents across the pack in a single second.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/crimson_moon_icon.png",
+      "resource_path": "Resources/Skills/Database/96_CrimsonMoon.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 154.0,
+      "y": 87.0,
+      "node_name": "CrimsonMoon",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 100,
+      "name": "Undying",
+      "description": "Toggle. Refuse to fall: 20(+3.68/lv)% of the damage you take does not land at once, instead bleeding out of you over 4 seconds. Killing an enemy cleanses 25% of your remaining bleed, and every hit on a boss cleanses 2%. Lowers your MP regen by 1(+0.15/lv) per tick. Healing past full health mends the bleed by the excess.",
+      "type_ids": [
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/undying.png",
+      "resource_path": "Resources/Skills/Database/100_Undying.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 304.0,
+      "y": 87.0,
+      "node_name": "Undying",
+      "types": "Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 101,
+      "name": "Blue Moon",
+      "description": "Howl at the blue moon: you shrug off 90% of incoming damage, party members within range a quarter of that, and everyone gains 80 Speed for 5(+0.37/lv) seconds. Attack speed does not reduce this cooldown.",
+      "type_ids": [
+        1,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blue_moon.png",
+      "resource_path": "Resources/Skills/Database/101_BlueMoon.tres",
+      "tree": "Combat Skills",
+      "branch": "Melee",
+      "x": 78.0,
+      "y": 87.0,
+      "node_name": "BlueMoon",
+      "types": "Melee, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 2,
+      "name": "Ninja Throw",
+      "description": "A basic attack: hurl a throwing knife with barely any knockback, perfect for kiting.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/ninjathrow.png",
+      "resource_path": "Resources/Skills/Database/2_NinjaThrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 264.0,
+      "y": 322.0,
+      "node_name": "NinjaThrow",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 9,
+      "name": "Dash Strike",
+      "description": "Burst forward, damaging enemies you pass through, invulnerable for the whole dash. Release early to cut the dash short.",
+      "type_ids": [
+        1,
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/dash_strike.png",
+      "resource_path": "Resources/Skills/Database/9_DashStrike.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 303.0,
+      "y": 121.0,
+      "node_name": "DashStrike",
+      "types": "Melee, Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 18,
+      "name": "Triple Throw",
+      "description": "Snap out three throwing knives in a tight fan, each landing as its own hit with its own crit and element roll.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/triple_throw.png",
+      "resource_path": "Resources/Skills/Database/18_TripleThrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 342.0,
+      "y": 422.0,
+      "node_name": "TripleThrow",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 33,
+      "name": "Soul Shot",
+      "description": "Draw back and loose a heavy bolt that punches through up to two enemies, hitting harder the farther it flies, up to x1.3. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/soul_shot.png",
+      "resource_path": "Resources/Skills/Database/33_SoulShot.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 221.0,
+      "y": 295.0,
+      "node_name": "SoulShot",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 34,
+      "name": "Arrow Rain",
+      "description": "Loose a volley of five magic arrows that curve toward monsters ahead. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        3,
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/arrow_rain.png",
+      "resource_path": "Resources/Skills/Database/34_ArrowRain.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 164.0,
+      "y": 323.0,
+      "node_name": "ArrowRain",
+      "types": "Faith, Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 43,
+      "name": "True Shot",
+      "description": "Charge and release to mark the target with an exposed bomb that feeds on all damage it takes. When full it detonates for 300% of your hit, and if the target dies the blast jumps to the nearest monster. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/true_shot.png",
+      "resource_path": "Resources/Skills/Database/43_TrueShot.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 180.0,
+      "y": 348.0,
+      "node_name": "TrueShot",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 44,
+      "name": "Arrow Storm",
+      "description": "Release a standing barrage of eight arrows that curve toward monsters ahead. Your draw at release sets the power of the whole barrage, from a third on a tap to full.",
+      "type_ids": [
+        4,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/arrow_rain.png",
+      "resource_path": "Resources/Skills/Database/44_ArrowStorm.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 116.0,
+      "y": 366.0,
+      "node_name": "ArrowStorm",
+      "types": "Range, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 45,
+      "name": "Cursed Throw",
+      "description": "Throw a cursed kunai that chains between monsters, cursing each one. Whenever anyone hits a cursed enemy, every enemy you cursed takes 50% of a Cursed Throw hit (5x on bosses), up to 3 times. Death spreads the curse.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/cursed_throw.png",
+      "resource_path": "Resources/Skills/Database/45_CursedThrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 300.0,
+      "y": 367.0,
+      "node_name": "CursedThrow",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 46,
+      "name": "Shadow Twin",
+      "description": "Toggle. A shadow repeats every skill you cast for 7.2(+2.4/lv)% of your damage, and if a blow would kill you the twin dies in your place, leaving you at 1 HP.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/ShadowTwin.png",
+      "resource_path": "Resources/Skills/Database/46_ShadowTwin.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 270.0,
+      "y": 438.0,
+      "node_name": "ShadowTwin",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 49,
+      "name": "Shadow Step",
+      "description": "Turn invisible, evading every attack, with 38(+2/lv) Speed and 7.1(+0.375/lv) Jump while hidden. When you reappear, Ambush grants 6.48(+3.402/lv)% global damage. Multiplies with your other buff bonuses.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/ShadowStep.png",
+      "resource_path": "Resources/Skills/Database/49_ShadowStep.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 233.0,
+      "y": 369.0,
+      "node_name": "ShadowStep",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 59,
+      "name": "Range",
+      "description": "Your Range proficiency. It levels on its own as you deal Range damage, gates which Range skills you can learn, and lifts your Range damage as it grows. Caps at 99.",
+      "type_ids": [
+        4
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/UI/Icons/Attribute/range_damage_icon.png",
+      "resource_path": "Resources/Skills/Database/59_Range.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 264.0,
+      "y": 282.0,
+      "node_name": "Range",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 69,
+      "name": "Dash",
+      "description": "Dash in the direction you hold, untouchable for the whole dash, phasing through terrain when safe ground waits on the far side. Release early to stop short.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/dash.png",
+      "resource_path": "Resources/Skills/Database/69_Dash.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 265.0,
+      "y": 371.0,
+      "node_name": "Dash",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 70,
+      "name": "Siphon",
+      "description": "Throw a siphoning knife that tears life and mana out of its target and returns them to you as drifting wisps, restoring 1.5(+1.5/lv) HP plus 5% of your max HP, and 0.5(+0.5/lv) MP plus 3% of your max MP.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/siphon.png",
+      "resource_path": "Resources/Skills/Database/70_Siphon.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 328.0,
+      "y": 356.0,
+      "node_name": "ShadowStep2",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 71,
+      "name": "Seirei",
+      "description": "Throw two spirit-charged knives that always trigger your element's effect on hit, no chance roll needed.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/seirei.png",
+      "resource_path": "Resources/Skills/Database/71_Seirei.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 306.0,
+      "y": 430.0,
+      "node_name": "Seirei",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 72,
+      "name": "Heaven Arrow",
+      "description": "Summon a halo above your head that fires 25 homing arrows at nearby monsters while you keep fighting, dodging, or running.",
+      "type_ids": [
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/heaven_arrow.png",
+      "resource_path": "Resources/Skills/Database/72_HeavenArrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 202.0,
+      "y": 429.0,
+      "node_name": "HeavenArrow",
+      "types": "Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 73,
+      "name": "Bullseye",
+      "description": "Steady your aim, adding 9(+2/lv) Crit Rate plus a bonus from your LUK and DEX. Nearby party members gain half of the crit rate bonus while it lasts.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/bullseye.png",
+      "resource_path": "Resources/Skills/Database/73_Bullseye.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 234.0,
+      "y": 435.0,
+      "node_name": "Bullseye",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 74,
+      "name": "Feather Jump",
+      "description": "Launch upward and drift down slowly, gaining 7(+2.31/lv)% global damage while Airborne. Multiplies with your other buff bonuses.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/feather_jump.png",
+      "resource_path": "Resources/Skills/Database/74_FeatherJump.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 207.0,
+      "y": 362.0,
+      "node_name": "FeatherJump",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 75,
+      "name": "Force of Will",
+      "description": "Channel a hunger that drags the four furthest enemies around you toward you twice a second, damaging them as it pulls. You stay free to move; bosses are untouched. Your will hardens you for 15(+2.368/lv) Defense while it lasts.",
+      "type_ids": [
+        3,
+        1
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/Force of will.png",
+      "resource_path": "Resources/Skills/Database/75_ForceofWill.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 366.0,
+      "y": 79.0,
+      "node_name": "ForceofWill",
+      "types": "Faith, Melee",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 77,
+      "name": "Realm Piercing Arrow",
+      "description": "Charge a massive arrow that tears through terrain and monsters alike until it leaves the map, dealing double damage to bosses. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/realm_piercing_arrow.png",
+      "resource_path": "Resources/Skills/Database/77_RealmPiercingArrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 142.0,
+      "y": 394.0,
+      "node_name": "RealmPiercingArrow",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 86,
+      "name": "Phasing",
+      "description": "Toggle. Leave after-images behind as you move, gaining 18(+2.21/lv) Speed and global damage that grows with how fast you are, up to 8.1(+1.94/lv)%. Your Dodge Chance grows the same way, up to 10(+1.316/lv)% at full speed. Lowers your MP regen by 1(+0.15/lv) per tick. Multiplies with your other buff bonuses. Trains as you travel with it on, faster the faster you move, and only over ground you have not crossed recently. Nearby party members gain half of the Speed while you have it on.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/phrasing_icon.png",
+      "resource_path": "Resources/Skills/Database/86_Phrasing.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 112.0,
+      "y": 136.0,
+      "node_name": "Phrasing",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 91,
+      "name": "Holy Arrow",
+      "description": "A basic attack: charge a blessed arrow that homes onto a monster and chains to the next with every hit. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/holy_arrow_icon.png",
+      "resource_path": "Resources/Skills/Database/91_HolyArrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 311.0,
+      "y": 293.0,
+      "node_name": "HolyArrow",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 92,
+      "name": "Flare Arrow",
+      "description": "Charge an arrow of holy flame that detonates on impact, then walks two more explosions across the pack. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/flare_arrow_icon.png",
+      "resource_path": "Resources/Skills/Database/92_FlareArrow.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 354.0,
+      "y": 341.0,
+      "node_name": "FlareArrow",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 93,
+      "name": "Holy Field",
+      "description": "Charge and loose an arrow of light that erupts into a radiant field, searing everything inside once a second and slowing enemies by 40% while they stand in it. Tap for a third of the damage, full draw for all of it.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/holy_field_icon.png",
+      "resource_path": "Resources/Skills/Database/93_HolyField.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 370.0,
+      "y": 319.0,
+      "node_name": "HolyField",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 94,
+      "name": "Arrow Infusion",
+      "description": "Toggle. Your projectile hits weaken monsters, cutting their damage and shredding their armor, while all of your Crit Rate becomes Elemental Chance and all of your Crit Damage becomes Elemental Potency. Lowers your MP regen by 1(+0.15/lv) per tick. Trains from your projectile hits while it is on.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/arrow_infusion_icon.png",
+      "resource_path": "Resources/Skills/Database/94_ArrowInfusion.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 369.0,
+      "y": 405.0,
+      "node_name": "ArrowInfusion",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 95,
+      "name": "Clarity",
+      "description": "Toggle. Monsters suffering from any status effect take x1.1008(+1.68%/lv) damage from you. Lowers your MP regen by 2(+0.15/lv) per tick. Trains from hits on monsters suffering a status effect.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/clarity_icon.png",
+      "resource_path": "Resources/Skills/Database/95_Clarity.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 393.0,
+      "y": 384.0,
+      "node_name": "Clarity",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 98,
+      "name": "Messenger",
+      "description": "Send a blessed arrow to your chosen party member, shielding them for 15(+5/lv) plus 3(+0.5/lv)% of your Range and Faith damage for 4 seconds, and lacing their next 10 hits with true damage drawn from your power. Casting it with no ally to receive it shields you for a quarter as much. The experience returns to you.",
+      "type_ids": [
+        4,
+        3
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/messenger_icon.png",
+      "resource_path": "Resources/Skills/Database/98_Messenger.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 430.0,
+      "y": 338.0,
+      "node_name": "Messenger",
+      "types": "Range, Faith",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 104,
+      "name": "Companion",
+      "description": "Toggle. A hawk companion flies at your side: your attacks have a 6(+1.74/lv)% chance to strike again at full strength (shadow clones never trigger it), and you and nearby party members gain 1(+0.32/lv) Accuracy and 1(+0.37/lv) Damage Balance. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        2,
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/companion_skill_icon.png",
+      "resource_path": "Resources/Skills/Database/104_Companion.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 171.0,
+      "y": 412.0,
+      "node_name": "Companion",
+      "types": "Magic, Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 108,
+      "name": "Nimble",
+      "description": "Passive stance. Stay unhit for 12(-0.26/lv)s to prime a perfect dodge: while primed your Range and Magic damage rise 3.48(+1.08/lv)% (multiplying with your other buff bonuses), and the dodge negates the next hit, granting 1.5s of invisibility and a 3s Ambush. Nearby party members gain 15% Dodge Chance.",
+      "type_ids": [
+        4,
+        2
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/ghost_charge.png",
+      "resource_path": "Resources/Skills/Database/108_Nimble.tres",
+      "tree": "Combat Skills",
+      "branch": "Range",
+      "x": 97.0,
+      "y": 336.0,
+      "node_name": "Nimble",
+      "types": "Range, Magic",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 10,
+      "name": "Herbalism",
+      "description": "Your bond with growing things. Cast it to reveal every herb patch and tree node on the map, then walk up and gather. Higher proficiency finds rarer herbs and bigger stacks. Levels up to 99 as you gather.",
+      "type_ids": [
+        5
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/10_herbalism.png",
+      "resource_path": "Resources/Skills/Database/10_Herbalism.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 218.0,
+      "y": 291.0,
+      "node_name": "Herbalism",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 11,
+      "name": "Mining",
+      "description": "Your eye for stone. Cast it to reveal every ore node on the map, then walk up and mine. Higher proficiency finds rarer ore and bigger stacks. Levels up to 99 as you mine.",
+      "type_ids": [
+        5
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/mining.png",
+      "resource_path": "Resources/Skills/Database/11_Mining.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 220.0,
+      "y": 245.0,
+      "node_name": "Mining",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 12,
+      "name": "Fishing",
+      "description": "Cast a line into any water and wait for a bite. Higher proficiency hooks rarer fish and bigger hauls, and fish pay five times the gathering EXP of herbs or ore. Levels up to 99.",
+      "type_ids": [
+        5
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/fishing.png",
+      "resource_path": "Resources/Skills/Database/12_Fishing.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 250.0,
+      "y": 213.0,
+      "node_name": "Fishing",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 13,
+      "name": "Merchant",
+      "description": "Plant a personal stall that sells your Auction House listings in person at a reduced 4% sale fee instead of the Auction House's 5%. One stall at a time; it stands for 72 hours.",
+      "type_ids": [
+        7
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/merchant.png",
+      "resource_path": "Resources/Skills/Database/13_Merchant.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 161.0,
+      "y": 263.0,
+      "node_name": "Merchant",
+      "types": "Utility",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 14,
+      "name": "Alchemy",
+      "description": "Your standing as an alchemist. Unlocks potion, dye, soul and crystal recipes up to level 99, brewed instantly with no minigame. Crafting levels it up.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/alchemy.png",
+      "resource_path": "Resources/Skills/Database/14_Alchemy.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 342.0,
+      "y": 290.0,
+      "node_name": "Alchemy",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 15,
+      "name": "Weapon Smithing",
+      "description": "Your standing at the forge. Unlocks weapon and shield recipes up to level 93; every equipment piece is forged through the card minigame, where the cards you play decide its stats. Crafting levels it up.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blacksmithing.png",
+      "resource_path": "Resources/Skills/Database/15_WeaponSmithing.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 326.0,
+      "y": 222.0,
+      "node_name": "WeaponSmithing",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 16,
+      "name": "Cooking",
+      "description": "Your standing in the kitchen. Unlocks dish recipes up to level 93, each carrying buffs to eat before a fight; finished dishes go through the cooking card minigame for bonus stats. Crafting levels it up.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/cooking.png",
+      "resource_path": "Resources/Skills/Database/16_Cooking.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 319.0,
+      "y": 322.0,
+      "node_name": "Cooking",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 39,
+      "name": "Grapple",
+      "description": "Retired skill. It once fired a grappling hook that reeled you toward terrain, but the grappling hook equipment slot has been removed and this skill can no longer be learned or used.",
+      "type_ids": [
+        7
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/grappling_hook.png",
+      "resource_path": "Resources/Skills/Database/39_Grapple.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 283.0,
+      "y": 299.0,
+      "node_name": "Grapple",
+      "types": "Utility",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 65,
+      "name": "Nature's veil",
+      "description": "Toggle. Blend into the scenery and turn invisible: monsters stop hunting you and their attacks pass through you, while gathering, Dash and Blink all leave the veil intact. Anything else you do drops it, including damage dealt on your behalf by a familiar. The veil only holds against monsters up to 10 levels above your better gathering profession, Mining or Herbalism, and it cannot be lit at all on a map that holds something bigger, nor in dungeons, party quests or boss maps. Lowers your MP regen by 1(+0.15/lv) per tick.",
+      "type_ids": [
+        4
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/natures_veil.png",
+      "resource_path": "Resources/Skills/Database/65_NaturesVeil.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 181.0,
+      "y": 341.0,
+      "node_name": "Herbalism2",
+      "types": "Range",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 66,
+      "name": "Armor Crafting",
+      "description": "Your standing as an armorer. Unlocks the biggest recipe list in the game, armor from head to toe up to level 94, forged through the card minigame where the cards you play decide its stats. Crafting levels it up.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blacksmithing.png",
+      "resource_path": "Resources/Skills/Database/66_ArmorCrafting.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 345.0,
+      "y": 253.0,
+      "node_name": "ArmorCrafting",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 67,
+      "name": "Jewelry Crafting",
+      "description": "Your standing at the jeweler's bench. Unlocks ring recipes up to level 94, cut through the card minigame where the cards you play decide the stats. Crafting levels it up.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blacksmithing.png",
+      "resource_path": "Resources/Skills/Database/67_JewelryCrafting.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 289.0,
+      "y": 203.0,
+      "node_name": "JewelryCrafting",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 68,
+      "name": "Artisan Crafting",
+      "description": "Your standing as an artisan. Unlocks the instrument bench (flute, bass guitar, piano) and grows your treasure-finding as it levels.",
+      "type_ids": [
+        6
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/blacksmithing.png",
+      "resource_path": "Resources/Skills/Database/68_ArtisanCrafting.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 245.0,
+      "y": 323.0,
+      "node_name": "ArtisanCrafting",
+      "types": "Crafting",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 78,
+      "name": "Prospector",
+      "description": "Your trained eye for a rich seam. Mining nodes have a chance to spawn special, carrying extra resources at the price of a harder minigame. Caps at level 20.",
+      "type_ids": [
+        5
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/prospector.png",
+      "resource_path": "Resources/Skills/Database/78_prospector.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 165.0,
+      "y": 221.0,
+      "node_name": "Prospector",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 79,
+      "name": "Botanist",
+      "description": "Your trained eye for a rare patch. Herb nodes have a chance to spawn special, carrying extra resources at the price of a harder minigame. Caps at level 20.",
+      "type_ids": [
+        5
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/79_botanistpng.png",
+      "resource_path": "Resources/Skills/Database/79_botanist.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 163.0,
+      "y": 302.0,
+      "node_name": "Botanist",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 80,
+      "name": "Pickaxe Frenzy",
+      "description": "A miner's hot streak. Mining minigames can erupt into a three-bundle frenzy, all rows at once; keep chaining until a press advances nothing. Caps at level 20.",
+      "type_ids": [
+        5
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/pickaxe_frenzy.png",
+      "resource_path": "Resources/Skills/Database/80_PickaxeFrenzy.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 117.0,
+      "y": 192.0,
+      "node_name": "PickaxeFrenzy",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 81,
+      "name": "Sickle Frenzy",
+      "description": "A gatherer's hot streak. Herbalism minigames can erupt into a three-bundle frenzy, all rows at once; keep chaining until a press advances nothing. Caps at level 20.",
+      "type_ids": [
+        5
+      ],
+      "passive": true,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/81_sickleFrenzy.png",
+      "resource_path": "Resources/Skills/Database/81_SickleFrenzy.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 103.0,
+      "y": 307.0,
+      "node_name": "SickleFrenzy",
+      "types": "Gathering",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    },
+    {
+      "skill_id": 99,
+      "name": "Transmutation",
+      "description": "Rewrite a weapon's element. Slot a weapon, pick a new element, and pay the alchemy matter matching the weapon's tier, the essence matching your chosen element and tier, and Soul Crystals. Every echo already on the weapon raises the whole cost by 30%. Dark items cannot be transmuted.",
+      "type_ids": [
+        7
+      ],
+      "passive": false,
+      "hidden_in_client_data": false,
+      "texture_path": "Sprites/Skills/transmutation.png",
+      "resource_path": "Resources/Skills/Database/99_Transmutation.tres",
+      "tree": "Life Skills",
+      "branch": "Life",
+      "x": 373.0,
+      "y": 313.0,
+      "node_name": "Transmutation",
+      "types": "Utility",
+      "requirements": "Provided by the game server at runtime; not stored in the PCK"
+    }
+  ]
+}

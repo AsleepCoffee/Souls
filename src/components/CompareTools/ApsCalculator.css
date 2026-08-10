@@ -1,0 +1,108 @@
+.aps-calc {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+}
+
+.aps-calc h3 {
+  margin: 0 0 6px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.aps-calc__intro {
+  margin: 0 0 16px;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  max-width: 68ch;
+}
+
+.aps-calc__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.aps-calc__field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.aps-calc__field input,
+.aps-calc__field select {
+  background: var(--bg-input);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 7px 9px;
+  font-size: 0.88rem;
+}
+
+.aps-calc__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  align-self: end;
+  padding-bottom: 6px;
+}
+
+.aps-calc__result {
+  background: var(--bg-panel-raised);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+}
+
+.aps-calc__result-value {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--accent-strong);
+  margin-bottom: 6px;
+}
+
+.aps-calc__formula {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.aps-calc__note {
+  margin: 10px 0 0;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.aps-calc__details {
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.aps-calc__details summary {
+  cursor: pointer;
+  color: var(--link);
+}
+
+.aps-calc__details p {
+  margin: 8px 0 0;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.aps-calc__details code {
+  font-family: var(--font-mono);
+  background: var(--bg-input);
+  padding: 0 4px;
+  border-radius: 3px;
+}

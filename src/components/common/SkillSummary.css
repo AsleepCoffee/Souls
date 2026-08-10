@@ -1,0 +1,99 @@
+.skill-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+}
+
+.skill-summary__header {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.skill-summary__name {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.skill-summary__id {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.skill-summary__badges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.skill-summary__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+}
+
+.skill-summary__row--stacked {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.skill-summary__label {
+  color: var(--text-muted);
+  min-width: 108px;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+}
+
+.skill-summary__muted {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+}
+
+.skill-summary__description {
+  margin: 2px 0 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.skill-summary--compact .skill-summary__description {
+  font-size: 0.82rem;
+}
+
+.skill-summary__effects h4 {
+  margin: 0 0 6px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.skill-summary__effects ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skill-summary__effects code {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: var(--accent-strong);
+}
