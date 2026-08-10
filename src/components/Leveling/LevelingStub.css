@@ -1,0 +1,30 @@
+.leveling-stub {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 12px 4px 40px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.leveling-stub h2 {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  margin: 0 0 14px;
+}
+
+.leveling-stub p {
+  margin: 0 0 14px;
+}
+
+.leveling-stub code {
+  font-family: var(--font-mono);
+  background: var(--bg-input);
+  padding: 0 4px;
+  border-radius: 3px;
+  font-size: 0.88em;
+}
+
+.leveling-stub__footnote {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

@@ -11,6 +11,8 @@ import { ItemsPage } from "./pages/ItemsPage";
 import { ItemDetail } from "./components/Items/ItemDetail";
 import { MonstersPage } from "./pages/MonstersPage";
 import { MonsterDetail } from "./components/Monsters/MonsterDetail";
+import { MapsStub } from "./components/Maps/MapsStub";
+import { LevelingStub } from "./components/Leveling/LevelingStub";
 import "./App.css";
 
 const siteData = rawSiteData as unknown as SiteData;
@@ -32,11 +34,8 @@ function App() {
           <Route path="/items/:slug" element={<ItemDetail />} />
           <Route path="/monsters" element={<MonstersPage />} />
           <Route path="/monsters/:slug" element={<MonsterDetail />} />
-          <Route path="/maps" element={<ComingSoon title="Maps" note="Maps page coming in a later phase." />} />
-          <Route
-            path="/leveling"
-            element={<ComingSoon title="Leveling" note="Leveling page coming in a later phase." />}
-          />
+          <Route path="/maps" element={<MapsStub />} />
+          <Route path="/leveling" element={<LevelingStub />} />
           <Route
             path="/build-planner"
             element={<ComingSoon title="Build Planner" note="Loadout planner coming in a later phase." />}
