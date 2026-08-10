@@ -76,3 +76,24 @@ export const ITEM_CATEGORY_COLOR: Record<ItemCategory, string> = {
 };
 
 export const ITEM_CATEGORIES: ItemCategory[] = ["general", "weapon", "gathering_material", "crafting_material"];
+
+// Canonical slot list for the Loadout Planner — same mapping as
+// data-pipeline/build-items-data.mjs's EQUIPMENT_SLOT_LABEL (kept in sync by
+// hand; the pipeline can't share TS constants with the frontend). Slot 6 and
+// 12 are intentionally absent — no friendly label was found for either in
+// either of the two source scripts that corroborate this mapping.
+export const EQUIPMENT_SLOT_LABEL: Record<number, string> = {
+  1: "Hat",
+  2: "Topwear",
+  3: "Accessory",
+  4: "Aura",
+  5: "Weapon",
+  7: "Backpack",
+  8: "Face Accessory",
+  9: "Bottomwear",
+  10: "Shoes",
+  11: "Cape",
+  13: "Accessory 2",
+};
+
+export const EQUIPMENT_SLOT_TYPES: number[] = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13];

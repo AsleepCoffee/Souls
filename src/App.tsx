@@ -13,6 +13,7 @@ import { MonstersPage } from "./pages/MonstersPage";
 import { MonsterDetail } from "./components/Monsters/MonsterDetail";
 import { MapsStub } from "./components/Maps/MapsStub";
 import { LevelingStub } from "./components/Leveling/LevelingStub";
+import { BuildPlannerPage } from "./pages/BuildPlannerPage";
 import "./App.css";
 
 const siteData = rawSiteData as unknown as SiteData;
@@ -36,10 +37,7 @@ function App() {
           <Route path="/monsters/:slug" element={<MonsterDetail />} />
           <Route path="/maps" element={<MapsStub />} />
           <Route path="/leveling" element={<LevelingStub />} />
-          <Route
-            path="/build-planner"
-            element={<ComingSoon title="Build Planner" note="Loadout planner coming in a later phase." />}
-          />
+          <Route path="/build-planner" element={<BuildPlannerPage />} />
           <Route path="*" element={<ComingSoon title="Not found" note="That page doesn't exist." />} />
         </Routes>
       </main>
