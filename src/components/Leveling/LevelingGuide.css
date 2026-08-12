@@ -1,0 +1,117 @@
+.leveling-guide {
+  max-width: 720px;
+  margin: 32px auto 0;
+}
+
+.leveling-guide__heading {
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  margin: 0 0 8px;
+}
+
+.leveling-guide__note {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.leveling-guide__steps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.leveling-guide__step {
+  display: flex;
+  gap: 14px;
+  padding: 14px 4px;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.leveling-guide__step:first-child {
+  border-top: none;
+}
+
+.leveling-guide__step-number {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-default);
+  color: var(--accent-strong);
+  font-family: var(--font-pixel);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leveling-guide__step-body {
+  min-width: 0;
+  flex: 1;
+}
+
+.leveling-guide__step-title {
+  margin: 0 0 4px;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.leveling-guide__step-title a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.leveling-guide__step-title a:hover {
+  color: var(--accent-strong);
+  text-decoration: underline;
+}
+
+.leveling-guide__step-target {
+  font-family: var(--font-pixel);
+  font-size: 0.85rem;
+  color: var(--accent-strong);
+}
+
+.leveling-guide__step-desc {
+  margin: 0 0 8px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.leveling-guide__step-monsters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.leveling-guide__monster-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  padding: 2px 8px 2px 4px;
+  text-decoration: none;
+}
+
+.leveling-guide__monster-chip:hover {
+  border-color: var(--border-strong);
+  color: var(--text-primary);
+}

@@ -13,7 +13,7 @@ import { ItemDetail } from "./components/Items/ItemDetail";
 import { MonstersPage } from "./pages/MonstersPage";
 import { MonsterDetail } from "./components/Monsters/MonsterDetail";
 import { MapsPage } from "./pages/MapsPage";
-import { LevelingStub } from "./components/Leveling/LevelingStub";
+import { LevelingPage } from "./pages/LevelingPage";
 import { BuildPlannerPage } from "./pages/BuildPlannerPage";
 import { CommandPalette } from "./components/CommandPalette/CommandPalette";
 import "./App.css";
@@ -51,7 +51,7 @@ function App() {
           <Route path="/monsters" element={<MonstersPage />} />
           <Route path="/monsters/:slug" element={<MonsterDetail />} />
           <Route path="/maps" element={<MapsPage />} />
-          <Route path="/leveling" element={<LevelingStub />} />
+          <Route path="/leveling" element={<LevelingPage />} />
           <Route path="/build-planner" element={<BuildPlannerPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

@@ -7,14 +7,6 @@ import "./SkillNode.css";
 
 const NODE_SIZE = 34;
 
-// EXPERIMENTAL: the recovered skill_window.tscn positions each node's 20x20 icon box via
-// offset_left/offset_top from its anchor point, i.e. the box's TOP-LEFT corner — but
-// position.value.x/y (as extracted into the pre-parsed skill-tree JSON) may have recorded that
-// same top-left corner rather than the box's true center. If so, every node is uniformly 10px
-// up-left of where it should render against the 576x546 background art. Testing that here —
-// revert to 0,0 if this doesn't visually match the game/wiki reference.
-const POSITION_CORRECTION = { x: 10, y: 10 };
-
 export const SkillNode = forwardRef<
   HTMLButtonElement,
   {
@@ -35,8 +27,8 @@ export const SkillNode = forwardRef<
       type="button"
       className={`tree-node tree-node--${cls} ${selected ? "tree-node--selected" : ""}`}
       style={{
-        left: skill.position.value.x + POSITION_CORRECTION.x,
-        top: skill.position.value.y + POSITION_CORRECTION.y,
+        left: skill.position.value.x,
+        top: skill.position.value.y,
         width: NODE_SIZE,
         height: NODE_SIZE,
         marginLeft: -NODE_SIZE / 2,

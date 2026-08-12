@@ -11,7 +11,7 @@
 
 .site-header__title {
   margin: 0 0 4px;
-  font-family: var(--font-display);
+  font-family: var(--font-hero);
   font-size: 1.4rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -68,8 +68,8 @@
 }
 
 .site-header__search-kbd {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-family: var(--font-pixel);
+  font-size: 0.78rem;
   color: var(--text-muted);
   background: var(--bg-panel);
   border: 1px solid var(--border-subtle);
@@ -84,8 +84,8 @@
 }
 
 .site-header__build-badge {
-  font-family: var(--font-mono);
-  font-size: 0.74rem;
+  font-family: var(--font-pixel);
+  font-size: 0.85rem;
   color: var(--accent-strong);
   background: var(--accent-soft);
   border: 1px solid rgba(207, 157, 79, 0.4);

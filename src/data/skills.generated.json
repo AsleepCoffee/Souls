@@ -2,7 +2,7 @@
   "meta": {
     "steam_app": 3479090,
     "build_id": "24640923",
-    "generated_at": "2026-08-11T03:34:06.448Z",
+    "generated_at": "2026-08-12T18:43:12.197Z",
     "pipeline_version": "1.1.0",
     "source_file": "data-pipeline/source/souls-remnant-skill-tree.json",
     "total_combat_nodes": 79,
@@ -46,11 +46,11 @@
       },
       "position": {
         "value": {
-          "x": 240,
-          "y": 119
+          "x": 270,
+          "y": 149
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/heavystrike.png",
@@ -152,11 +152,11 @@
       },
       "position": {
         "value": {
-          "x": 264,
-          "y": 322
+          "x": 294,
+          "y": 352
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/ninjathrow.png",
@@ -259,11 +259,11 @@
       },
       "position": {
         "value": {
-          "x": 272,
-          "y": 116
+          "x": 302,
+          "y": 146
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/taunt.png",
@@ -375,11 +375,11 @@
       },
       "position": {
         "value": {
-          "x": 388,
-          "y": 270
+          "x": 418,
+          "y": 300
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/revitalize.png",
@@ -481,11 +481,11 @@
       },
       "position": {
         "value": {
-          "x": 334,
-          "y": 246
+          "x": 364,
+          "y": 276
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/frost.png",
@@ -587,11 +587,11 @@
       },
       "position": {
         "value": {
-          "x": 76,
-          "y": 212
+          "x": 106,
+          "y": 242
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/gravitywell.png",
@@ -694,11 +694,11 @@
       },
       "position": {
         "value": {
-          "x": 303,
-          "y": 121
+          "x": 333,
+          "y": 151
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/dash_strike.png",
@@ -800,11 +800,11 @@
       },
       "position": {
         "value": {
-          "x": 342,
-          "y": 422
+          "x": 372,
+          "y": 452
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/triple_throw.png",
@@ -906,11 +906,11 @@
       },
       "position": {
         "value": {
-          "x": 143,
-          "y": 302
+          "x": 173,
+          "y": 332
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/flame_barrage.png",
@@ -1012,11 +1012,11 @@
       },
       "position": {
         "value": {
-          "x": 263,
-          "y": 55
+          "x": 293,
+          "y": 85
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/upward_strike.png",
@@ -1118,11 +1118,11 @@
       },
       "position": {
         "value": {
-          "x": 449,
-          "y": 230
+          "x": 479,
+          "y": 260
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/Elemental_charge.png",
@@ -1276,11 +1276,11 @@
       },
       "position": {
         "value": {
-          "x": 392,
-          "y": 241
+          "x": 422,
+          "y": 271
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/armor_link.png",
@@ -1383,11 +1383,11 @@
       },
       "position": {
         "value": {
-          "x": 133,
-          "y": 274
+          "x": 163,
+          "y": 304
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/mana_shield.png",
@@ -1545,11 +1545,11 @@
       },
       "position": {
         "value": {
-          "x": 378,
-          "y": 295
+          "x": 408,
+          "y": 325
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/burst_shield.png",
@@ -1662,11 +1662,11 @@
       },
       "position": {
         "value": {
-          "x": 443,
-          "y": 311
+          "x": 473,
+          "y": 341
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/medishot.png",
@@ -1787,11 +1787,11 @@
       },
       "position": {
         "value": {
-          "x": 221,
-          "y": 295
+          "x": 251,
+          "y": 325
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/soul_shot.png",
@@ -1904,11 +1904,11 @@
       },
       "position": {
         "value": {
-          "x": 164,
-          "y": 323
+          "x": 194,
+          "y": 353
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/arrow_rain.png",
@@ -2010,11 +2010,11 @@
       },
       "position": {
         "value": {
-          "x": 335,
-          "y": 68
+          "x": 365,
+          "y": 98
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/grapple.png",
@@ -2116,11 +2116,11 @@
       },
       "position": {
         "value": {
-          "x": 265,
-          "y": 179
+          "x": 295,
+          "y": 209
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/slash.png",
@@ -2232,11 +2232,11 @@
       },
       "position": {
         "value": {
-          "x": 195,
-          "y": 247
+          "x": 225,
+          "y": 277
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/skill_magic_burst.png",
@@ -2338,11 +2338,11 @@
       },
       "position": {
         "value": {
-          "x": 132,
-          "y": 249
+          "x": 162,
+          "y": 279
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/blink.png",
@@ -2445,11 +2445,11 @@
       },
       "position": {
         "value": {
-          "x": 180,
-          "y": 348
+          "x": 210,
+          "y": 378
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/true_shot.png",
@@ -2552,11 +2552,11 @@
       },
       "position": {
         "value": {
-          "x": 116,
-          "y": 366
+          "x": 146,
+          "y": 396
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/arrow_rain.png",
@@ -2658,11 +2658,11 @@
       },
       "position": {
         "value": {
-          "x": 300,
-          "y": 367
+          "x": 330,
+          "y": 397
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/cursed_throw.png",
@@ -2764,11 +2764,11 @@
       },
       "position": {
         "value": {
-          "x": 270,
-          "y": 438
+          "x": 300,
+          "y": 468
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/ShadowTwin.png",
@@ -2901,11 +2901,11 @@
       },
       "position": {
         "value": {
-          "x": 452,
-          "y": 258
+          "x": 482,
+          "y": 288
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/divine_protection.png",
@@ -3018,11 +3018,11 @@
       },
       "position": {
         "value": {
-          "x": 335,
-          "y": 136
+          "x": 365,
+          "y": 166
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/shield_slam.png",
@@ -3134,11 +3134,11 @@
       },
       "position": {
         "value": {
-          "x": 233,
-          "y": 369
+          "x": 263,
+          "y": 399
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/ShadowStep.png",
@@ -3269,11 +3269,11 @@
       },
       "position": {
         "value": {
-          "x": 222,
-          "y": 58
+          "x": 252,
+          "y": 88
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/Onslaught.png",
@@ -3375,11 +3375,11 @@
       },
       "position": {
         "value": {
-          "x": 144,
-          "y": 189
+          "x": 174,
+          "y": 219
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/Gust.png",
@@ -3481,11 +3481,11 @@
       },
       "position": {
         "value": {
-          "x": 447,
-          "y": 205
+          "x": 477,
+          "y": 235
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/smite.png",
@@ -3587,11 +3587,11 @@
       },
       "position": {
         "value": {
-          "x": 87,
-          "y": 186
+          "x": 117,
+          "y": 216
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/star_fall.png",
@@ -3693,11 +3693,11 @@
       },
       "position": {
         "value": {
-          "x": 89,
-          "y": 313
+          "x": 119,
+          "y": 343
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/arcane_surge_icon.png",
@@ -3800,11 +3800,11 @@
       },
       "position": {
         "value": {
-          "x": 184,
-          "y": 71
+          "x": 214,
+          "y": 101
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/whirlwind_icon.png",
@@ -3917,11 +3917,11 @@
       },
       "position": {
         "value": {
-          "x": 157,
-          "y": 166
+          "x": 187,
+          "y": 196
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/crescent_slash_icon.png",
@@ -4024,11 +4024,11 @@
       },
       "position": {
         "value": {
-          "x": 133,
-          "y": 217
+          "x": 163,
+          "y": 247
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/soul_bomb.png",
@@ -4130,11 +4130,11 @@
       },
       "position": {
         "value": {
-          "x": 265,
-          "y": 213
+          "x": 295,
+          "y": 243
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/melee.png",
@@ -4236,11 +4236,11 @@
       },
       "position": {
         "value": {
-          "x": 264,
-          "y": 282
+          "x": 294,
+          "y": 312
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/range_damage_icon.png",
@@ -4342,11 +4342,11 @@
       },
       "position": {
         "value": {
-          "x": 229,
-          "y": 247
+          "x": 259,
+          "y": 277
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/int_damage_icon.png",
@@ -4448,11 +4448,11 @@
       },
       "position": {
         "value": {
-          "x": 300,
-          "y": 246
+          "x": 330,
+          "y": 276
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/faith_icon_2.png",
@@ -4555,11 +4555,11 @@
       },
       "position": {
         "value": {
-          "x": 210,
-          "y": 126
+          "x": 240,
+          "y": 156
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/blood_sacrifice.png",
@@ -4702,11 +4702,11 @@
       },
       "position": {
         "value": {
-          "x": 96,
-          "y": 162
+          "x": 126,
+          "y": 192
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/skill_Empower.png",
@@ -4827,11 +4827,11 @@
       },
       "position": {
         "value": {
-          "x": 386,
-          "y": 212
+          "x": 416,
+          "y": 242
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/divine_blessing.png",
@@ -4961,11 +4961,11 @@
       },
       "position": {
         "value": {
-          "x": 265,
-          "y": 371
+          "x": 295,
+          "y": 401
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/dash.png",
@@ -5067,11 +5067,11 @@
       },
       "position": {
         "value": {
-          "x": 328,
-          "y": 356
+          "x": 358,
+          "y": 386
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/siphon.png",
@@ -5192,11 +5192,11 @@
       },
       "position": {
         "value": {
-          "x": 306,
-          "y": 430
+          "x": 336,
+          "y": 460
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/seirei.png",
@@ -5298,11 +5298,11 @@
       },
       "position": {
         "value": {
-          "x": 202,
-          "y": 429
+          "x": 232,
+          "y": 459
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/heaven_arrow.png",
@@ -5404,11 +5404,11 @@
       },
       "position": {
         "value": {
-          "x": 234,
-          "y": 435
+          "x": 264,
+          "y": 465
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/bullseye.png",
@@ -5520,11 +5520,11 @@
       },
       "position": {
         "value": {
-          "x": 207,
-          "y": 362
+          "x": 237,
+          "y": 392
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/feather_jump.png",
@@ -5637,11 +5637,11 @@
       },
       "position": {
         "value": {
-          "x": 366,
-          "y": 79
+          "x": 396,
+          "y": 109
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/Force of will.png",
@@ -5754,11 +5754,11 @@
       },
       "position": {
         "value": {
-          "x": 304,
-          "y": 59
+          "x": 334,
+          "y": 89
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/bloodlust.png",
@@ -5870,11 +5870,11 @@
       },
       "position": {
         "value": {
-          "x": 142,
-          "y": 394
+          "x": 172,
+          "y": 424
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/realm_piercing_arrow.png",
@@ -5976,11 +5976,11 @@
       },
       "position": {
         "value": {
-          "x": 438,
-          "y": 177
+          "x": 468,
+          "y": 207
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/skill_darkness_fire_icon.png",
@@ -6082,11 +6082,11 @@
       },
       "position": {
         "value": {
-          "x": 218,
-          "y": 196
+          "x": 248,
+          "y": 226
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/magic_slash.png",
@@ -6199,11 +6199,11 @@
       },
       "position": {
         "value": {
-          "x": 181,
-          "y": 142
+          "x": 211,
+          "y": 172
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/luna_step_icon.png",
@@ -6306,11 +6306,11 @@
       },
       "position": {
         "value": {
-          "x": 133,
-          "y": 111
+          "x": 163,
+          "y": 141
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/flash_stike_icon.png",
@@ -6412,11 +6412,11 @@
       },
       "position": {
         "value": {
-          "x": 112,
-          "y": 136
+          "x": 142,
+          "y": 166
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/phrasing_icon.png",
@@ -6591,11 +6591,11 @@
       },
       "position": {
         "value": {
-          "x": 310,
-          "y": 197
+          "x": 340,
+          "y": 227
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/shield_bash_icon.png",
@@ -6697,11 +6697,11 @@
       },
       "position": {
         "value": {
-          "x": 357,
-          "y": 158
+          "x": 387,
+          "y": 188
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/vanguard_icon.png",
@@ -6857,11 +6857,11 @@
       },
       "position": {
         "value": {
-          "x": 410,
-          "y": 124
+          "x": 440,
+          "y": 154
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/cross_strike_icon.png",
@@ -6974,11 +6974,11 @@
       },
       "position": {
         "value": {
-          "x": 423,
-          "y": 149
+          "x": 453,
+          "y": 179
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/perseverance_icon.png",
@@ -7109,11 +7109,11 @@
       },
       "position": {
         "value": {
-          "x": 311,
-          "y": 293
+          "x": 341,
+          "y": 323
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/holy_arrow_icon.png",
@@ -7216,11 +7216,11 @@
       },
       "position": {
         "value": {
-          "x": 354,
-          "y": 341
+          "x": 384,
+          "y": 371
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/flare_arrow_icon.png",
@@ -7323,11 +7323,11 @@
       },
       "position": {
         "value": {
-          "x": 370,
-          "y": 319
+          "x": 400,
+          "y": 349
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/holy_field_icon.png",
@@ -7430,11 +7430,11 @@
       },
       "position": {
         "value": {
-          "x": 369,
-          "y": 405
+          "x": 399,
+          "y": 435
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/arrow_infusion_icon.png",
@@ -7579,11 +7579,11 @@
       },
       "position": {
         "value": {
-          "x": 393,
-          "y": 384
+          "x": 423,
+          "y": 414
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/clarity_icon.png",
@@ -7744,11 +7744,11 @@
       },
       "position": {
         "value": {
-          "x": 154,
-          "y": 87
+          "x": 184,
+          "y": 117
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/crimson_moon_icon.png",
@@ -7851,11 +7851,11 @@
       },
       "position": {
         "value": {
-          "x": 376,
-          "y": 182
+          "x": 406,
+          "y": 212
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/punishment_icon.png",
@@ -7958,11 +7958,11 @@
       },
       "position": {
         "value": {
-          "x": 430,
-          "y": 338
+          "x": 460,
+          "y": 368
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/messenger_icon.png",
@@ -8083,11 +8083,11 @@
       },
       "position": {
         "value": {
-          "x": 304,
-          "y": 87
+          "x": 334,
+          "y": 117
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/undying.png",
@@ -8245,11 +8245,11 @@
       },
       "position": {
         "value": {
-          "x": 78,
-          "y": 87
+          "x": 108,
+          "y": 117
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/blue_moon.png",
@@ -8361,11 +8361,11 @@
       },
       "position": {
         "value": {
-          "x": 72,
-          "y": 244
+          "x": 102,
+          "y": 274
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/focused_mind.png",
@@ -8536,11 +8536,11 @@
       },
       "position": {
         "value": {
-          "x": 77,
-          "y": 279
+          "x": 107,
+          "y": 309
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/familiar_skill_icon.png",
@@ -8686,11 +8686,11 @@
       },
       "position": {
         "value": {
-          "x": 171,
-          "y": 412
+          "x": 201,
+          "y": 442
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/companion_skill_icon.png",
@@ -8864,11 +8864,11 @@
       },
       "position": {
         "value": {
-          "x": 438,
-          "y": 77
+          "x": 468,
+          "y": 107
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/divine_benelovent.png",
@@ -9021,11 +9021,11 @@
       },
       "position": {
         "value": {
-          "x": 453,
-          "y": 285
+          "x": 483,
+          "y": 315
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/dedication.png",
@@ -9161,11 +9161,11 @@
       },
       "position": {
         "value": {
-          "x": 389,
-          "y": 99
+          "x": 419,
+          "y": 129
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/divine_thorn.png",
@@ -9327,11 +9327,11 @@
       },
       "position": {
         "value": {
-          "x": 97,
-          "y": 336
+          "x": 127,
+          "y": 366
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/ghost_charge.png",
@@ -9479,11 +9479,11 @@
       },
       "position": {
         "value": {
-          "x": 413,
-          "y": 361
+          "x": 443,
+          "y": 391
         },
         "provenance": "client_structured",
-        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space."
+        "note": "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs)."
       },
       "icon": {
         "value": "assets/icons/lifeline.png",

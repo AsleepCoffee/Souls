@@ -16,7 +16,7 @@ const SECTIONS: { to: string; title: string; blurb: string }[] = [
   { to: "/items", title: "Items", blurb: "Every item and piece of equipment recovered from the client, with where-to-gather zones and spawn chance where known." },
   { to: "/monsters", title: "Monsters", blurb: "Every monster in the recovered client, cross-linked to the World Map zones it spawns in." },
   { to: "/maps", title: "Maps", blurb: "An interactive Surface/Caves World Map — zone levels, monster spawns, gathering resources with spawn chance, and warp points." },
-  { to: "/leveling", title: "Leveling", blurb: "Character leveling & EXP — status of what's known." },
+  { to: "/leveling", title: "Leveling", blurb: "No EXP curve exists in any recovered file, but there's a player-contributed early-game route to level 10+." },
   { to: "/build-planner", title: "Build Planner", blurb: "Compose an equipment + skill loadout and share it." },
 ];
 

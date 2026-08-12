@@ -244,6 +244,13 @@ Only the assets the site actually renders were copied out of the recovered proje
 - `public/assets/icons/items/*.png` — 1,181 item icons (see `data-pipeline/source/item-icon-manifest.json`).
 - `public/assets/icons/monsters/*.png` — 133 monster icons, 2 monsters have no icon in the source (see
   `data-pipeline/source/monster-icon-manifest.json`).
+- `public/assets/maps/*.png` — World Map background art (Surface, Caves, the road overlay), upscaled via
+  `wiki-export/make-worldmap-images.py`.
+- `public/fonts/{04B_03__,GhastlyPixe,alagard}.{TTF,ttf}` — three of the pixel/fantasy fonts from
+  `UI/Fonts/` in the recovered project. The site's visual style (dark + medium-purple palette, these same
+  font families) is matched to soulsremnant.com's own stylesheet, but the font *files* themselves come from
+  the recovered client, not scraped off the live site — 04B03 in particular is the exact font
+  `Skill.gd`'s level-label uses in-game, not just a look-alike.
 
 No other game assets, and no game code, were copied. The installed game and the recovered project directory
 were not modified.

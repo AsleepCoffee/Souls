@@ -239,9 +239,19 @@ function buildSkillRecord(skill, iconMap, observations) {
     tree: skill.tree,
     damage_types: { value: damage_types, provenance: "client_structured" },
     position: {
-      value: { x: skill.x, y: skill.y },
+      // The pre-parsed export's x/y are correct relative to each other (verified by tracing
+      // every node's actual anchor/offset chain in skill_window.tscn from scratch — zero
+      // structural error, node-for-node) but sit in SkillTreeContainer's own local space, which
+      // is offset from the 576x546 background art's pixel space. SkillTreeBackground is declared
+      // as a 576x546 box centered on that same container anchor point (offset_left=-288,
+      // offset_top=-273, offset_right=288, offset_bottom=273), so converting into the
+      // background's own coordinates needs +288/+273 — but the export's x/y only reflects an
+      // effective +258/+243, a real, constant (30, 30) shortfall. Corrected here so every
+      // consumer (site, wiki export) gets a value that's actually in the background's pixel
+      // space, rather than re-deriving/reapplying this per consumer.
+      value: { x: skill.x + 30, y: skill.y + 30 },
       provenance: "client_structured",
-      note: "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space.",
+      note: "Instance position from the recovered skill_window.tscn / parsed export, in the 576x546 tree background's coordinate space (background-alignment correction of +30/+30 applied — see build-site-data.mjs).",
     },
     icon: iconFile
       ? { value: `assets/icons/${iconFile}`, provenance: "client_structured" }

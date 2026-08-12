@@ -1,27 +1,49 @@
+@font-face {
+  font-family: "04B03";
+  src: url("/fonts/04B_03__.TTF") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GhastlyPixel";
+  src: url("/fonts/GhastlyPixe.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alagard";
+  src: url("/fonts/alagard.ttf") format("truetype");
+  font-display: swap;
+}
+
 :root {
   color-scheme: dark;
 
-  --bg-void: #0a0b0f;
-  --bg-app: #0e1015;
-  --bg-panel: #15171f;
-  --bg-panel-raised: #1b1e28;
-  --bg-panel-hover: #21252f;
-  --bg-input: #12141b;
+  /* Palette matched to soulsremnant.com's own stylesheet (includes/style.css):
+     pure black + medium-purple accent (#9370DB / #b18ff0), same family used for its
+     link/hover/glow colors site-wide. Branch colors (Melee/Range/Magic/Faith) are left
+     untouched — those are sampled from the game's own skill-tree artwork, not site chrome. */
+  --bg-void: #000000;
+  --bg-app: #060507;
+  --bg-panel: #0f0c14;
+  --bg-panel-raised: #17131e;
+  --bg-panel-hover: #1e1828;
+  --bg-input: #0a080d;
 
-  --border-subtle: #262a36;
-  --border-default: #333849;
-  --border-strong: #454c63;
+  --border-subtle: rgba(147, 112, 219, 0.16);
+  --border-default: rgba(147, 112, 219, 0.3);
+  --border-strong: rgba(147, 112, 219, 0.55);
 
-  --text-primary: #e9e7de;
-  --text-secondary: #aeb2c0;
-  --text-muted: #6c7182;
-  --text-faint: #4b5063;
+  --text-primary: #f5f3fa;
+  --text-secondary: #c7c1d6;
+  --text-muted: #9b93ad;
+  --text-faint: #6b6480;
 
-  --accent: #cf9d4f;
-  --accent-strong: #e8b968;
-  --accent-soft: rgba(207, 157, 79, 0.16);
+  --accent: #9370db;
+  --accent-strong: #b18ff0;
+  --accent-soft: rgba(147, 112, 219, 0.18);
 
-  --link: #8fb7e8;
+  --link: #b18ff0;
 
   --branch-melee: #e8746f;
   --branch-range: #d9cf5c;
@@ -39,18 +61,28 @@
   --danger: #e0685a;
   --success: #7fc26b;
 
-  --focus-ring: #e8b968;
+  --focus-ring: #b18ff0;
 
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 14px;
 
-  --shadow-panel: 0 8px 30px rgba(0, 0, 0, 0.45);
-  --shadow-tooltip: 0 6px 24px rgba(0, 0, 0, 0.55);
+  --shadow-panel: 0 8px 30px rgba(0, 0, 0, 0.6);
+  --shadow-tooltip: 0 6px 24px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 8px 24px rgba(147, 112, 219, 0.35);
 
   --font-ui: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
-  --font-display: "Cinzel", "Georgia", serif;
+  /* GhastlyPixel is soulsremnant.com's own h1 font — but only for its actual H1 (it renders as
+     a deliberately "glitchy"/illegible static texture at anything smaller than a hero title).
+     Reserve it for --font-hero; every other heading uses Alagard, a much more legible pixel-serif
+     face from the same recovered UI/Fonts/ folder, as the everyday "fantasy-pixel" display font. */
+  --font-hero: "GhastlyPixel", "Cinzel", "Georgia", serif;
+  --font-display: "Alagard", "Cinzel", "Georgia", serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  /* 04B03 is soulsremnant.com's body font AND the exact font Skill.gd's level-label uses
+     in-game (UI/Fonts/04B_03__.TTF) — used selectively for chrome/HUD-style bits (badges,
+     stat tiles), not dense paragraph or table text, since it's a tiny bitmap-style face. */
+  --font-pixel: "04B03", "JetBrains Mono", monospace;
 
   --transition-fast: 120ms ease;
   --transition-med: 200ms ease;
