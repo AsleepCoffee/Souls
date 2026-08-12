@@ -7,6 +7,7 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { buildIconManifest } from "./lib/icon-manifest.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -54,31 +55,6 @@ function numericCell(field, { unit = "", unknownSortValue = "-1" } = {}) {
     return `| data-sort-value="${unknownSortValue}" | Unknown (server-only)\n`;
   }
   return `| data-sort-value="${field.value}" | ${field.value}${unit}\n`;
-}
-
-function buildIconManifest(skills) {
-  // Multiple skills can share one source texture (e.g. Arrow Rain / Arrow
-  // Storm); only emit one upload entry per unique file, keyed off the first
-  // skill that uses it, and note the rest as "reuses" in the manifest.
-  const iconMap = new Map(); // texture_path -> wiki filename
-  const rows = [["skill_id", "skill_name", "local_icon_path", "suggested_wiki_filename", "notes"]];
-  for (const s of skills) {
-    const iconPath = s.icon.value;
-    if (!iconPath) {
-      rows.push([s.skill_id, s.name.value, "(missing)", "(missing)", "no icon in recovered client"]);
-      continue;
-    }
-    const localPath = `public/${iconPath}`;
-    if (!iconMap.has(iconPath)) {
-      const wikiName = `${s.name.value.replace(/[^\w\s-]/g, "")} icon.png`;
-      iconMap.set(iconPath, wikiName);
-      rows.push([s.skill_id, s.name.value, localPath, wikiName, ""]);
-    } else {
-      rows.push([s.skill_id, s.name.value, localPath, iconMap.get(iconPath), `reuses same file as another skill — upload once`]);
-    }
-  }
-  const csv = rows.map((r) => r.map((c) => `"${String(c).replace(/"/g, '""')}"`).join(",")).join("\n");
-  return { iconMap, csv };
 }
 
 function buildImagemap(skills, meta) {
@@ -230,7 +206,7 @@ function main() {
   mkdirSync(OUT_DIR, { recursive: true });
 
   const { iconMap, csv } = buildIconManifest(skills);
-  writeFileSync(path.join(OUT_DIR, "icon-upload-manifest.csv"), csv, "utf-8");
+  writeFileSync(path.join(OUT_DIR, "icon-filename-reference.csv"), csv, "utf-8");
 
   const imagemap = buildImagemap(skills, raw.meta);
   const skillsTable = buildSkillsTable(skills, iconMap);
@@ -272,7 +248,7 @@ function main() {
   writeFileSync(path.join(OUT_DIR, "combat-skills-page.wikitext"), fullPage + "\n", "utf-8");
 
   console.log(`Wrote wikitext for ${skills.length} skills to ${path.relative(ROOT, OUT_DIR)}/`);
-  console.log(`Unique icons to upload: ${iconMap.size}`);
+  console.log(`Unique icon files referenced: ${iconMap.size} (expected to already exist on the wiki — see icon-filename-reference.csv, check any row flagged UNVERIFIED)`);
 }
 
 main();

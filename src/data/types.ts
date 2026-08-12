@@ -184,6 +184,54 @@ export interface MonstersData {
   monsters: MonsterRecord[];
 }
 
+export type ZoneLayer = 0 | 1; // 0 = Surface, 1 = Caves — see data-pipeline/README.md's layer-labeling caveat
+
+export interface ZoneMonsterSpawn {
+  name: string;
+  reference_id: number; // matches MonsterRecord.monster_id.value
+  essence_item_ids: number[]; // matches ItemRecord.item_id.value; the 0 sentinel is filtered at pipeline time
+}
+
+export interface ZoneResourceSpawn {
+  name: string;
+  reference_id: number; // matches ItemRecord.item_id.value
+  resource_type: Field<number>; // 0 Herbalism / 1 Mining / 2 Fishing
+  spawn_chance_percent: StatField;
+  found_on_trees: boolean;
+}
+
+export interface ZoneWarpPoint {
+  warp_point_id: string;
+  unlocked: Field<boolean>; // observed_live — reflects the capturing account's own progress, not a global fact
+}
+
+export interface ZoneRecord {
+  map_id: string;
+  layer: ZoneLayer;
+  display_name: Field<string>;
+  x: Field<number>; // already corrected into the background image's pixel space
+  y: Field<number>;
+  /** The zone's in-game region tint (self_modulate), as a CSS-ready "r, g, b" string (0-255 each). */
+  color_rgb: Field<string>;
+  level: StatField;
+  monsters: ZoneMonsterSpawn[];
+  resources: ZoneResourceSpawn[];
+  /** null = this zone structurally has no warp point — not an unknown value. */
+  warp_point: ZoneWarpPoint | null;
+}
+
+export interface WorldMapData {
+  meta: {
+    generated_at: string;
+    pipeline_version: string;
+    image_width: number;
+    image_height: number;
+    total_zones: number;
+    layer_counts: Record<string, number>;
+  };
+  zones: ZoneRecord[];
+}
+
 export interface SiteData {
   meta: {
     steam_app: number;

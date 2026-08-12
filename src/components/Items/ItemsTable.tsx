@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import type { ItemRecord } from "../../data/types";
+import rawMapsData from "../../data/maps.generated.json";
+import type { ItemRecord, WorldMapData } from "../../data/types";
 import { ITEM_CATEGORIES, ITEM_CATEGORY_COLOR, ITEM_CATEGORY_LABEL } from "../../data/constants";
 import { DataTable, type Column } from "../common/DataTable";
 import { SearchInput } from "../common/SearchInput";
@@ -9,13 +10,17 @@ import { ColorBadge } from "../common/Badge";
 import { SkillIcon } from "../common/SkillIcon";
 import { StatValue } from "../common/Provenance";
 import { publicUrl } from "../../utils/publicUrl";
+import { buildItemZoneIndex } from "../../utils/crossLinks";
 import "../SkillsTable/SkillsTable.css";
+
+const mapsData = rawMapsData as unknown as WorldMapData;
 
 export function ItemsTable({ items }: { items: ItemRecord[] }) {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [categoryFilter, setCategoryFilter] = useState<Set<string>>(new Set());
   const [equipOnly, setEquipOnly] = useState(false);
+  const itemZoneIndex = useMemo(() => buildItemZoneIndex(mapsData.zones), []);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -101,6 +106,23 @@ export function ItemsTable({ items }: { items: ItemRecord[] }) {
         align: "right",
       },
       {
+        key: "zones",
+        label: "Zones",
+        sortable: true,
+        accessor: (it) => (it.item_id.value != null ? itemZoneIndex.get(it.item_id.value)?.length ?? 0 : 0),
+        render: (it) => {
+          const count = it.item_id.value != null ? itemZoneIndex.get(it.item_id.value)?.length ?? 0 : 0;
+          return count > 0 ? (
+            <span title={`Gatherable in ${count} zone${count === 1 ? "" : "s"}`}>{count}</span>
+          ) : (
+            <span className="skills-table__muted">—</span>
+          );
+        },
+        width: "70px",
+        align: "right",
+        headerTitle: "Number of World Map zones this item can be gathered in",
+      },
+      {
         key: "description",
         label: "Description",
         sortable: false,
@@ -115,7 +137,7 @@ export function ItemsTable({ items }: { items: ItemRecord[] }) {
         width: "340px",
       },
     ],
-    []
+    [itemZoneIndex]
   );
 
   return (

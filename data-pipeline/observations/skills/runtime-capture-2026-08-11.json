@@ -1,0 +1,2063 @@
+{
+  "1": {
+    "base_power": 28,
+    "power_per_level": 14,
+    "cooldown_ms": 2600,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 2.07999992370605,
+        "per_level": 1.23599994182587
+      },
+      {
+        "id": "faith_damage",
+        "amount": 1.17850005626678,
+        "per_level": 0.564999997615814
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 4,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "2": {
+    "base_power": 16,
+    "power_per_level": 8,
+    "cooldown_ms": 400,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "range_damage",
+        "amount": 0.388799995183945,
+        "per_level": 0.196559995412827
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 1,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "3": {
+    "base_power": 1,
+    "power_per_level": 0.5,
+    "cooldown_ms": 45000,
+    "duration_ms": 6000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "max_hp",
+        "amount": 0.0297999996691942,
+        "per_level": 0
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 11,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "4": {
+    "base_power": 50,
+    "power_per_level": 25,
+    "cooldown_ms": 8500,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "max_mp",
+        "amount": 0.0241224002093077,
+        "per_level": 0.0120612001046538
+      },
+      {
+        "id": "melee_damage",
+        "amount": 1.12174272537231,
+        "per_level": 1.21825695037842
+      },
+      {
+        "id": "faith_damage",
+        "amount": 5.59360504150391,
+        "per_level": 2.60816502571106
+      },
+      {
+        "id": "max_hp",
+        "amount": 0.0150765003636479,
+        "per_level": 0.00753825018182397
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 10,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "5": {
+    "base_power": 19,
+    "power_per_level": 9.5,
+    "cooldown_ms": 1700,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 1.60000002384186,
+        "per_level": 0.800000011920929
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 1,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "6": {
+    "base_power": 7,
+    "power_per_level": 3.5,
+    "cooldown_ms": 10500,
+    "duration_ms": 5000,
+    "attack_per_second": 3,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.437599986791611,
+        "per_level": 0.216424003243446
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 35,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "9": {
+    "base_power": 18,
+    "power_per_level": 9,
+    "cooldown_ms": 2600,
+    "duration_ms": 450,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 1.89999997615814,
+        "per_level": 0.941999971866608
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.735700011253357,
+        "per_level": 0.677999973297119
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 8,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "18": {
+    "base_power": 13,
+    "power_per_level": 7,
+    "cooldown_ms": 1200,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 3,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.150000005960464,
+        "per_level": 0.109999999403954
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.349999994039536,
+        "per_level": 0.155000001192093
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 20,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "19": {
+    "base_power": 13,
+    "power_per_level": 6.5,
+    "cooldown_ms": 6000,
+    "duration_ms": 1050,
+    "attack_per_second": 7,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.100979998707771,
+        "per_level": 0.222057998180389
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.660239994525909,
+        "per_level": 0.335119992494583
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 15,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "21": {
+    "base_power": 55,
+    "power_per_level": 27.5,
+    "cooldown_ms": 2600,
+    "duration_ms": 1200,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.502900004386902,
+        "per_level": 0.25789999961853
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 25,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "22": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "spr",
+        "amount": 1.31099998950958,
+        "per_level": 0
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 28,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "27": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 2000,
+    "duration_ms": 600000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 12,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "28": {
+    "base_power": 0.400000005960464,
+    "power_per_level": 0.0500000007450581,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "int",
+        "amount": 1.18799996376038,
+        "per_level": 0.11879999935627
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 10,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "29": {
+    "base_power": 12,
+    "power_per_level": 6,
+    "cooldown_ms": 5000,
+    "duration_ms": 2500,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.121742740273476,
+        "per_level": 0.263000011444092
+      },
+      {
+        "id": "faith_damage",
+        "amount": 1.00258719921112,
+        "per_level": 0.327499985694885
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 4,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "30": {
+    "base_power": 35,
+    "power_per_level": 17.5,
+    "cooldown_ms": 7500,
+    "duration_ms": 6000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 1.60000002384186,
+        "per_level": 0.75
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.60000002384186,
+        "per_level": 0.75
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 16,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 59,
+        "level": 12,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "33": {
+    "base_power": 16,
+    "power_per_level": 8.5,
+    "cooldown_ms": 1200,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.280000001192093
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.899999976158142,
+        "per_level": 0.449999988079071
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 5,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 5,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "34": {
+    "base_power": 8.10000038146973,
+    "power_per_level": 4,
+    "cooldown_ms": 4500,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 5,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.212500005960464
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.212500005960464
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.639999985694885,
+        "per_level": 0.319999992847443
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 8,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 8,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "35": {
+    "base_power": 35,
+    "power_per_level": 18,
+    "cooldown_ms": 3900,
+    "duration_ms": 3000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "duration_per_level_ms": 100,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 2.68205595016479,
+        "per_level": 1.51215994358063
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.505834996700287,
+        "per_level": 0.71663498878479
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.505834996700287,
+        "per_level": 0.775624990463257
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 20,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "40": {
+    "base_power": 8,
+    "power_per_level": 5,
+    "cooldown_ms": 450,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.519999980926514,
+        "per_level": 0.233999997377396
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 1,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "41": {
+    "base_power": 11,
+    "power_per_level": 5,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 1.05359995365143,
+        "per_level": 0.419999986886978
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 1,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "42": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 9,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "43": {
+    "base_power": 8,
+    "power_per_level": 4,
+    "cooldown_ms": 5000,
+    "duration_ms": 15000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.675000011920929,
+        "per_level": 0.340000003576279
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.1599999666214,
+        "per_level": 0.519999980926514
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 11,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 11,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "44": {
+    "base_power": 17,
+    "power_per_level": 8.5,
+    "cooldown_ms": 6000,
+    "duration_ms": 1000,
+    "attack_per_second": 4,
+    "attack_count": 2,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.203999996185303
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.579999983310699,
+        "per_level": 0.28999999165535
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 18,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 18,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "45": {
+    "base_power": 11.5,
+    "power_per_level": 6,
+    "cooldown_ms": 3000,
+    "duration_ms": 15000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.317999988794327,
+        "per_level": 0.25
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.899999976158142,
+        "per_level": 0.449999988079071
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 4,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "46": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 4000,
+    "duration_ms": 15000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 30,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "47": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 120000,
+    "duration_ms": 20000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "duration_per_level_ms": 4000,
+    "scaling": [
+      {
+        "id": "max_hp",
+        "amount": 0.131099998950958,
+        "per_level": 0.0524399988353252
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 25,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "48": {
+    "base_power": 60,
+    "power_per_level": 30,
+    "cooldown_ms": 3900,
+    "duration_ms": 500,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 3.0310800075531,
+        "per_level": 1.52152001857758
+      },
+      {
+        "id": "faith_damage",
+        "amount": 2.43199992179871,
+        "per_level": 1.37950003147125
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.0843200013041496,
+        "per_level": 0.851350009441376
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 12,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 16,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "49": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 12000,
+    "duration_ms": 2500,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "duration_per_level_ms": 106,
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 12,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "50": {
+    "base_power": 2,
+    "power_per_level": 1,
+    "cooldown_ms": 1200,
+    "duration_ms": 700,
+    "attack_per_second": 14,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.140919998288155,
+        "per_level": 0.0536639988422394
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.0885699987411499,
+        "per_level": 0.0239000003784895
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.0801550000905991,
+        "per_level": 0.0239000003784895
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.0885699987411499,
+        "per_level": 0.0239000003784895
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 5,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 35,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "51": {
+    "base_power": 20,
+    "power_per_level": 10,
+    "cooldown_ms": 4500,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.900979995727539,
+        "per_level": 1
+      },
+      {
+        "id": "magic_damage",
+        "amount": 3,
+        "per_level": 1.45000004768372
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 4,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "52": {
+    "base_power": 42,
+    "power_per_level": 21,
+    "cooldown_ms": 12000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 2.34999990463257,
+        "per_level": 2.51134300231934
+      },
+      {
+        "id": "faith_damage",
+        "amount": 6.34999990463257,
+        "per_level": 4.41134309768677
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 30,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "53": {
+    "base_power": 16,
+    "power_per_level": 8,
+    "cooldown_ms": 7500,
+    "duration_ms": 5000,
+    "attack_per_second": 3,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 0.601599991321564,
+        "per_level": 0.314999997615814
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.292842000722885,
+        "per_level": 0.166420996189117
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 30,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "54": {
+    "base_power": 7,
+    "power_per_level": 4,
+    "cooldown_ms": 7500,
+    "duration_ms": 5500,
+    "attack_per_second": 2.5,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.111078001558781,
+        "per_level": 0.119999997317791
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.556280016899109,
+        "per_level": 0.230000004172325
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 20,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "55": {
+    "base_power": 20,
+    "power_per_level": 10,
+    "cooldown_ms": 9000,
+    "duration_ms": 3050,
+    "attack_per_second": 2,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.800000011920929,
+        "per_level": 0.389999985694885
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.419640004634857,
+        "per_level": 0.180000007152557
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.800000011920929,
+        "per_level": 0.389999985694885
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 12,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 28,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "56": {
+    "base_power": 24,
+    "power_per_level": 12.5,
+    "cooldown_ms": 3900,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 2.7039999961853,
+        "per_level": 1.37279999256134
+      },
+      {
+        "id": "magic_damage",
+        "amount": 1.5,
+        "per_level": 1.10749995708466
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 8,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 8,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "57": {
+    "base_power": 30,
+    "power_per_level": 15,
+    "cooldown_ms": 3000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.400000005960464,
+        "per_level": 0.649999976158142
+      },
+      {
+        "id": "magic_damage",
+        "amount": 2,
+        "per_level": 1
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 8,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "58": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": -2,
+        "level": 1,
+        "skill_name": "Player Level"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "59": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": -2,
+        "level": 1,
+        "skill_name": "Player Level"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "60": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": -2,
+        "level": 1,
+        "skill_name": "Player Level"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "61": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": -2,
+        "level": 1,
+        "skill_name": "Player Level"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "62": {
+    "base_power": 10,
+    "power_per_level": 4,
+    "cooldown_ms": 1500,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 12,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 8,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "63": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 4000,
+    "duration_ms": 3000,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 25,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "64": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 5000,
+    "duration_ms": 60000,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "duration_per_level_ms": 6000,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 11,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "69": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1500,
+    "duration_ms": 500,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 8,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "70": {
+    "base_power": 60,
+    "power_per_level": 30,
+    "cooldown_ms": 3200,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 1.19340002536774,
+        "per_level": 0.596700012683868
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.62000000476837,
+        "per_level": 0.810000002384186
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 8,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "71": {
+    "base_power": 25,
+    "power_per_level": 15,
+    "cooldown_ms": 2200,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 2,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.36719998717308,
+        "per_level": 0.18359999358654
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.36719998717308,
+        "per_level": 0.18359999358654
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.540000021457672,
+        "per_level": 0.270000010728836
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 22,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "72": {
+    "base_power": 21,
+    "power_per_level": 10.5,
+    "cooldown_ms": 9500,
+    "duration_ms": 5000,
+    "attack_per_second": 5,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.0850000008940697
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.0850000008940697,
+        "per_level": 0.0850000008940697
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.300000011920929,
+        "per_level": 0.119999997317791
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 28,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "73": {
+    "base_power": 7,
+    "power_per_level": 2,
+    "cooldown_ms": 10000,
+    "duration_ms": 60000,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "duration_per_level_ms": 6000,
+    "scaling": [
+      {
+        "id": "luk",
+        "amount": 0.200000002980232,
+        "per_level": 0
+      },
+      {
+        "id": "dex",
+        "amount": 0.5,
+        "per_level": 0
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 15,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "74": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 8000,
+    "duration_ms": 6500,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 15,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 15,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "75": {
+    "base_power": 7,
+    "power_per_level": 5,
+    "cooldown_ms": 9000,
+    "duration_ms": 5000,
+    "attack_per_second": 2,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.101999998092651,
+        "per_level": 0.0552500002086163
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.0425000004470348,
+        "per_level": 0.0552500002086163
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 22,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 16,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "76": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 40100,
+    "duration_ms": 40000,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 27,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "77": {
+    "base_power": 25,
+    "power_per_level": 12.5,
+    "cooldown_ms": 12000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 7,
+        "per_level": 3.5
+      },
+      {
+        "id": "range_damage",
+        "amount": 7,
+        "per_level": 3.5
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 33,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "82": {
+    "base_power": 7.5,
+    "power_per_level": 3.5,
+    "cooldown_ms": 5000,
+    "duration_ms": 0,
+    "attack_per_second": 2,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.340000003576279,
+        "per_level": 0.209999993443489
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.569999992847443,
+        "per_level": 0.280000001192093
+      },
+      {
+        "id": "max_hp",
+        "amount": 0.200000002980232,
+        "per_level": 0.0949999988079071
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 35,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "83": {
+    "base_power": 5.5,
+    "power_per_level": 3.5,
+    "cooldown_ms": 600,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.600000023841858,
+        "per_level": 0.293999999761581
+      },
+      {
+        "id": "magic_damage",
+        "amount": 0.600000023841858,
+        "per_level": 0.293999999761581
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 5,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 5,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "84": {
+    "base_power": 18,
+    "power_per_level": 8,
+    "cooldown_ms": 4500,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 5,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 1,
+        "per_level": 0.449999988079071
+      },
+      {
+        "id": "magic_damage",
+        "amount": 1,
+        "per_level": 0.449999988079071
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 15,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 15,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "85": {
+    "base_power": 10,
+    "power_per_level": 5,
+    "cooldown_ms": 8000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 7,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 1.10000002384186,
+        "per_level": 0.620000004768372
+      },
+      {
+        "id": "magic_damage",
+        "amount": 1.10000002384186,
+        "per_level": 0.620000004768372
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 20,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 15,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "86": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 22,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 22,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "87": {
+    "base_power": 8,
+    "power_per_level": 4,
+    "cooldown_ms": 1400,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 1,
+        "per_level": 0.5
+      },
+      {
+        "id": "faith_damage",
+        "amount": 1,
+        "per_level": 0.5
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 5,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 5,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "88": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 8,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 12,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "89": {
+    "base_power": 55,
+    "power_per_level": 26,
+    "cooldown_ms": 9000,
+    "duration_ms": 1000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 3,
+        "per_level": 1.64999997615814
+      },
+      {
+        "id": "faith_damage",
+        "amount": 3,
+        "per_level": 1.64999997615814
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 20,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 25,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "90": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 30000,
+    "duration_ms": 12000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "duration_per_level_ms": 400,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 28,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 28,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "91": {
+    "base_power": 12,
+    "power_per_level": 6.5,
+    "cooldown_ms": 1400,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.75,
+        "per_level": 0.449999988079071
+      },
+      {
+        "id": "range_damage",
+        "amount": 0.75,
+        "per_level": 0.449999988079071
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 5,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 5,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "92": {
+    "base_power": 30,
+    "power_per_level": 15,
+    "cooldown_ms": 6000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 3,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 0.600000023841858,
+        "per_level": 0.349999994039536
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.10000002384186,
+        "per_level": 0.5
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 8,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 8,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "93": {
+    "base_power": 16,
+    "power_per_level": 8,
+    "cooldown_ms": 12000,
+    "duration_ms": 5000,
+    "attack_per_second": 1,
+    "attack_count": 1,
+    "duration_per_level_ms": 100,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 1.5,
+        "per_level": 0.75
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.5,
+        "per_level": 0.75
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 18,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 23,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "94": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 12,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 12,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "95": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 28,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 28,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "96": {
+    "base_power": 10,
+    "power_per_level": 5,
+    "cooldown_ms": 16000,
+    "duration_ms": 1250,
+    "attack_per_second": 0,
+    "attack_count": 15,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 1.60000002384186,
+        "per_level": 0.800000011920929
+      },
+      {
+        "id": "magic_damage",
+        "amount": 1.60000002384186,
+        "per_level": 0.800000011920929
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 25,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 25,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "97": {
+    "base_power": 12,
+    "power_per_level": 6,
+    "cooldown_ms": 3500,
+    "duration_ms": 1500,
+    "attack_per_second": 0,
+    "attack_count": 3,
+    "scaling": [
+      {
+        "id": "melee_damage",
+        "amount": 0.5,
+        "per_level": 0.25
+      },
+      {
+        "id": "faith_damage",
+        "amount": 0.5,
+        "per_level": 0.25
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 8,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 8,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "98": {
+    "base_power": 8,
+    "power_per_level": 4,
+    "cooldown_ms": 8000,
+    "duration_ms": 30000,
+    "attack_per_second": 0,
+    "attack_count": 1,
+    "scaling": [
+      {
+        "id": "faith_damage",
+        "amount": 1.79999995231628,
+        "per_level": 0.899999976158142
+      },
+      {
+        "id": "range_damage",
+        "amount": 1.79999995231628,
+        "per_level": 0.899999976158142
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 59,
+        "level": 25,
+        "skill_name": "Range"
+      },
+      {
+        "skill_id": 61,
+        "level": 25,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "100": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 58,
+        "level": 32,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "101": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 50000,
+    "duration_ms": 5000,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "duration_per_level_ms": 368.399993896484,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 25,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 58,
+        "level": 25,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "102": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 21,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "103": {
+    "base_power": 11,
+    "power_per_level": 5,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "scaling": [
+      {
+        "id": "magic_damage",
+        "amount": 1.05359995365143,
+        "per_level": 0.419999986886978
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 26,
+        "skill_name": "Magic"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "104": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 29,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 29,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "105": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 22,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 22,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "106": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 29,
+        "skill_name": "Faith"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "107": {
+    "base_power": 5,
+    "power_per_level": 3,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "scaling": [
+      {
+        "id": "max_hp",
+        "amount": 0.600000023841858,
+        "per_level": 0.300000011920929
+      }
+    ],
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 17,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 58,
+        "level": 17,
+        "skill_name": "Melee"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "108": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 1000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 60,
+        "level": 23,
+        "skill_name": "Magic"
+      },
+      {
+        "skill_id": 59,
+        "level": 23,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  },
+  "109": {
+    "base_power": 0,
+    "power_per_level": 0,
+    "cooldown_ms": 5000,
+    "duration_ms": 0,
+    "attack_per_second": 0,
+    "attack_count": 0,
+    "level_requirements": [
+      {
+        "skill_id": 61,
+        "level": 25,
+        "skill_name": "Faith"
+      },
+      {
+        "skill_id": 59,
+        "level": 25,
+        "skill_name": "Range"
+      }
+    ],
+    "recorded_at_unix": 1786418920
+  }
+}

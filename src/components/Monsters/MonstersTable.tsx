@@ -1,17 +1,22 @@
 import { useMemo, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import type { MonsterRecord } from "../../data/types";
+import rawMapsData from "../../data/maps.generated.json";
+import type { MonsterRecord, WorldMapData } from "../../data/types";
 import { DataTable, type Column } from "../common/DataTable";
 import { SearchInput } from "../common/SearchInput";
 import { SkillIcon } from "../common/SkillIcon";
 import { StatValue } from "../common/Provenance";
 import { publicUrl } from "../../utils/publicUrl";
+import { buildMonsterZoneIndex } from "../../utils/crossLinks";
 import "../SkillsTable/SkillsTable.css";
 import "../BuffsTable/BuffsTable.css";
+
+const mapsData = rawMapsData as unknown as WorldMapData;
 
 export function MonstersTable({ monsters }: { monsters: MonsterRecord[] }) {
   const navigate = useNavigate();
   const [search, setSearch] = useState("");
+  const monsterZoneIndex = useMemo(() => buildMonsterZoneIndex(mapsData.zones), []);
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
@@ -100,8 +105,25 @@ export function MonstersTable({ monsters }: { monsters: MonsterRecord[] }) {
         render: (m) => <StatValue value={m.found_in.value} provenance={m.found_in.provenance} note={m.found_in.note} />,
         width: "120px",
       },
+      {
+        key: "zones",
+        label: "Zones",
+        sortable: true,
+        accessor: (m) => (m.monster_id.value != null ? monsterZoneIndex.get(m.monster_id.value)?.length ?? 0 : 0),
+        render: (m) => {
+          const count = m.monster_id.value != null ? monsterZoneIndex.get(m.monster_id.value)?.length ?? 0 : 0;
+          return count > 0 ? (
+            <span title={`Spawns in ${count} zone${count === 1 ? "" : "s"}`}>{count}</span>
+          ) : (
+            <span className="skills-table__muted">—</span>
+          );
+        },
+        width: "70px",
+        align: "right",
+        headerTitle: "Number of World Map zones this monster spawns in (from a live capture, separate from the freeform \"Found In\" field)",
+      },
     ],
-    []
+    [monsterZoneIndex]
   );
 
   return (

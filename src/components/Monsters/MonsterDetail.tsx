@@ -1,18 +1,30 @@
+import { useMemo } from "react";
 import { Link, useParams } from "react-router-dom";
 import rawMonstersData from "../../data/monsters.generated.json";
-import type { MonstersData } from "../../data/types";
+import rawItemsData from "../../data/items.generated.json";
+import rawMapsData from "../../data/maps.generated.json";
+import type { ItemsData, MonstersData, WorldMapData } from "../../data/types";
+import { ZONE_LAYER_LABEL } from "../../data/constants";
+import { ColorBadge } from "../common/Badge";
 import { SkillIcon } from "../common/SkillIcon";
 import { StatValue, ProvenanceTag } from "../common/Provenance";
+import { Breadcrumb } from "../common/Breadcrumb";
 import { publicUrl } from "../../utils/publicUrl";
+import { buildItemByIdIndex, buildMonsterZoneIndex } from "../../utils/crossLinks";
 import "../common/SkillSummary.css";
 import "../DetailPanel/DetailPanel.css";
 import "../Items/ItemDetail.css";
 
 const monstersData = rawMonstersData as unknown as MonstersData;
+const itemsData = rawItemsData as unknown as ItemsData;
+const mapsData = rawMapsData as unknown as WorldMapData;
 
 export function MonsterDetail() {
   const { slug } = useParams<{ slug: string }>();
   const monster = monstersData.monsters.find((m) => m.slug === slug);
+  const monsterZoneIndex = useMemo(() => buildMonsterZoneIndex(mapsData.zones), []);
+  const itemsById = useMemo(() => buildItemByIdIndex(itemsData.items), []);
+  const spawnZones = monster?.monster_id.value != null ? monsterZoneIndex.get(monster.monster_id.value) ?? [] : [];
 
   if (!monster) {
     return (
@@ -25,9 +37,7 @@ export function MonsterDetail() {
 
   return (
     <div className="item-detail">
-      <Link to="/monsters" className="item-detail__back">
-        ← Back to Monsters
-      </Link>
+      <Breadcrumb items={[{ label: "Home", to: "/" }, { label: "Monsters", to: "/monsters" }, { label: monster.name.value }]} />
 
       <header className="item-detail__header">
         <SkillIcon src={monster.icon.value ? publicUrl(monster.icon.value) : null} alt="" size={56} />
@@ -94,6 +104,37 @@ export function MonsterDetail() {
           </dd>
         </dl>
       </section>
+
+      {spawnZones.length > 0 && (
+        <section className="detail-panel__section">
+          <h4>
+            Found in these zones ({spawnZones.length} {spawnZones.length === 1 ? "zone" : "zones"})
+          </h4>
+          <p className="detail-panel__stats-note">
+            Recorded from a live World Map capture — a real, separate data source from the "Found in" field
+            above, which stays "Unknown" since nothing directly populates it.
+          </p>
+          <ul className="item-detail__gather-list">
+            {spawnZones.map(({ zone, spawn }) => {
+              const essenceItems = spawn.essence_item_ids.map((id) => itemsById.get(id)).filter((it): it is NonNullable<typeof it> => Boolean(it));
+              return (
+                <li key={zone.map_id} className="item-detail__gather-row">
+                  <Link to={`/maps?zone=${zone.map_id}`} className="item-detail__gather-zone">
+                    {zone.display_name.value}
+                  </Link>
+                  <ColorBadge label={ZONE_LAYER_LABEL[zone.layer]} color="var(--text-muted)" />
+                  {zone.level.value != null && <span className="item-detail__gather-note">Lv. {zone.level.value}</span>}
+                  {essenceItems.map((it) => (
+                    <Link key={it.slug} to={`/items/${it.slug}`} className="item-detail__gather-note" title={`Essence drop: ${it.name.value}`}>
+                      Essence: {it.name.value}
+                    </Link>
+                  ))}
+                </li>
+              );
+            })}
+          </ul>
+        </section>
+      )}
 
       <section className="detail-panel__section">
         <h4>Source reference</h4>

@@ -1,0 +1,2843 @@
+{
+  "$schema": "https://soulsremnant.wiki.gg/extensions/DataMaps/schemas/v17.3.json",
+  "settings": {
+    "showCoordinates": false
+  },
+  "crs": {
+    "order": "xy",
+    "topLeft": [
+      0,
+      0
+    ],
+    "bottomRight": [
+      1076,
+      1056
+    ]
+  },
+  "backgrounds": [
+    {
+      "name": "Surface",
+      "associatedLayer": "surface",
+      "image": "WorldMapSurface.png",
+      "at": [
+        [
+          0,
+          0
+        ],
+        [
+          1076,
+          1056
+        ]
+      ],
+      "overlays": [
+        {
+          "image": "WorldMapPath.png",
+          "at": [
+            [
+              0,
+              0
+            ],
+            [
+              1076,
+              1056
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Caves",
+      "associatedLayer": "caves",
+      "image": "WorldMapCaves.png",
+      "at": [
+        [
+          0,
+          0
+        ],
+        [
+          1076,
+          1056
+        ]
+      ]
+    }
+  ],
+  "groups": {
+    "region-0": {
+      "name": "Spawn",
+      "fillColor": "#00d69f",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-1": {
+      "name": "Outskirts",
+      "fillColor": "#a7ff9f",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-2": {
+      "name": "Plains",
+      "fillColor": "#00e86c",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-3": {
+      "name": "Plains cave",
+      "fillColor": "#767676",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-4": {
+      "name": "Forest",
+      "fillColor": "#00915d",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-5": {
+      "name": "Giant tree",
+      "fillColor": "#00edaa",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-6": {
+      "name": "Deep forest den",
+      "fillColor": "#00892a",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-7": {
+      "name": "Ocean",
+      "fillColor": "#40bfff",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-8": {
+      "name": "Cold ocean cave",
+      "fillColor": "#006189",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-9": {
+      "name": "Great trench",
+      "fillColor": "#006fed",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-10": {
+      "name": "Desert",
+      "fillColor": "#ffc23d",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-11": {
+      "name": "Pyramid",
+      "fillColor": "#eda600",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-12": {
+      "name": "Banana farm",
+      "fillColor": "#d99200",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-13": {
+      "name": "Misty Forest",
+      "fillColor": "#c337e6",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-14": {
+      "name": "Lost Forest",
+      "fillColor": "#770d8f",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-15": {
+      "name": "Sulfuric Plains",
+      "fillColor": "#ff3863",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-16": {
+      "name": "Sulfuric Path",
+      "fillColor": "#9f0033",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-17": {
+      "name": "Rocky Path",
+      "fillColor": "#ffbb94",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-18": {
+      "name": "Detour",
+      "fillColor": "#c35c00",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-19": {
+      "name": "Snowy Mountain",
+      "fillColor": "#ffffff",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-20": {
+      "name": "Traveler rest",
+      "fillColor": "#9862a6",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": true
+    },
+    "region-21": {
+      "name": "Spawn",
+      "fillColor": "#00d69f",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": false
+    },
+    "region-22": {
+      "name": "Cave",
+      "fillColor": "#767676",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": false
+    },
+    "region-23": {
+      "name": "Deep Cave",
+      "fillColor": "#9966ed",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": false
+    },
+    "region-24": {
+      "name": "Hall of Might",
+      "fillColor": "#6633ad",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": false
+    },
+    "region-25": {
+      "name": "Frost cave",
+      "fillColor": "#8cd9ff",
+      "strokeColor": "#1a1a1a",
+      "strokeWidth": 1,
+      "size": 12,
+      "static": true,
+      "isSwitchable": true,
+      "isDefault": false
+    }
+  },
+  "markers": {
+    "region-0": [
+      {
+        "id": "zone-spawn-0-0",
+        "x": 534,
+        "y": 560,
+        "name": "Spawn",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp\n* [[File:Trout.png|16px|link=]] Trout\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Spawn",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-market_hub_entrance-0-1",
+        "x": 564,
+        "y": 500,
+        "name": "Market hub entrance",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Market hub entrance",
+            10
+          ]
+        ]
+      }
+    ],
+    "region-1": [
+      {
+        "id": "zone-outskirts_west-0-0",
+        "x": 424,
+        "y": 524,
+        "name": "Outskirts west",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 1'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slime.png|16px|link=]] Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp\n* [[File:Trout.png|16px|link=]] Trout\n* [[File:Chomper.png|16px|link=]] Chomper\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts west",
+            10
+          ],
+          [
+            "Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_northwest-0-1",
+        "x": 449,
+        "y": 469,
+        "name": "Outskirts northwest",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 2'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n* [[File:Slime.png|16px|link=]] Slime\n* [[File:Jel.png|16px|link=]] Jel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts northwest",
+            10
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ],
+          [
+            "Slime",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_flower_field-0-2",
+        "x": 494,
+        "y": 454,
+        "name": "Outskirts flower field",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 3'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slime.png|16px|link=]] Slime\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n* [[File:Jel.png|16px|link=]] Jel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts flower field",
+            10
+          ],
+          [
+            "Slime",
+            5
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_north-0-3",
+        "x": 539,
+        "y": 449,
+        "name": "Outskirts north",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 5'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Flows.png|16px|link=]] Flows\n* [[File:Jel.png|16px|link=]] Jel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts north",
+            10
+          ],
+          [
+            "Flows",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_northeast-0-4",
+        "x": 609,
+        "y": 479,
+        "name": "Outskirts northeast",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 5'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n* [[File:Pin Pin.png|16px|link=]] Pin Pin\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts northeast",
+            10
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ],
+          [
+            "Pin Pin",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_east-0-5",
+        "x": 649,
+        "y": 524,
+        "name": "Outskirts east",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 3'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Pin Pin.png|16px|link=]] Pin Pin\n* [[File:Slime.png|16px|link=]] Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts east",
+            10
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Pin Pin",
+            5
+          ],
+          [
+            "Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_pond-0-6",
+        "x": 629,
+        "y": 569,
+        "name": "Outskirts pond",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 7'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slip.png|16px|link=]] Slip\n* [[File:Flows.png|16px|link=]] Flows\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp\n* [[File:Trout.png|16px|link=]] Trout\n* [[File:Chomper.png|16px|link=]] Chomper\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts pond",
+            10
+          ],
+          [
+            "Slip",
+            5
+          ],
+          [
+            "Flows",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_southeast-0-7",
+        "x": 579,
+        "y": 594,
+        "name": "Outskirts southeast",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 6'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Pin Pin.png|16px|link=]] Pin Pin\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Hopper.png|16px|link=]] Hopper\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts southeast",
+            10
+          ],
+          [
+            "Pin Pin",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Hopper",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_southwest-0-8",
+        "x": 449,
+        "y": 579,
+        "name": "Outskirts southwest",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 8'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Glowsnail.png|16px|link=]] Glowsnail\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Pin Pin.png|16px|link=]] Pin Pin\n* [[File:Hopper.png|16px|link=]] Hopper\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts southwest",
+            10
+          ],
+          [
+            "Glowsnail",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Pin Pin",
+            5
+          ],
+          [
+            "Hopper",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-outskirts_south-0-9",
+        "x": 512,
+        "y": 606,
+        "name": "Outskirts south",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 7'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Hopper.png|16px|link=]] Hopper\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Pin Pin.png|16px|link=]] Pin Pin\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Stone.png|16px|link=]] Stone\n* [[File:Salt.png|16px|link=]] Salt\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Wheat.png|16px|link=]] Wheat\n* [[File:Green Herb.png|16px|link=]] Green Herb\n* [[File:Red Herb.png|16px|link=]] Red Herb\n* [[File:Blue Herb.png|16px|link=]] Blue Herb\n* [[File:Wood.png|16px|link=]] Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Outskirts south",
+            10
+          ],
+          [
+            "Hopper",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Pin Pin",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-2": [
+      {
+        "id": "zone-plains_1-0-0",
+        "x": 334,
+        "y": 519,
+        "name": "Plains 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 11'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Glowsnail.png|16px|link=]] Glowsnail\n* [[File:Cloudsheep.png|16px|link=]] Cloudsheep\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Copper Ore.png|16px|link=]] Copper Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Cotton Ball.png|16px|link=]] Cotton Ball\n* [[File:Oak Wood.png|16px|link=]] Oak Wood (trees)\n* [[File:Apple.png|16px|link=]] Apple (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Shrimp.png|16px|link=]] Shrimp\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Trout.png|16px|link=]] Trout",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Plains 1",
+            10
+          ],
+          [
+            "Glowsnail",
+            5
+          ],
+          [
+            "Cloudsheep",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-plains_2-0-1",
+        "x": 354,
+        "y": 469,
+        "name": "Plains 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 12'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Squishling.png|16px|link=]] Squishling\n* [[File:Cloudsheep.png|16px|link=]] Cloudsheep\n* [[File:Angeling.png|16px|link=]] Angeling\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Copper Ore.png|16px|link=]] Copper Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Cotton Ball.png|16px|link=]] Cotton Ball\n* [[File:Oak Wood.png|16px|link=]] Oak Wood (trees)\n* [[File:Apple.png|16px|link=]] Apple (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Plains 2",
+            10
+          ],
+          [
+            "Squishling",
+            5
+          ],
+          [
+            "Cloudsheep",
+            5
+          ],
+          [
+            "Angeling",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-plains_3-0-2",
+        "x": 389,
+        "y": 414,
+        "name": "Plains 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 14'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Squishling.png|16px|link=]] Squishling\n* [[File:Black Cloudsheep.png|16px|link=]] Black Cloudsheep\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Copper Ore.png|16px|link=]] Copper Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Cotton Ball.png|16px|link=]] Cotton Ball\n* [[File:Oak Wood.png|16px|link=]] Oak Wood (trees)\n* [[File:Apple.png|16px|link=]] Apple (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Plains 3",
+            10
+          ],
+          [
+            "Squishling",
+            5
+          ],
+          [
+            "Black Cloudsheep",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-plains_4-0-3",
+        "x": 364,
+        "y": 369,
+        "name": "Plains 4",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 15'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Black Cloudsheep.png|16px|link=]] Black Cloudsheep\n* [[File:Squishling.png|16px|link=]] Squishling\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Copper Ore.png|16px|link=]] Copper Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Cotton Ball.png|16px|link=]] Cotton Ball\n* [[File:Oak Wood.png|16px|link=]] Oak Wood (trees)\n* [[File:Apple.png|16px|link=]] Apple (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Plains 4",
+            10
+          ],
+          [
+            "Black Cloudsheep",
+            5
+          ],
+          [
+            "Squishling",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-lost_plains-0-4",
+        "x": 319,
+        "y": 564,
+        "name": "Lost plains",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 37'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Rainbow Cloudsheep.png|16px|link=]] Rainbow Cloudsheep\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Copper Ore.png|16px|link=]] Copper Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Cotton Ball.png|16px|link=]] Cotton Ball\n* [[File:Oak Wood.png|16px|link=]] Oak Wood (trees)\n* [[File:Apple.png|16px|link=]] Apple (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Lost plains",
+            10
+          ],
+          [
+            "Rainbow Cloudsheep",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-forest_1-0-5",
+        "x": 244,
+        "y": 424,
+        "name": "Forest 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 40'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Ferni.png|16px|link=]] Ferni\n* [[File:Big Slime.png|16px|link=]] Big Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest 1",
+            10
+          ],
+          [
+            "Ferni",
+            5
+          ],
+          [
+            "Big Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-forest_2-0-6",
+        "x": 254,
+        "y": 354,
+        "name": "Forest 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 41'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soultree.png|16px|link=]] Soultree\n* [[File:Soulpling.png|16px|link=]] Soulpling\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest 2",
+            10
+          ],
+          [
+            "Soultree",
+            5
+          ],
+          [
+            "Soulpling",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-forest_3-0-7",
+        "x": 269,
+        "y": 294,
+        "name": "Forest 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 39'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soultree.png|16px|link=]] Soultree\n* [[File:Soulpling.png|16px|link=]] Soulpling\n* [[File:Ferni.png|16px|link=]] Ferni\n* [[File:Humblebee.png|16px|link=]] Humblebee\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest 3",
+            10
+          ],
+          [
+            "Soultree",
+            5
+          ],
+          [
+            "Soulpling",
+            5
+          ],
+          [
+            "Ferni",
+            5
+          ],
+          [
+            "Humblebee",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-forest_pond-0-8",
+        "x": 209,
+        "y": 514,
+        "name": "Forest pond",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 38'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Humblebee.png|16px|link=]] Humblebee\n* [[File:Soulpling.png|16px|link=]] Soulpling\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest pond",
+            10
+          ],
+          [
+            "Humblebee",
+            5
+          ],
+          [
+            "Soulpling",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-swamp-0-9",
+        "x": 289,
+        "y": 244,
+        "name": "Swamp",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Swamp",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_forest_1-0-10",
+        "x": 154,
+        "y": 409,
+        "name": "Deep forest 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 73'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Tallshroom.png|16px|link=]] Tallshroom\n* [[File:Shroomie.png|16px|link=]] Shroomie\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Abyssal Leech.png|16px|link=]] Abyssal Leech\n* [[File:Abyssal Urchin.png|16px|link=]] Abyssal Urchin\n* [[File:Abyssal Octopus.png|16px|link=]] Abyssal Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep forest 1",
+            10
+          ],
+          [
+            "Tallshroom",
+            5
+          ],
+          [
+            "Shroomie",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_forest_threshold-0-11",
+        "x": 138,
+        "y": 379,
+        "name": "Deep forest threshold",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 78'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Lime Guardian.png|16px|link=]] Lime Guardian\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Abyssal Leech.png|16px|link=]] Abyssal Leech\n* [[File:Abyssal Urchin.png|16px|link=]] Abyssal Urchin\n* [[File:Abyssal Octopus.png|16px|link=]] Abyssal Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep forest threshold",
+            10
+          ],
+          [
+            "Lime Guardian",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_forest_2-0-12",
+        "x": 189,
+        "y": 319,
+        "name": "Deep forest 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 75'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Kiwi.png|16px|link=]] Kiwi\n* [[File:Fernek.png|16px|link=]] Fernek\n* [[File:Tallshroom.png|16px|link=]] Tallshroom\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Abyssal Leech.png|16px|link=]] Abyssal Leech\n* [[File:Abyssal Urchin.png|16px|link=]] Abyssal Urchin\n* [[File:Abyssal Octopus.png|16px|link=]] Abyssal Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep forest 2",
+            10
+          ],
+          [
+            "Kiwi",
+            5
+          ],
+          [
+            "Fernek",
+            5
+          ],
+          [
+            "Tallshroom",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_forest_3-0-13",
+        "x": 229,
+        "y": 234,
+        "name": "Deep forest 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 75'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Shroomie.png|16px|link=]] Shroomie\n* [[File:Tallshroom.png|16px|link=]] Tallshroom\n* [[File:Fernek.png|16px|link=]] Fernek\n* [[File:Kiwi.png|16px|link=]] Kiwi\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep forest 3",
+            10
+          ],
+          [
+            "Shroomie",
+            5
+          ],
+          [
+            "Tallshroom",
+            5
+          ],
+          [
+            "Fernek",
+            5
+          ],
+          [
+            "Kiwi",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-lost_peak-0-14",
+        "x": 304,
+        "y": 139,
+        "name": "Lost peak",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 76'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Fernek.png|16px|link=]] Fernek\n* [[File:Kiwi.png|16px|link=]] Kiwi\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Abyssal Leech.png|16px|link=]] Abyssal Leech\n* [[File:Abyssal Urchin.png|16px|link=]] Abyssal Urchin\n* [[File:Abyssal Octopus.png|16px|link=]] Abyssal Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Lost peak",
+            10
+          ],
+          [
+            "Fernek",
+            5
+          ],
+          [
+            "Kiwi",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_tree_way-0-15",
+        "x": 124,
+        "y": 523,
+        "name": "Deep tree way",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 73'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Shroomie.png|16px|link=]] Shroomie\n* [[File:Tallshroom.png|16px|link=]] Tallshroom\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep tree way",
+            10
+          ],
+          [
+            "Shroomie",
+            5
+          ],
+          [
+            "Tallshroom",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-3": [
+      {
+        "id": "zone-plains_cave-0-0",
+        "x": 339,
+        "y": 429,
+        "name": "Plains cave",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 15'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cursed Slime.png|16px|link=]] Cursed Slime\n* [[File:Gilded Slime.png|16px|link=]] Gilded Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Plains cave",
+            10
+          ],
+          [
+            "Cursed Slime",
+            5
+          ],
+          [
+            "Gilded Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-beach_cave-0-1",
+        "x": 644,
+        "y": 414,
+        "name": "Beach cave",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 21'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Troppo.png|16px|link=]] Troppo\n* [[File:Droppo.png|16px|link=]] Droppo\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Beach cave",
+            10
+          ],
+          [
+            "Troppo",
+            5
+          ],
+          [
+            "Droppo",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-4": [
+      {
+        "id": "zone-forest_seed-0-0",
+        "x": 253,
+        "y": 514,
+        "name": "Forest seeding ground",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 38'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soulpling.png|16px|link=]] Soulpling\n* [[File:Humblebee.png|16px|link=]] Humblebee\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest seeding ground",
+            10
+          ],
+          [
+            "Soulpling",
+            5
+          ],
+          [
+            "Humblebee",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-forest_lake-0-1",
+        "x": 248,
+        "y": 474,
+        "name": "Forest Lake",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 40'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soulpling.png|16px|link=]] Soulpling\n* [[File:Soultree.png|16px|link=]] Soultree\n* [[File:Humblebee.png|16px|link=]] Humblebee\n* [[File:Water Spot.png|16px|link=]] Water Spot\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Chomper.png|16px|link=]] Chomper\n* [[File:Clownfish.png|16px|link=]] Clownfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sweet Fern.png|16px|link=]] Sweet Fern\n* [[File:Forest Seal.png|16px|link=]] Forest Seal\n* [[File:Melon.png|16px|link=]] Melon\n* [[File:Green Cherry.png|16px|link=]] Green Cherry (trees)\n* [[File:Hard Wood.png|16px|link=]] Hard Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Forest Lake",
+            10
+          ],
+          [
+            "Soulpling",
+            5
+          ],
+          [
+            "Soultree",
+            5
+          ],
+          [
+            "Humblebee",
+            5
+          ],
+          [
+            "Water Spot",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-5": [
+      {
+        "id": "zone-giant_tree-0-0",
+        "x": 129,
+        "y": 344,
+        "name": "Giant tree",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Giant tree",
+            10
+          ]
+        ]
+      }
+    ],
+    "region-6": [
+      {
+        "id": "zone-deep_forest_den-0-0",
+        "x": 193,
+        "y": 244,
+        "name": "Deep forest den",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 76'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Blossnek.png|16px|link=]] Blossnek\n* [[File:Fernek.png|16px|link=]] Fernek\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ancient Fern.png|16px|link=]] Ancient Fern\n* [[File:Censhroom.png|16px|link=]] Censhroom\n* [[File:Eon Fruit.png|16px|link=]] Eon Fruit (trees)\n* [[File:Eon Wood.png|16px|link=]] Eon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep forest den",
+            10
+          ],
+          [
+            "Blossnek",
+            5
+          ],
+          [
+            "Fernek",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-7": [
+      {
+        "id": "zone-beach_1-0-0",
+        "x": 544,
+        "y": 409,
+        "name": "Around the Seashore",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 19'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Crusher.png|16px|link=]] Crusher\n* [[File:Snapper.png|16px|link=]] Snapper\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sea Grapes.png|16px|link=]] Sea Grapes\n* [[File:Coconut.png|16px|link=]] Coconut (trees)\n* [[File:Coconut Wood.png|16px|link=]] Coconut Wood (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Quartz.png|16px|link=]] Quartz\n* [[File:Stone.png|16px|link=]] Stone\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Starfish.png|16px|link=]] Starfish\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Around the Seashore",
+            10
+          ],
+          [
+            "Crusher",
+            5
+          ],
+          [
+            "Snapper",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-beach_3-0-1",
+        "x": 454,
+        "y": 399,
+        "name": "Snapper Shore",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 18'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Snapper.png|16px|link=]] Snapper\n* [[File:Crusher.png|16px|link=]] Crusher\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sea Grapes.png|16px|link=]] Sea Grapes\n* [[File:Coconut.png|16px|link=]] Coconut (trees)\n* [[File:Coconut Wood.png|16px|link=]] Coconut Wood (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Quartz.png|16px|link=]] Quartz\n* [[File:Stone.png|16px|link=]] Stone\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Starfish.png|16px|link=]] Starfish\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snapper Shore",
+            10
+          ],
+          [
+            "Snapper",
+            5
+          ],
+          [
+            "Crusher",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-beach_2-0-2",
+        "x": 659,
+        "y": 389,
+        "name": "Seashell Cove",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 20'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Droppo.png|16px|link=]] Droppo\n* [[File:Crusher.png|16px|link=]] Crusher\n* [[File:Troppo.png|16px|link=]] Troppo\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sea Grapes.png|16px|link=]] Sea Grapes\n* [[File:Coconut.png|16px|link=]] Coconut (trees)\n* [[File:Coconut Wood.png|16px|link=]] Coconut Wood (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Quartz.png|16px|link=]] Quartz\n* [[File:Stone.png|16px|link=]] Stone\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Starfish.png|16px|link=]] Starfish\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Seashell Cove",
+            10
+          ],
+          [
+            "Droppo",
+            5
+          ],
+          [
+            "Crusher",
+            5
+          ],
+          [
+            "Troppo",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-shell_beach-0-3",
+        "x": 604,
+        "y": 399,
+        "name": "Shell beach",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 17'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Pimchy.png|16px|link=]] Pimchy\n* [[File:Snapper.png|16px|link=]] Snapper\n* [[File:Crusher.png|16px|link=]] Crusher\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Sea Grapes.png|16px|link=]] Sea Grapes\n* [[File:Coconut.png|16px|link=]] Coconut (trees)\n* [[File:Coconut Wood.png|16px|link=]] Coconut Wood (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Quartz.png|16px|link=]] Quartz\n* [[File:Stone.png|16px|link=]] Stone\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Starfish.png|16px|link=]] Starfish\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Shell beach",
+            10
+          ],
+          [
+            "Pimchy",
+            5
+          ],
+          [
+            "Snapper",
+            5
+          ],
+          [
+            "Crusher",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-ocean_1-0-4",
+        "x": 544,
+        "y": 314,
+        "name": "Ocean 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 46'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Giga.png|16px|link=]] Giga\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Poceanto.png|16px|link=]] Poceanto\n* [[File:Blue Pepper.png|16px|link=]] Blue Pepper (trees)\n* [[File:Corals.png|16px|link=]] Corals (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Cobalt Ore.png|16px|link=]] Cobalt Ore\n* [[File:Aquamarine.png|16px|link=]] Aquamarine\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Angel Fish.png|16px|link=]] Angel Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Ocean 1",
+            10
+          ],
+          [
+            "Giga",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-ocean_4-0-5",
+        "x": 634,
+        "y": 289,
+        "name": "Ocean 4",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 47'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Giga.png|16px|link=]] Giga\n* [[File:Bubble Snake.png|16px|link=]] Bubble Snake\n* [[File:Sweel.png|16px|link=]] Sweel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Poceanto.png|16px|link=]] Poceanto\n* [[File:Blue Pepper.png|16px|link=]] Blue Pepper (trees)\n* [[File:Corals.png|16px|link=]] Corals (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Cobalt Ore.png|16px|link=]] Cobalt Ore\n* [[File:Aquamarine.png|16px|link=]] Aquamarine\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Angel Fish.png|16px|link=]] Angel Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Ocean 4",
+            10
+          ],
+          [
+            "Giga",
+            5
+          ],
+          [
+            "Bubble Snake",
+            5
+          ],
+          [
+            "Sweel",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-ocean_3-0-6",
+        "x": 459,
+        "y": 289,
+        "name": "Ocean 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 45'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Giga.png|16px|link=]] Giga\n* [[File:Sweel.png|16px|link=]] Sweel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Poceanto.png|16px|link=]] Poceanto\n* [[File:Blue Pepper.png|16px|link=]] Blue Pepper (trees)\n* [[File:Corals.png|16px|link=]] Corals (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Cobalt Ore.png|16px|link=]] Cobalt Ore\n* [[File:Aquamarine.png|16px|link=]] Aquamarine\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Angel Fish.png|16px|link=]] Angel Fish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Ocean 3",
+            10
+          ],
+          [
+            "Giga",
+            5
+          ],
+          [
+            "Sweel",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-ocean_2-0-7",
+        "x": 389,
+        "y": 244,
+        "name": "Ocean 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 44'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Sweel.png|16px|link=]] Sweel\n* [[File:Giga.png|16px|link=]] Giga\n* [[File:Bubble Snake.png|16px|link=]] Bubble Snake\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Poceanto.png|16px|link=]] Poceanto\n* [[File:Blue Pepper.png|16px|link=]] Blue Pepper (trees)\n* [[File:Corals.png|16px|link=]] Corals (trees)\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Cobalt Ore.png|16px|link=]] Cobalt Ore\n* [[File:Aquamarine.png|16px|link=]] Aquamarine\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Exotic Tuna.png|16px|link=]] Exotic Tuna\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Ocean 2",
+            10
+          ],
+          [
+            "Sweel",
+            5
+          ],
+          [
+            "Giga",
+            5
+          ],
+          [
+            "Bubble Snake",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_ocean_1-0-8",
+        "x": 553,
+        "y": 209,
+        "name": "Deep ocean 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 81'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Coral.png|16px|link=]] Coral\n* [[File:Soulfish.png|16px|link=]] Soulfish\n* [[File:Upsivase.png|16px|link=]] Upsivase\n* [[File:Ancient Soul.png|16px|link=]] Ancient Soul\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Arcane Pearl.png|16px|link=]] Arcane Pearl\n* [[File:Angelic Algae.png|16px|link=]] Angelic Algae\n* [[File:Forbidden Fruit.png|16px|link=]] Forbidden Fruit (trees)\n* [[File:Depth Vine.png|16px|link=]] Depth Vine (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep ocean 1",
+            10
+          ],
+          [
+            "Coral",
+            5
+          ],
+          [
+            "Soulfish",
+            5
+          ],
+          [
+            "Upsivase",
+            5
+          ],
+          [
+            "Ancient Soul",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_ocean_2-0-9",
+        "x": 654,
+        "y": 199,
+        "name": "Deep ocean 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 83'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Ancient Soul.png|16px|link=]] Ancient Soul\n* [[File:Soulfish.png|16px|link=]] Soulfish\n* [[File:Coral.png|16px|link=]] Coral\n* [[File:Upsivase.png|16px|link=]] Upsivase\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Arcane Pearl.png|16px|link=]] Arcane Pearl\n* [[File:Angelic Algae.png|16px|link=]] Angelic Algae\n* [[File:Forbidden Fruit.png|16px|link=]] Forbidden Fruit (trees)\n* [[File:Depth Vine.png|16px|link=]] Depth Vine (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep ocean 2",
+            10
+          ],
+          [
+            "Ancient Soul",
+            5
+          ],
+          [
+            "Soulfish",
+            5
+          ],
+          [
+            "Coral",
+            5
+          ],
+          [
+            "Upsivase",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_ocean_3-0-10",
+        "x": 474,
+        "y": 164,
+        "name": "Deep ocean 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 79'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soulfish.png|16px|link=]] Soulfish\n* [[File:Upsivase.png|16px|link=]] Upsivase\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Arcane Pearl.png|16px|link=]] Arcane Pearl\n* [[File:Angelic Algae.png|16px|link=]] Angelic Algae\n* [[File:Forbidden Fruit.png|16px|link=]] Forbidden Fruit (trees)\n* [[File:Depth Vine.png|16px|link=]] Depth Vine (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep ocean 3",
+            10
+          ],
+          [
+            "Soulfish",
+            5
+          ],
+          [
+            "Upsivase",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_ocean_4-0-11",
+        "x": 389,
+        "y": 114,
+        "name": "Deep ocean 4",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 79'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Soulfish.png|16px|link=]] Soulfish\n* [[File:Upsivase.png|16px|link=]] Upsivase\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Arcane Pearl.png|16px|link=]] Arcane Pearl\n* [[File:Angelic Algae.png|16px|link=]] Angelic Algae\n* [[File:Forbidden Fruit.png|16px|link=]] Forbidden Fruit (trees)\n* [[File:Depth Vine.png|16px|link=]] Depth Vine (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep ocean 4",
+            10
+          ],
+          [
+            "Soulfish",
+            5
+          ],
+          [
+            "Upsivase",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-8": [
+      {
+        "id": "zone-cold_ocean_cave-0-0",
+        "x": 584,
+        "y": 284,
+        "name": "Cold ocean cave",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 44'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Froni.png|16px|link=]] Froni\n* [[File:Sweel.png|16px|link=]] Sweel\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Cold ocean cave",
+            10
+          ],
+          [
+            "Froni",
+            5
+          ],
+          [
+            "Sweel",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-9": [
+      {
+        "id": "zone-great_trench-0-0",
+        "x": 503,
+        "y": 149,
+        "name": "Great trench",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Arcane Pearl.png|16px|link=]] Arcane Pearl\n* [[File:Angelic Algae.png|16px|link=]] Angelic Algae\n* [[File:Forbidden Fruit.png|16px|link=]] Forbidden Fruit (trees)\n* [[File:Depth Vine.png|16px|link=]] Depth Vine (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Great trench",
+            10
+          ]
+        ]
+      }
+    ],
+    "region-10": [
+      {
+        "id": "zone-desert_1-0-0",
+        "x": 819,
+        "y": 489,
+        "name": "Desert 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 55'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Dragonfruit.png|16px|link=]] Dragonfruit\n* [[File:Slabbit.png|16px|link=]] Slabbit\n* [[File:Desert Bandit.png|16px|link=]] Desert Bandit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Ruby.png|16px|link=]] Ruby\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 1",
+            10
+          ],
+          [
+            "Dragonfruit",
+            5
+          ],
+          [
+            "Slabbit",
+            5
+          ],
+          [
+            "Desert Bandit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_2-0-1",
+        "x": 809,
+        "y": 424,
+        "name": "Desert 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 54'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Rokkik.png|16px|link=]] Rokkik\n* [[File:Slabbit.png|16px|link=]] Slabbit\n* [[File:Dragonfruit.png|16px|link=]] Dragonfruit\n* [[File:Desert Bandit.png|16px|link=]] Desert Bandit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Ruby.png|16px|link=]] Ruby\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 2",
+            10
+          ],
+          [
+            "Rokkik",
+            5
+          ],
+          [
+            "Slabbit",
+            5
+          ],
+          [
+            "Dragonfruit",
+            5
+          ],
+          [
+            "Desert Bandit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_3-0-2",
+        "x": 759,
+        "y": 349,
+        "name": "Desert 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 51'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Rokkik.png|16px|link=]] Rokkik\n* [[File:Cactus.png|16px|link=]] Cactus\n* [[File:Slabbit.png|16px|link=]] Slabbit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Ruby.png|16px|link=]] Ruby\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 3",
+            10
+          ],
+          [
+            "Rokkik",
+            5
+          ],
+          [
+            "Cactus",
+            5
+          ],
+          [
+            "Slabbit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_7-0-3",
+        "x": 964,
+        "y": 439,
+        "name": "Desert 7",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 88'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Pyramid Guardian.png|16px|link=]] Pyramid Guardian\n* [[File:Lime Slime.png|16px|link=]] Lime Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Black Diamond.png|16px|link=]] Black Diamond\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Memory Agave.png|16px|link=]] Memory Agave\n* [[File:Epochal Lily.png|16px|link=]] Epochal Lily\n* [[File:Sculpted Cactus.png|16px|link=]] Sculpted Cactus (trees)\n* [[File:History Fruit.png|16px|link=]] History Fruit (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 7",
+            10
+          ],
+          [
+            "Pyramid Guardian",
+            5
+          ],
+          [
+            "Lime Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_8-0-4",
+        "x": 894,
+        "y": 439,
+        "name": "Desert 8",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Ruby.png|16px|link=]] Ruby\n* [[File:Black Diamond.png|16px|link=]] Black Diamond\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Lava Octopus.png|16px|link=]] Lava Octopus\n* [[File:Fire Fish.png|16px|link=]] Fire Fish\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Desert Eel.png|16px|link=]] Desert Eel\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Chomper.png|16px|link=]] Chomper\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Epochal Lily.png|16px|link=]] Epochal Lily\n* [[File:Memory Agave.png|16px|link=]] Memory Agave\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Sculpted Cactus.png|16px|link=]] Sculpted Cactus (trees)\n* [[File:History Fruit.png|16px|link=]] History Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 8",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_5-0-5",
+        "x": 904,
+        "y": 314,
+        "name": "Desert 5",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 86'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Blaze.png|16px|link=]] Blaze\n* [[File:Haunted Flame.png|16px|link=]] Haunted Flame\n* [[File:Lost Bard.png|16px|link=]] Lost Bard\n* [[File:Saowl.png|16px|link=]] Saowl\n* [[File:Pyramid Guardian.png|16px|link=]] Pyramid Guardian\n* [[File:Lime Slime.png|16px|link=]] Lime Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Black Diamond.png|16px|link=]] Black Diamond\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Memory Agave.png|16px|link=]] Memory Agave\n* [[File:Epochal Lily.png|16px|link=]] Epochal Lily\n* [[File:Sculpted Cactus.png|16px|link=]] Sculpted Cactus (trees)\n* [[File:History Fruit.png|16px|link=]] History Fruit (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 5",
+            10
+          ],
+          [
+            "Blaze",
+            5
+          ],
+          [
+            "Haunted Flame",
+            5
+          ],
+          [
+            "Lost Bard",
+            5
+          ],
+          [
+            "Saowl",
+            5
+          ],
+          [
+            "Pyramid Guardian",
+            5
+          ],
+          [
+            "Lime Slime",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_6-0-6",
+        "x": 839,
+        "y": 254,
+        "name": "Desert 6",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Black Diamond.png|16px|link=]] Black Diamond\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Memory Agave.png|16px|link=]] Memory Agave\n* [[File:Epochal Lily.png|16px|link=]] Epochal Lily\n* [[File:Sculpted Cactus.png|16px|link=]] Sculpted Cactus (trees)\n* [[File:History Fruit.png|16px|link=]] History Fruit (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 6",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_4-0-7",
+        "x": 734,
+        "y": 269,
+        "name": "Desert 4",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 50'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cactus.png|16px|link=]] Cactus\n* [[File:Rokkik.png|16px|link=]] Rokkik\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Ruby.png|16px|link=]] Ruby\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Glowfish.png|16px|link=]] Glowfish\n* [[File:Angel Fish.png|16px|link=]] Angel Fish\n* [[File:Chomper.png|16px|link=]] Chomper\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert 4",
+            10
+          ],
+          [
+            "Cactus",
+            5
+          ],
+          [
+            "Rokkik",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-desert_coast-0-8",
+        "x": 759,
+        "y": 204,
+        "name": "Desert coast",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 85'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Saowl.png|16px|link=]] Saowl\n* [[File:Pyramid Guardian.png|16px|link=]] Pyramid Guardian\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Black Diamond.png|16px|link=]] Black Diamond\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Abyssal Octopus.png|16px|link=]] Abyssal Octopus\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Abyssal Urchin.png|16px|link=]] Abyssal Urchin\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Memory Agave.png|16px|link=]] Memory Agave\n* [[File:Epochal Lily.png|16px|link=]] Epochal Lily\n* [[File:Sculpted Cactus.png|16px|link=]] Sculpted Cactus (trees)\n* [[File:History Fruit.png|16px|link=]] History Fruit (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Desert coast",
+            10
+          ],
+          [
+            "Saowl",
+            5
+          ],
+          [
+            "Pyramid Guardian",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-savannah_1-0-9",
+        "x": 714,
+        "y": 474,
+        "name": "Savannah 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 22'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Licki.png|16px|link=]] Licki\n* [[File:Bananek.png|16px|link=]] Bananek\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Aloe Vera.png|16px|link=]] Aloe Vera\n* [[File:Pineapple.png|16px|link=]] Pineapple\n* [[File:Acacia Wood.png|16px|link=]] Acacia Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Savannah 1",
+            10
+          ],
+          [
+            "Licki",
+            5
+          ],
+          [
+            "Bananek",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-savannah_2-0-10",
+        "x": 744,
+        "y": 549,
+        "name": "Savannah 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 23'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Bananek.png|16px|link=]] Bananek\n* [[File:Citruslime.png|16px|link=]] Citruslime\n* [[File:Licki.png|16px|link=]] Licki\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Aloe Vera.png|16px|link=]] Aloe Vera\n* [[File:Pineapple.png|16px|link=]] Pineapple\n* [[File:Acacia Wood.png|16px|link=]] Acacia Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Savannah 2",
+            10
+          ],
+          [
+            "Bananek",
+            5
+          ],
+          [
+            "Citruslime",
+            5
+          ],
+          [
+            "Licki",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-savannah_3-0-11",
+        "x": 779,
+        "y": 629,
+        "name": "Savannah 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 24'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Citruslime.png|16px|link=]] Citruslime\n* [[File:Bananek.png|16px|link=]] Bananek\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Aloe Vera.png|16px|link=]] Aloe Vera\n* [[File:Pineapple.png|16px|link=]] Pineapple\n* [[File:Acacia Wood.png|16px|link=]] Acacia Wood (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Savannah 3",
+            10
+          ],
+          [
+            "Citruslime",
+            5
+          ],
+          [
+            "Bananek",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-windy_savannah-0-12",
+        "x": 874,
+        "y": 634,
+        "name": "Windy savannah",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 22'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Licki.png|16px|link=]] Licki\n* [[File:Citruslime.png|16px|link=]] Citruslime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Moss Snail.png|16px|link=]] Moss Snail\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Glowfish.png|16px|link=]] Glowfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Aloe Vera.png|16px|link=]] Aloe Vera\n* [[File:Pineapple.png|16px|link=]] Pineapple\n* [[File:Acacia Wood.png|16px|link=]] Acacia Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Windy savannah",
+            10
+          ],
+          [
+            "Licki",
+            5
+          ],
+          [
+            "Citruslime",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-11": [
+      {
+        "id": "zone-pyramid-0-0",
+        "x": 954,
+        "y": 399,
+        "name": "Pyramid",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Ruby.png|16px|link=]] Ruby\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Desert Sage.png|16px|link=]] Desert Sage\n* [[File:Desert Flower.png|16px|link=]] Desert Flower\n* [[File:Desert Rose.png|16px|link=]] Desert Rose\n* [[File:Cactus Fruit.png|16px|link=]] Cactus Fruit (trees)\n* [[File:Cactus.png|16px|link=]] Cactus (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Pyramid",
+            10
+          ]
+        ]
+      }
+    ],
+    "region-12": [
+      {
+        "id": "zone-savannah_cavern-0-0",
+        "x": 739,
+        "y": 594,
+        "name": "Banana farm",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 25'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Bananek.png|16px|link=]] Bananek\n* [[File:Overripe Bananek.png|16px|link=]] Overripe Bananek\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Aloe Vera.png|16px|link=]] Aloe Vera\n* [[File:Pineapple.png|16px|link=]] Pineapple\n* [[File:Acacia Wood.png|16px|link=]] Acacia Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Banana farm",
+            10
+          ],
+          [
+            "Bananek",
+            5
+          ],
+          [
+            "Overripe Bananek",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-13": [
+      {
+        "id": "zone-misty_forest_1-0-0",
+        "x": 689,
+        "y": 659,
+        "name": "Misty forest 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 27'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Monoghoul.png|16px|link=]] Monoghoul\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Petrified Wood.png|16px|link=]] Petrified Wood\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Lantern Bulb.png|16px|link=]] Lantern Bulb\n* [[File:Misty Fruit.png|16px|link=]] Misty Fruit (trees)\n* [[File:Misty Wood.png|16px|link=]] Misty Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Misty forest 1",
+            10
+          ],
+          [
+            "Monoghoul",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-misty_forest_2-0-1",
+        "x": 619,
+        "y": 684,
+        "name": "Misty forest 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 27'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Sadling.png|16px|link=]] Sadling\n* [[File:Monoghoul.png|16px|link=]] Monoghoul\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Petrified Wood.png|16px|link=]] Petrified Wood\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Lantern Bulb.png|16px|link=]] Lantern Bulb\n* [[File:Misty Fruit.png|16px|link=]] Misty Fruit (trees)\n* [[File:Misty Wood.png|16px|link=]] Misty Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Starfish.png|16px|link=]] Starfish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Misty forest 2",
+            10
+          ],
+          [
+            "Sadling",
+            5
+          ],
+          [
+            "Monoghoul",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-misty_forest_3-0-2",
+        "x": 534,
+        "y": 669,
+        "name": "Misty forest 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 29'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Sadling.png|16px|link=]] Sadling\n* [[File:Dark Pumpkin.png|16px|link=]] Dark Pumpkin\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Petrified Wood.png|16px|link=]] Petrified Wood\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Lantern Bulb.png|16px|link=]] Lantern Bulb\n* [[File:Misty Fruit.png|16px|link=]] Misty Fruit (trees)\n* [[File:Misty Wood.png|16px|link=]] Misty Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Misty forest 3",
+            10
+          ],
+          [
+            "Sadling",
+            5
+          ],
+          [
+            "Dark Pumpkin",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-14": [
+      {
+        "id": "zone-lost_forest-0-0",
+        "x": 569,
+        "y": 709,
+        "name": "Lost Forest",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 30'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Monoghoul.png|16px|link=]] Monoghoul\n* [[File:Denial.png|16px|link=]] Denial\n* [[File:Sadling.png|16px|link=]] Sadling\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Petrified Wood.png|16px|link=]] Petrified Wood\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Lantern Bulb.png|16px|link=]] Lantern Bulb\n* [[File:Misty Fruit.png|16px|link=]] Misty Fruit (trees)\n* [[File:Misty Wood.png|16px|link=]] Misty Wood (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Seaweed.png|16px|link=]] Seaweed\n* [[File:Starfish.png|16px|link=]] Starfish",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Lost Forest",
+            10
+          ],
+          [
+            "Monoghoul",
+            5
+          ],
+          [
+            "Denial",
+            5
+          ],
+          [
+            "Sadling",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-15": [
+      {
+        "id": "zone-sulfuric_plains_1-0-0",
+        "x": 474,
+        "y": 664,
+        "name": "Sulfuric plains 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 32'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Stinky Sheep.png|16px|link=]] Stinky Sheep\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Silver Leaf.png|16px|link=]] Silver Leaf\n* [[File:Yellow Garlic.png|16px|link=]] Yellow Garlic\n* [[File:Sulfuric Wood.png|16px|link=]] Sulfuric Wood (trees)\n* [[File:Spot Tomato.png|16px|link=]] Spot Tomato (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Sulfuric plains 1",
+            10
+          ],
+          [
+            "Stinky Sheep",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-sulfuric_plains_2-0-1",
+        "x": 434,
+        "y": 644,
+        "name": "Sulfuric plains 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 33'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Spot Slime.png|16px|link=]] Spot Slime\n* [[File:Stinky Sheep.png|16px|link=]] Stinky Sheep\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Silver Leaf.png|16px|link=]] Silver Leaf\n* [[File:Yellow Garlic.png|16px|link=]] Yellow Garlic\n* [[File:Sulfuric Wood.png|16px|link=]] Sulfuric Wood (trees)\n* [[File:Spot Tomato.png|16px|link=]] Spot Tomato (trees)\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Trout.png|16px|link=]] Trout\n* [[File:Sulfur Squid.png|16px|link=]] Sulfur Squid\n* [[File:Clownfish.png|16px|link=]] Clownfish\n* [[File:Seaweed.png|16px|link=]] Seaweed",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Sulfuric plains 2",
+            10
+          ],
+          [
+            "Spot Slime",
+            5
+          ],
+          [
+            "Stinky Sheep",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-sulfuric_plains_3-0-2",
+        "x": 394,
+        "y": 609,
+        "name": "Sulfuric plains 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 35'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Licke.png|16px|link=]] Licke\n* [[File:Spot Slime.png|16px|link=]] Spot Slime\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Silver Leaf.png|16px|link=]] Silver Leaf\n* [[File:Yellow Garlic.png|16px|link=]] Yellow Garlic\n* [[File:Sulfuric Wood.png|16px|link=]] Sulfuric Wood (trees)\n* [[File:Spot Tomato.png|16px|link=]] Spot Tomato (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Sulfuric plains 3",
+            10
+          ],
+          [
+            "Licke",
+            5
+          ],
+          [
+            "Spot Slime",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-16": [
+      {
+        "id": "zone-sulfuric_path-0-0",
+        "x": 414,
+        "y": 669,
+        "name": "Sulfuric path",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 34'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Spot Slime.png|16px|link=]] Spot Slime\n* [[File:Lumen Sprite.png|16px|link=]] Lumen Sprite\n* [[File:Licke.png|16px|link=]] Licke\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Silver Leaf.png|16px|link=]] Silver Leaf\n* [[File:Yellow Garlic.png|16px|link=]] Yellow Garlic\n* [[File:Sulfuric Wood.png|16px|link=]] Sulfuric Wood (trees)\n* [[File:Spot Tomato.png|16px|link=]] Spot Tomato (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Sulfuric path",
+            10
+          ],
+          [
+            "Spot Slime",
+            5
+          ],
+          [
+            "Lumen Sprite",
+            5
+          ],
+          [
+            "Licke",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-sulfuric_path_2-0-1",
+        "x": 399,
+        "y": 704,
+        "name": "Sulfuric path 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 33'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Anger.png|16px|link=]] Anger\n* [[File:Licke.png|16px|link=]] Licke\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Silver Leaf.png|16px|link=]] Silver Leaf\n* [[File:Yellow Garlic.png|16px|link=]] Yellow Garlic\n* [[File:Sulfuric Wood.png|16px|link=]] Sulfuric Wood (trees)\n* [[File:Spot Tomato.png|16px|link=]] Spot Tomato (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Sulfuric path 2",
+            10
+          ],
+          [
+            "Anger",
+            5
+          ],
+          [
+            "Licke",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-17": [
+      {
+        "id": "zone-rocky_path_1-0-0",
+        "x": 314,
+        "y": 689,
+        "name": "Rocky path 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 65'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Rokkak.png|16px|link=]] Rokkak\n* [[File:Rocky.png|16px|link=]] Rocky\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ashen Onion.png|16px|link=]] Ashen Onion\n* [[File:Red Soy.png|16px|link=]] Red Soy\n* [[File:Red Dandelion.png|16px|link=]] Red Dandelion\n* [[File:Rocky Wood.png|16px|link=]] Rocky Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Rocky path 1",
+            10
+          ],
+          [
+            "Rokkak",
+            5
+          ],
+          [
+            "Rocky",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-rocky_path_2-0-1",
+        "x": 379,
+        "y": 739,
+        "name": "Rocky path 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 67'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cat Golem.png|16px|link=]] Cat Golem\n* [[File:Rokkak.png|16px|link=]] Rokkak\n* [[File:Rocky.png|16px|link=]] Rocky\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ashen Onion.png|16px|link=]] Ashen Onion\n* [[File:Red Soy.png|16px|link=]] Red Soy\n* [[File:Red Dandelion.png|16px|link=]] Red Dandelion\n* [[File:Rocky Wood.png|16px|link=]] Rocky Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Rocky path 2",
+            10
+          ],
+          [
+            "Cat Golem",
+            5
+          ],
+          [
+            "Rokkak",
+            5
+          ],
+          [
+            "Rocky",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-rocky_path_3-0-2",
+        "x": 259,
+        "y": 624,
+        "name": "Rocky path 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 70'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cat Guardian.png|16px|link=]] Cat Guardian\n* [[File:Rocky.png|16px|link=]] Rocky\n* [[File:Cat Golem.png|16px|link=]] Cat Golem\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Fire Fish.png|16px|link=]] Fire Fish\n* [[File:Lava Octopus.png|16px|link=]] Lava Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Moss Snail.png|16px|link=]] Moss Snail\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ashen Onion.png|16px|link=]] Ashen Onion\n* [[File:Red Soy.png|16px|link=]] Red Soy\n* [[File:Red Dandelion.png|16px|link=]] Red Dandelion\n* [[File:Rocky Wood.png|16px|link=]] Rocky Wood (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Rocky path 3",
+            10
+          ],
+          [
+            "Cat Guardian",
+            5
+          ],
+          [
+            "Rocky",
+            5
+          ],
+          [
+            "Cat Golem",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-18": [
+      {
+        "id": "zone-detour-0-0",
+        "x": 184,
+        "y": 599,
+        "name": "Detour",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 70'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Ashball.png|16px|link=]] Ashball\n* [[File:Cat Guardian.png|16px|link=]] Cat Guardian\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ashen Onion.png|16px|link=]] Ashen Onion\n* [[File:Red Soy.png|16px|link=]] Red Soy\n* [[File:Red Dandelion.png|16px|link=]] Red Dandelion\n* [[File:Rocky Wood.png|16px|link=]] Rocky Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Detour",
+            10
+          ],
+          [
+            "Ashball",
+            5
+          ],
+          [
+            "Cat Guardian",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-rocky_path_den-0-1",
+        "x": 358,
+        "y": 754,
+        "name": "Cat Golem Den",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 69'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cat Golem.png|16px|link=]] Cat Golem\n* [[File:Cat Guardian.png|16px|link=]] Cat Guardian\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Fire Fish.png|16px|link=]] Fire Fish\n* [[File:Lava Octopus.png|16px|link=]] Lava Octopus\n* [[File:Wolf Fish.png|16px|link=]] Wolf Fish\n* [[File:Spookee.png|16px|link=]] Spookee\n* [[File:Moss Snail.png|16px|link=]] Moss Snail\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Ashen Onion.png|16px|link=]] Ashen Onion\n* [[File:Red Soy.png|16px|link=]] Red Soy\n* [[File:Red Dandelion.png|16px|link=]] Red Dandelion\n* [[File:Rocky Wood.png|16px|link=]] Rocky Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Cat Golem Den",
+            10
+          ],
+          [
+            "Cat Golem",
+            5
+          ],
+          [
+            "Cat Guardian",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-19": [
+      {
+        "id": "zone-snowy_mountain_1-0-0",
+        "x": 629,
+        "y": 799,
+        "name": "Snowy mountain 1",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 58'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slibbit.png|16px|link=]] Slibbit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Ice Jelly.png|16px|link=]] Ice Jelly\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Glowfish.png|16px|link=]] Glowfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snowy mountain 1",
+            10
+          ],
+          [
+            "Slibbit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-snowy_mountain_2-0-1",
+        "x": 714,
+        "y": 764,
+        "name": "Snowy mountain 2",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 59'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slibbit.png|16px|link=]] Slibbit\n* [[File:Blizzy.png|16px|link=]] Blizzy\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snowy mountain 2",
+            10
+          ],
+          [
+            "Slibbit",
+            5
+          ],
+          [
+            "Blizzy",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-snowy_mountain_4-0-2",
+        "x": 439,
+        "y": 779,
+        "name": "Snowy mountain 4",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 61'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Blizzy.png|16px|link=]] Blizzy\n* [[File:Snowball.png|16px|link=]] Snowball\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snowy mountain 4",
+            10
+          ],
+          [
+            "Blizzy",
+            5
+          ],
+          [
+            "Snowball",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-snowy_mountain_5-0-3",
+        "x": 534,
+        "y": 789,
+        "name": "Snowy mountain 5",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 60'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Frostfruit.png|16px|link=]] Frostfruit\n* [[File:Snowball.png|16px|link=]] Snowball\n* [[File:Blizzy.png|16px|link=]] Blizzy\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Ice Jelly.png|16px|link=]] Ice Jelly\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Glowfish.png|16px|link=]] Glowfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snowy mountain 5",
+            10
+          ],
+          [
+            "Frostfruit",
+            5
+          ],
+          [
+            "Snowball",
+            5
+          ],
+          [
+            "Blizzy",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-snowy_mountain_3-0-4",
+        "x": 804,
+        "y": 744,
+        "name": "Snowy mountain 3",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 63'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Snowball.png|16px|link=]] Snowball\n* [[File:Blizzy.png|16px|link=]] Blizzy\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Ice Jelly.png|16px|link=]] Ice Jelly\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Glowfish.png|16px|link=]] Glowfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Snowy mountain 3",
+            10
+          ],
+          [
+            "Snowball",
+            5
+          ],
+          [
+            "Blizzy",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-20": [
+      {
+        "id": "zone-traveler_rest-0-0",
+        "x": 484,
+        "y": 799,
+        "name": "Traveler rest",
+        "description": "'''Surface zone''' &bull; <span style=\"color:#ffd166\">'''Level 62'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Icyghoul.png|16px|link=]] Icyghoul\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Ice Jelly.png|16px|link=]] Ice Jelly\n* [[File:Electray.png|16px|link=]] Electray\n* [[File:Ice Salmon.png|16px|link=]] Ice Salmon\n* [[File:Glowfish.png|16px|link=]] Glowfish\n<span style=\"color:#8bc34a\">'''Herbalism'''</span>\n* [[File:Dew Bloom.png|16px|link=]] Dew Bloom\n* [[File:Blue Ginseng.png|16px|link=]] Blue Ginseng\n* [[File:Ice Flax Seed.png|16px|link=]] Ice Flax Seed\n* [[File:Blue Cinnamon Wood.png|16px|link=]] Blue Cinnamon Wood (trees)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Traveler rest",
+            10
+          ],
+          [
+            "Icyghoul",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-21": [
+      {
+        "id": "zone-spawn-1-0",
+        "x": 549,
+        "y": 145,
+        "name": "Spawn",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#63a5e0\">'''Fishing'''</span>\n* [[File:Clam.png|16px|link=]] Clam\n* [[File:Shrimp.png|16px|link=]] Shrimp\n* [[File:Trout.png|16px|link=]] Trout\n\n<span style=\"color:#4fd1c5\">'''Warp point:'''</span> Yes",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Spawn",
+            10
+          ]
+        ]
+      }
+    ],
+    "region-22": [
+      {
+        "id": "zone-cave_1-1-0",
+        "x": 529,
+        "y": 228,
+        "name": "Cave 1",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 4'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Cave 1",
+            10
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-cave_2-1-1",
+        "x": 588,
+        "y": 274,
+        "name": "Cave 2",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 6'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Glowsnail.png|16px|link=]] Glowsnail\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Cave 2",
+            10
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Glowsnail",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-cave_3-1-2",
+        "x": 674,
+        "y": 284,
+        "name": "Cave 3",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 5'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Jel.png|16px|link=]] Jel\n* [[File:Bubble Spirit.png|16px|link=]] Bubble Spirit\n* [[File:Glowsnail.png|16px|link=]] Glowsnail\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Blue Shard.png|16px|link=]] Blue Shard\n* [[File:Red Shard.png|16px|link=]] Red Shard\n* [[File:Yellow Shard.png|16px|link=]] Yellow Shard\n* [[File:Red Crystal.png|16px|link=]] Red Crystal\n* [[File:Blue Crystal.png|16px|link=]] Blue Crystal\n* [[File:Yellow Crystal.png|16px|link=]] Yellow Crystal",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Cave 3",
+            10
+          ],
+          [
+            "Jel",
+            5
+          ],
+          [
+            "Bubble Spirit",
+            5
+          ],
+          [
+            "Glowsnail",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-23": [
+      {
+        "id": "zone-deep_cave_1-1-0",
+        "x": 724,
+        "y": 324,
+        "name": "Deep cave 1",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 21'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Banshek.png|16px|link=]] Banshek\n* [[File:Lampshroom.png|16px|link=]] Lampshroom\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Iron Ore.png|16px|link=]] Iron Ore",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 1",
+            10
+          ],
+          [
+            "Banshek",
+            5
+          ],
+          [
+            "Lampshroom",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_2-1-1",
+        "x": 654,
+        "y": 368,
+        "name": "Deep cave 2",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n* None",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 2",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_3-1-2",
+        "x": 589,
+        "y": 398,
+        "name": "Deep cave 3",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 30'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Dark Matter.png|16px|link=]] Dark Matter\n* [[File:Mangosteen Slime.png|16px|link=]] Mangosteen Slime\n* [[File:Shadow Sprite.png|16px|link=]] Shadow Sprite\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Petrified Wood.png|16px|link=]] Petrified Wood",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 3",
+            10
+          ],
+          [
+            "Dark Matter",
+            5
+          ],
+          [
+            "Mangosteen Slime",
+            5
+          ],
+          [
+            "Shadow Sprite",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_4-1-3",
+        "x": 543,
+        "y": 384,
+        "name": "Deep cave 4",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 33'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Dark Matter.png|16px|link=]] Dark Matter\n* [[File:Shadow Sprite.png|16px|link=]] Shadow Sprite\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 4",
+            10
+          ],
+          [
+            "Dark Matter",
+            5
+          ],
+          [
+            "Shadow Sprite",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_6-1-4",
+        "x": 503,
+        "y": 368,
+        "name": "Deep cave 6",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 40'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Shadow Sprite.png|16px|link=]] Shadow Sprite\n* [[File:Elemental.png|16px|link=]] Elemental\n* [[File:Dark Mass.png|16px|link=]] Dark Mass\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Cobalt Ore.png|16px|link=]] Cobalt Ore\n* [[File:Aquamarine.png|16px|link=]] Aquamarine",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 6",
+            10
+          ],
+          [
+            "Shadow Sprite",
+            5
+          ],
+          [
+            "Elemental",
+            5
+          ],
+          [
+            "Dark Mass",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_5-1-5",
+        "x": 428,
+        "y": 399,
+        "name": "Deep cave 5",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 0'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* None\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n* None",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 5",
+            10
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_x-1-6",
+        "x": 538,
+        "y": 993,
+        "name": "Deep cave x",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 90'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Licka.png|16px|link=]] Licka\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n* None",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave x",
+            10
+          ],
+          [
+            "Licka",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_7-1-7",
+        "x": 544,
+        "y": 938,
+        "name": "Deep cave 7",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 98'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Lost Ruins.png|16px|link=]] Lost Ruins\n* [[File:Fallentree.png|16px|link=]] Fallentree\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Obsidium.png|16px|link=]] Obsidium\n* [[File:Blood Pebble.png|16px|link=]] Blood Pebble\n* [[File:Darkshard.png|16px|link=]] Darkshard\n* [[File:Ruby.png|16px|link=]] Ruby\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n* [[File:Bloodstone.png|16px|link=]] Bloodstone",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 7",
+            10
+          ],
+          [
+            "Lost Ruins",
+            5
+          ],
+          [
+            "Fallentree",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_8-1-8",
+        "x": 533,
+        "y": 438,
+        "name": "Deep cave 8",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 42'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Death Mist.png|16px|link=]] Death Mist\n* [[File:Dark Mass.png|16px|link=]] Dark Mass\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Malachite Ore.png|16px|link=]] Malachite Ore\n* [[File:Emerald.png|16px|link=]] Emerald",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 8",
+            10
+          ],
+          [
+            "Death Mist",
+            5
+          ],
+          [
+            "Dark Mass",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_10-1-9",
+        "x": 554,
+        "y": 568,
+        "name": "Deep cave 10",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 62'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cursed Spot.png|16px|link=]] Cursed Spot\n* [[File:Cursed Slibbit.png|16px|link=]] Cursed Slibbit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 10",
+            10
+          ],
+          [
+            "Cursed Spot",
+            5
+          ],
+          [
+            "Cursed Slibbit",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_11-1-10",
+        "x": 494,
+        "y": 599,
+        "name": "Deep cave 11",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 65'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Licku.png|16px|link=]] Licku\n* [[File:Cursed Spot.png|16px|link=]] Cursed Spot\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Gold Ore.png|16px|link=]] Gold Ore\n* [[File:Amber.png|16px|link=]] Amber",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 11",
+            10
+          ],
+          [
+            "Licku",
+            5
+          ],
+          [
+            "Cursed Spot",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_12-1-11",
+        "x": 494,
+        "y": 663,
+        "name": "Deep cave 12",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 69'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Frostshroom.png|16px|link=]] Frostshroom\n* [[File:Licku.png|16px|link=]] Licku\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 12",
+            10
+          ],
+          [
+            "Frostshroom",
+            5
+          ],
+          [
+            "Licku",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_13-1-12",
+        "x": 553,
+        "y": 683,
+        "name": "Deep cave 13",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 72'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cosmowl.png|16px|link=]] Cosmowl\n* [[File:Frostshroom.png|16px|link=]] Frostshroom\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Mithril Ore.png|16px|link=]] Mithril Ore\n* [[File:Dream Fragment.png|16px|link=]] Dream Fragment\n* [[File:Dreamstone.png|16px|link=]] Dreamstone",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 13",
+            10
+          ],
+          [
+            "Cosmowl",
+            5
+          ],
+          [
+            "Frostshroom",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_14-1-13",
+        "x": 573,
+        "y": 734,
+        "name": "Deep cave 14",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 75'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cursed Tallshroom.png|16px|link=]] Cursed Tallshroom\n* [[File:Cosmowl.png|16px|link=]] Cosmowl\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Arcane Crystal.png|16px|link=]] Arcane Crystal\n* [[File:Ocean Shard.png|16px|link=]] Ocean Shard\n* [[File:Ocean Heart.png|16px|link=]] Ocean Heart",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 14",
+            10
+          ],
+          [
+            "Cursed Tallshroom",
+            5
+          ],
+          [
+            "Cosmowl",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_15-1-14",
+        "x": 554,
+        "y": 799,
+        "name": "Deep cave 15",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 83'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Cursed Cloudsheep.png|16px|link=]] Cursed Cloudsheep\n* [[File:Cursed Tallshroom.png|16px|link=]] Cursed Tallshroom\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Starmetal.png|16px|link=]] Starmetal\n* [[File:Black Diamond Fragment.png|16px|link=]] Black Diamond Fragment\n* [[File:Black Diamond.png|16px|link=]] Black Diamond",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 15",
+            10
+          ],
+          [
+            "Cursed Cloudsheep",
+            5
+          ],
+          [
+            "Cursed Tallshroom",
+            5
+          ]
+        ]
+      },
+      {
+        "id": "zone-deep_cave_9-1-15",
+        "x": 554,
+        "y": 869,
+        "name": "Deep cave 9",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 95'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Lost Ruins.png|16px|link=]] Lost Ruins\n* [[File:Licka.png|16px|link=]] Licka\n* [[File:Fallentree.png|16px|link=]] Fallentree\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Eternal Ice.png|16px|link=]] Eternal Ice\n* [[File:Moon Shard.png|16px|link=]] Moon Shard\n* [[File:Moonstone.png|16px|link=]] Moonstone",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Deep cave 9",
+            10
+          ],
+          [
+            "Lost Ruins",
+            5
+          ],
+          [
+            "Licka",
+            5
+          ],
+          [
+            "Fallentree",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-24": [
+      {
+        "id": "zone-hall_of_might-1-0",
+        "x": 459,
+        "y": 384,
+        "name": "Hall of Might",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 105'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Shadow Golem.png|16px|link=]] Shadow Golem\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Obsidium.png|16px|link=]] Obsidium\n* [[File:Blood Pebble.png|16px|link=]] Blood Pebble\n* [[File:Darkshard.png|16px|link=]] Darkshard\n* [[File:Ruby.png|16px|link=]] Ruby\n* [[File:Bismuth.png|16px|link=]] Bismuth\n* [[File:Sulfuric powder.png|16px|link=]] Sulfuric powder\n* [[File:Bloodstone.png|16px|link=]] Bloodstone",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Hall of Might",
+            10
+          ],
+          [
+            "Shadow Golem",
+            5
+          ]
+        ]
+      }
+    ],
+    "region-25": [
+      {
+        "id": "zone-frost_cave-1-0",
+        "x": 564,
+        "y": 494,
+        "name": "Frost cave",
+        "description": "'''Caves zone''' &bull; <span style=\"color:#ffd166\">'''Level 57'''</span>\n----\n<span style=\"color:#4fd1c5\">'''Monsters:'''</span>\n* [[File:Slibbit.png|16px|link=]] Slibbit\n* [[File:Elemental.png|16px|link=]] Elemental\n* [[File:Cursed Slibbit.png|16px|link=]] Cursed Slibbit\n\n<span style=\"color:#4fd1c5\">'''Resources:'''</span>\n<span style=\"color:#b08968\">'''Mining'''</span>\n* [[File:Titanium Ore.png|16px|link=]] Titanium Ore\n* [[File:Sapphire.png|16px|link=]] Sapphire",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": [
+          [
+            "Frost cave",
+            10
+          ],
+          [
+            "Slibbit",
+            5
+          ],
+          [
+            "Elemental",
+            5
+          ],
+          [
+            "Cursed Slibbit",
+            5
+          ]
+        ]
+      }
+    ]
+  }
+}

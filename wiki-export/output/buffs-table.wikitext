@@ -3,7 +3,7 @@
 ! class="unsortable" | Icon
 ! Name !! ID !! Branch !! Affected stats !! Base bonus !! Per level !! Duration !! Cooldown !! MP/HP cost !! Party sharing !! Stacking !! Restrictions
 |-
-| [[File:Arrow Infusion icon.png|24px]]
+| [[File:Arrow Infusion.png|24px]]
 | [[#Arrow Infusion|Arrow Infusion]]
 | 94
 | Range
@@ -17,7 +17,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Blood Sacrifice icon.png|24px]]
+| [[File:Blood Sacrifice.png|24px]]
 | [[#Blood Sacrifice|Blood Sacrifice]]
 | 62
 | Magic
@@ -31,7 +31,7 @@
 | Unspecified
 | Skill costs you cannot afford with MP are paid in HP instead, damage you take converts to MP, every MP cost you pay rebounds as Shield, and 30% of your max HP becomes max Shield.
 |-
-| [[File:Clarity icon.png|24px]]
+| [[File:Clarity.png|24px]]
 | [[#Clarity|Clarity]]
 | 95
 | Range
@@ -45,7 +45,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Companion icon.png|24px]]
+| [[File:Companion.png|24px]]
 | [[#Companion|Companion]]
 | 104
 | Range
@@ -59,7 +59,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Dedication icon.png|24px]]
+| [[File:Dedication.png|24px]]
 | [[#Dedication|Dedication]]
 | 106
 | Faith
@@ -73,7 +73,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Divine Benevolence icon.png|24px]]
+| [[File:Divine Benevolence.png|24px]]
 | [[#Divine Benevolence|Divine Benevolence]]
 | 105
 | Faith
@@ -87,7 +87,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Divine Thorn icon.png|24px]]
+| [[File:Divine Thorn.png|24px]]
 | [[#Divine Thorn|Divine Thorn]]
 | 107
 | Faith
@@ -101,7 +101,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Elemental Charge icon.png|24px]]
+| [[File:Elemental Charge.png|24px]]
 | [[#Elemental Charge|Elemental Charge]]
 | 22
 | Faith
@@ -115,7 +115,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Familiar icon.png|24px]]
+| [[File:Familiar.png|24px]]
 | [[#Familiar|Familiar]]
 | 103
 | Magic
@@ -129,7 +129,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Focused Mind icon.png|24px]]
+| [[File:Focused Mind.png|24px]]
 | [[#Focused Mind|Focused Mind]]
 | 102
 | Magic
@@ -143,7 +143,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Mana Shield icon.png|24px]]
+| [[File:Mana Shield.png|24px]]
 | [[#Mana Shield|Mana Shield]]
 | 28
 | Magic
@@ -157,7 +157,7 @@
 | Multiplicative
 | None found
 |-
-| [[File:Nimble icon.png|24px]]
+| [[File:Nimble.png|24px]]
 | [[#Nimble|Nimble]]
 | 108
 | Range
@@ -171,7 +171,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Phasing icon.png|24px]]
+| [[File:Phasing.png|24px]]
 | [[#Phasing|Phasing]]
 | 86
 | Range
@@ -185,7 +185,7 @@
 | Multiplicative
 | None found
 |-
-| [[File:Shadow Twin icon.png|24px]]
+| [[File:Shadow Twin.png|24px]]
 | [[#Shadow Twin|Shadow Twin]]
 | 46
 | Range
@@ -199,7 +199,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Undying icon.png|24px]]
+| [[File:Undying.png|24px]]
 | [[#Undying|Undying]]
 | 100
 | Melee
@@ -213,7 +213,7 @@
 | Unspecified
 | None found
 |-
-| [[File:Vanguard icon.png|24px]]
+| [[File:Vanguard.png|24px]]
 | [[#Vanguard|Vanguard]]
 | 88
 | Faith

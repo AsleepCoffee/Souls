@@ -1,4 +1,4 @@
-import type { Branch, Classification, ItemCategory, Provenance } from "./types";
+import type { Branch, Classification, ItemCategory, Provenance, ZoneLayer } from "./types";
 
 // Matched to the actual in-game skill_tree_combat_color_overlay.png quadrant
 // colors (sampled: Melee #ff7777 top, Faith #cc9eff right, Range #fdff77
@@ -97,3 +97,32 @@ export const EQUIPMENT_SLOT_LABEL: Record<number, string> = {
 };
 
 export const EQUIPMENT_SLOT_TYPES: number[] = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13];
+
+export const ZONE_LAYER_LABEL: Record<ZoneLayer, string> = {
+  0: "Surface",
+  1: "Caves",
+};
+
+export const ZONE_LAYER_COLOR: Record<ZoneLayer, string> = {
+  0: "#e8b968",
+  1: "#8b7cf6",
+};
+
+export const ZONE_LAYERS: ZoneLayer[] = [0, 1];
+
+// Resource-type enum observed in the World Map capture (herbalism/mining/fishing gathering
+// nodes). Colors picked distinct from ITEM_CATEGORY_COLOR since both badges can appear together
+// on an item's "Where to gather" section.
+export const RESOURCE_TYPE_LABEL: Record<number, string> = {
+  0: "Herbalism",
+  1: "Mining",
+  2: "Fishing",
+};
+
+export const RESOURCE_TYPE_COLOR: Record<number, string> = {
+  0: "#b5e05c",
+  1: "#8a94a6",
+  2: "#5fc9d9",
+};
+
+export const RESOURCE_TYPES: number[] = [0, 1, 2];

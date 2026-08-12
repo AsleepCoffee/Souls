@@ -30,11 +30,13 @@ npm run lint       # oxlint
 | Route | Contents |
 |---|---|
 | `/skills` | The full 79-node combat skill tree (pan/zoom, keyboard nav, hover tooltip, detail panel), a sortable skills table, a buffs/toggles table, and attack-speed/scaling compare tools. |
-| `/items` | 1,181 items + 320 equipment pieces, sortable/searchable/filterable by category and equipment slot, each with a detail page at `/items/:slug`. |
-| `/monsters` | 135 monsters, sortable/searchable, each with a detail page at `/monsters/:slug`. |
-| `/maps` | An honest "here's what little we know" page — no zone database exists client-side. |
-| `/leveling` | Same treatment — no EXP curve or level cap exists in any recovered file. |
+| `/items` | 1,181 items + 320 equipment pieces, sortable/searchable/filterable by category and equipment slot, each with a detail page at `/items/:slug` — gathering-material items show every zone they can be gathered in and at what spawn chance. |
+| `/monsters` | 135 monsters, sortable/searchable, each with a detail page at `/monsters/:slug` — cross-linked to every World Map zone the monster spawns in. |
+| `/maps` | An interactive Surface/Caves World Map — all 105 zones, click a marker for its level, monster spawns, gathering resources (with spawn chance %), and warp point status. |
+| `/leveling` | An honest "here's what little we know" page — no EXP curve or level cap exists in any recovered file. |
 | `/build-planner` | A shareable equipment + skill loadout composer (not a DPS calculator — see below). |
+
+Press **Ctrl/⌘ K** anywhere on the site to search skills, items, monsters, and zones in one place.
 
 None of the UI hard-codes game data — every page reads a generated JSON file (`src/data/*.generated.json`)
 produced by a standalone pipeline script. See [`data-pipeline/README.md`](data-pipeline/README.md) for exactly
@@ -68,6 +70,16 @@ recording it from your own live-connected client, and `data-pipeline/observation
 pipeline picks up whatever you capture. See
 [`data-pipeline/README.md`](data-pipeline/README.md#recovering-server-runtime-fields-live-capture--observations)
 for how it works and the ToS/account-risk caveat that comes with running a modified client.
+
+**Skills are fully captured as of 2026-08-11** — all 79 combat skills' base power, power/level, cooldown,
+duration, attacks/sec, per-stat scaling, and unlock requirements are populated from a live runtime export
+(`data-pipeline/import-runtime-skill-capture.mjs`) and tagged `"observed_live"`.
+
+**The World Map is also fully captured as of 2026-08-11** — all 105 zones' level, monster spawns, gathering
+resources (with spawn chance %), and warp point status are populated and tagged `"observed_live"` (see
+`/maps` above, and `data-pipeline/build-maps-data.mjs`). This is *not* the same thing as a monster's actual
+combat loot/drop table, though — `MonsterRecord.drop_table`, `ItemStats.rarity`, `ItemStats.required_level`,
+and `ItemStats.modifiers` still have no capture on file and remain "Unknown".
 
 The Build Planner is a loadout composer, not a stat calculator, for the same reason — there's no honest number
 to compute a "build score" from.

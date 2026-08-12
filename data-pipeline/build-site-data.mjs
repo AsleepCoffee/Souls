@@ -28,7 +28,7 @@ function observedStat(obs, key, note) {
   return {
     value: obs[key],
     provenance: "observed_live",
-    note: `${note} Captured from the running client (see data-pipeline/live-capture/) in ${obs._source_file}${
+    note: `${note} Captured from the running client in ${obs._source_file}${
       obs.recorded_at_unix ? ` on ${new Date(obs.recorded_at_unix * 1000).toISOString().slice(0, 10)}` : ""
     }${obs.recorded_level ? ` at skill level ${obs.recorded_level}` : ""}.`,
   };
@@ -37,7 +37,11 @@ function observedStat(obs, key, note) {
 function formatLevelRequirements(reqs) {
   if (!Array.isArray(reqs) || reqs.length === 0) return null;
   return reqs
-    .map((r) => (r && r.skill_id === -2 ? `Character level ${r.level}` : `Skill #${r?.skill_id} at level ${r?.level}`))
+    .map((r) => {
+      if (!r) return "";
+      if (r.skill_id === -2) return `Character level ${r.level}`;
+      return r.skill_name ? `${r.skill_name} (Skill #${r.skill_id}) at level ${r.level}` : `Skill #${r.skill_id} at level ${r.level}`;
+    })
     .join(", ");
 }
 
@@ -259,8 +263,13 @@ function buildSkillRecord(skill, iconMap, observations) {
         observedStat(obs, "cooldown_ms", "Skill.cooldown is server-supplied at runtime.") ??
         unknownStat("Skill.cooldown is server-supplied at runtime."),
       duration_ms:
-        observedStat(obs, "duration_ms", "Skill.duration is server-supplied at runtime.") ??
-        unknownStat("Skill.duration is server-supplied at runtime."),
+        observedStat(
+          obs,
+          "duration_ms",
+          `Skill.duration is server-supplied at runtime.${
+            obs?.duration_per_level_ms ? ` Increases by ${obs.duration_per_level_ms}ms per level.` : ""
+          }`
+        ) ?? unknownStat("Skill.duration is server-supplied at runtime."),
       attack_per_second:
         observedStat(obs, "attack_per_second", "Skill.attack_per_second is server-supplied at runtime.") ??
         unknownStat("Skill.attack_per_second is server-supplied at runtime."),
@@ -291,7 +300,7 @@ function buildSkillRecord(skill, iconMap, observations) {
           value: formatted,
           raw: formatted,
           provenance: "observed_live",
-          note: `Captured from the running client's Skill.vOYoJ1G (see data-pipeline/live-capture/) in ${obs._source_file}.`,
+          note: `Captured from the running client's Skill.vOYoJ1G in ${obs._source_file}.`,
         };
       }
       return {

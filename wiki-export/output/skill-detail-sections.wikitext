@@ -1,5 +1,5 @@
 === Arcane Surge ===
-[[File:Arcane Surge icon.png|32px]] '''Arcane Surge''' (ID <code>54</code>)
+[[File:Arcane Surge.png|32px]] '''Arcane Surge''' (ID <code>54</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -8,10 +8,10 @@
 
 Roll a hunting ball of raw magic that rumbles forward, homing onto enemies and battering everything it touches every 0.4 seconds.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 20 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Armor Link ===
-[[File:Armor Link icon.png|32px]] '''Armor Link''' (ID <code>27</code>)
+[[File:Armor Link.png|32px]] '''Armor Link''' (ID <code>27</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -20,10 +20,10 @@ Roll a hunting ball of raw magic that rumbles forward, homing onto enemies and b
 
 Pick a party member on your map: they take 35% less damage and you take that damage for them, rising to 45% at 100 CON, while half of every heal you receive flows to them too. The link never expires and follows them between maps, though it only works while you're together.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 12 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Arrow Infusion ===
-[[File:Arrow Infusion icon.png|32px]] '''Arrow Infusion''' (ID <code>94</code>)
+[[File:Arrow Infusion.png|32px]] '''Arrow Infusion''' (ID <code>94</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Buff / Toggle
@@ -35,10 +35,10 @@ Toggle. Your projectile hits weaken monsters, cutting their damage and shredding
 '''Known scaling (from description text):'''
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 12, Faith (Skill #61) at level 12 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Arrow Rain ===
-[[File:Arrow Rain icon.png|32px]] '''Arrow Rain''' (ID <code>34</code>)
+[[File:Arrow Rain.png|32px]] '''Arrow Rain''' (ID <code>34</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -47,10 +47,10 @@ Toggle. Your projectile hits weaken monsters, cutting their damage and shredding
 
 Loose a volley of five magic arrows that curve toward monsters ahead. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 8, Range (Skill #59) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Arrow Storm ===
-[[File:Arrow Rain icon.png|32px]] '''Arrow Storm''' (ID <code>44</code>)
+[[File:Arrow Rain.png|32px]] '''Arrow Storm''' (ID <code>44</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -59,10 +59,10 @@ Loose a volley of five magic arrows that curve toward monsters ahead. Tap for a 
 
 Release a standing barrage of eight arrows that curve toward monsters ahead. Your draw at release sets the power of the whole barrage, from a third on a tap to full.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 18, Range (Skill #59) at level 18 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Blink ===
-[[File:Blink icon.png|32px]] '''Blink''' (ID <code>42</code>)
+[[File:Blink.png|32px]] '''Blink''' (ID <code>42</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -71,10 +71,10 @@ Release a standing barrage of eight arrows that curve toward monsters ahead. You
 
 Teleport a short distance in the direction you hold, even straight up or down, phasing clean through walls.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 9 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Blood Sacrifice ===
-[[File:Blood Sacrifice icon.png|32px]] '''Blood Sacrifice''' (ID <code>62</code>)
+[[File:Blood Sacrifice.png|32px]] '''Blood Sacrifice''' (ID <code>62</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Buff / Toggle
@@ -86,10 +86,10 @@ Toggle. Skill costs you cannot afford with MP are paid in HP instead, damage you
 '''Known scaling (from description text):'''
 * <code>3.48(+1.08/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 12, Melee (Skill #58) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Bloodlust ===
-[[File:Bloodlust icon.png|32px]] '''Bloodlust''' (ID <code>76</code>)
+[[File:Bloodlust.png|32px]] '''Bloodlust''' (ID <code>76</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -101,10 +101,10 @@ Embrace pain: every 5 damage you take adds a stack worth +1.34% global damage an
 '''Known scaling (from description text):'''
 * <code>5(+2.5/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 27 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Blue Moon ===
-[[File:Blue Moon icon.png|32px]] '''Blue Moon''' (ID <code>101</code>)
+[[File:Blue Moon.png|32px]] '''Blue Moon''' (ID <code>101</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -116,10 +116,10 @@ Howl at the blue moon: you shrug off 90% of incoming damage, party members withi
 '''Known scaling (from description text):'''
 * <code>5(+0.37/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 25, Melee (Skill #58) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Bullseye ===
-[[File:Bullseye icon.png|32px]] '''Bullseye''' (ID <code>73</code>)
+[[File:Bullseye.png|32px]] '''Bullseye''' (ID <code>73</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -131,10 +131,10 @@ Steady your aim, adding 9(+2/lv) Crit Rate plus a bonus from your LUK and DEX. N
 '''Known scaling (from description text):'''
 * <code>9(+2/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 15 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Burst Shield ===
-[[File:Burst Shield icon.png|32px]] '''Burst Shield''' (ID <code>29</code>)
+[[File:Burst Shield.png|32px]] '''Burst Shield''' (ID <code>29</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -146,10 +146,10 @@ Shield yourself and nearby party members for a moment: the next hit is cut by 30
 '''Known scaling (from description text):'''
 * <code>30(+2.5/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 4 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Clarity ===
-[[File:Clarity icon.png|32px]] '''Clarity''' (ID <code>95</code>)
+[[File:Clarity.png|32px]] '''Clarity''' (ID <code>95</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Buff / Toggle
@@ -163,10 +163,10 @@ Toggle. Monsters suffering from any status effect take x1.1008(+1.68%/lv) damage
 * <code>2(+0.15/lv) </code>
 * <code>x1.1008(+1.68%/lv)</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 28, Faith (Skill #61) at level 28 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Companion ===
-[[File:Companion icon.png|32px]] '''Companion''' (ID <code>104</code>)
+[[File:Companion.png|32px]] '''Companion''' (ID <code>104</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Buff / Toggle
@@ -181,10 +181,10 @@ Toggle. A hawk companion flies at your side: your attacks have a 6(+1.74/lv)% ch
 * <code>1(+0.37/lv) </code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 29, Range (Skill #59) at level 29 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Crescent Slash ===
-[[File:Crescent Slash icon.png|32px]] '''Crescent Slash''' (ID <code>56</code>)
+[[File:Crescent Slash.png|32px]] '''Crescent Slash''' (ID <code>56</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -193,10 +193,10 @@ Toggle. A hawk companion flies at your side: your attacks have a 6(+1.74/lv)% ch
 
 Throw your sword arc forward as a travelling crescent of energy that cuts through the enemies in its path.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 8, Melee (Skill #58) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Crimson Moon ===
-[[File:Crimson Moon icon.png|32px]] '''Crimson Moon''' (ID <code>96</code>)
+[[File:Crimson Moon.png|32px]] '''Crimson Moon''' (ID <code>96</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -205,10 +205,10 @@ Throw your sword arc forward as a travelling crescent of energy that cuts throug
 
 Leap beneath a crimson moon and hang in the air, raining 15 homing crescents across the pack in a single second.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 25, Melee (Skill #58) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Cross Strike ===
-[[File:Cross Strike icon.png|32px]] '''Cross Strike''' (ID <code>89</code>)
+[[File:Cross Strike.png|32px]] '''Cross Strike''' (ID <code>89</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -220,10 +220,10 @@ Slam a blazing cross into the ground, stunning everything it hits, bosses includ
 '''Known scaling (from description text):'''
 * <code>x1.6</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 20, Melee (Skill #58) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Cursed Throw ===
-[[File:Cursed Throw icon.png|32px]] '''Cursed Throw''' (ID <code>45</code>)
+[[File:Cursed Throw.png|32px]] '''Cursed Throw''' (ID <code>45</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -232,10 +232,10 @@ Slam a blazing cross into the ground, stunning everything it hits, bosses includ
 
 Throw a cursed kunai that chains between monsters, cursing each one. Whenever anyone hits a cursed enemy, every enemy you cursed takes 50% of a Cursed Throw hit (5x on bosses), up to 3 times. Death spreads the curse.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 4 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Dark Fire ===
-[[File:Dark Fire icon.png|32px]] '''Dark Fire''' (ID <code>82</code>)
+[[File:Dark Fire.png|32px]] '''Dark Fire''' (ID <code>82</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -244,10 +244,10 @@ Throw a cursed kunai that chains between monsters, cursing each one. Whenever an
 
 Wreathe yourself in dark flame that scorches the nearest enemies twice a second, gaining +3% damage per enemy in the circle (up to +15%). It burns 5% of your max HP and 7% of your max Shield every second, but can never kill you; while Undying is lit the health burn bleeds out over 4 seconds like any other hit. Stays lit until you use the skill again, which you can only do once its cooldown is ready; putting it out starts the cooldown too. While it is lit, your Shield does not recover on its own and your HP regen no longer speeds up while resting.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 35 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Dash ===
-[[File:Dash icon.png|32px]] '''Dash''' (ID <code>69</code>)
+[[File:Dash.png|32px]] '''Dash''' (ID <code>69</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -256,10 +256,10 @@ Wreathe yourself in dark flame that scorches the nearest enemies twice a second,
 
 Dash in the direction you hold, untouchable for the whole dash, phasing through terrain when safe ground waits on the far side. Release early to stop short.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Dash Strike ===
-[[File:Dash Strike icon.png|32px]] '''Dash Strike''' (ID <code>9</code>)
+[[File:Dash Strike.png|32px]] '''Dash Strike''' (ID <code>9</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -268,10 +268,10 @@ Dash in the direction you hold, untouchable for the whole dash, phasing through 
 
 Burst forward, damaging enemies you pass through, invulnerable for the whole dash. Release early to cut the dash short.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Dedication ===
-[[File:Dedication icon.png|32px]] '''Dedication''' (ID <code>106</code>)
+[[File:Dedication.png|32px]] '''Dedication''' (ID <code>106</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Passive Stance
@@ -283,10 +283,10 @@ Passive stance. Your devotion magnifies your care: everything you heal or shield
 '''Known scaling (from description text):'''
 * <code>25(+5/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 29 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Divine Benevolence ===
-[[File:Divine Benevolence icon.png|32px]] '''Divine Benevolence''' (ID <code>105</code>)
+[[File:Divine Benevolence.png|32px]] '''Divine Benevolence''' (ID <code>105</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Passive Stance
@@ -299,10 +299,10 @@ Passive stance. Suffering becomes succor: when you take damage, party members wi
 * <code>7(+0.95/lv)%</code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 22, Melee (Skill #58) at level 22 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Divine Blessing ===
-[[File:Divine Blessing icon.png|32px]] '''Divine Blessing''' (ID <code>64</code>)
+[[File:Divine Blessing.png|32px]] '''Divine Blessing''' (ID <code>64</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -316,10 +316,10 @@ Bless yourself with 2.5(+1.75/lv)% EXP, 1.5(+1.5/lv)% Skill EXP and 2.369(+0.79/
 * <code>1.5(+1.5/lv)%</code>
 * <code>2.369(+0.79/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 11 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Divine Protection ===
-[[File:Divine Protection icon.png|32px]] '''Divine Protection''' (ID <code>47</code>)
+[[File:Divine Protection.png|32px]] '''Divine Protection''' (ID <code>47</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -331,10 +331,10 @@ Ward yourself and nearby party members: the first killing blow each of you takes
 '''Known scaling (from description text):'''
 * <code>13.11(+5.24/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Divine Thorn ===
-[[File:Divine Thorn icon.png|32px]] '''Divine Thorn''' (ID <code>107</code>)
+[[File:Divine Thorn.png|32px]] '''Divine Thorn''' (ID <code>107</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Passive Stance
@@ -348,10 +348,10 @@ Passive stance. Thorns of light answer every wound: your attacker and up to 2 ot
 * <code>4(+2/lv)%</code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 17, Melee (Skill #58) at level 17 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Elemental Charge ===
-[[File:Elemental Charge icon.png|32px]] '''Elemental Charge''' (ID <code>22</code>)
+[[File:Elemental Charge.png|32px]] '''Elemental Charge''' (ID <code>22</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Buff / Toggle
@@ -364,10 +364,10 @@ Toggle. Arms your weapon's element, adding 10(+3/lv)% Elemental Effect Chance, a
 * <code>10(+3/lv)%</code>
 * <code>2.88(+0.48/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 28 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Empower ===
-[[File:Empower icon.png|32px]] '''Empower''' (ID <code>63</code>)
+[[File:Empower.png|32px]] '''Empower''' (ID <code>63</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -380,10 +380,10 @@ Bind Empower to another skill to permanently boost it: x1.272(+0.039/lv) damage 
 * <code>1.272(+0.039/lv) </code>
 * <code>x1.272(+0.039/lv)</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Faith ===
-[[File:Faith icon.png|32px]] '''Faith''' (ID <code>61</code>)
+[[File:Faith (Skill).png|32px]] '''Faith''' (ID <code>61</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Proficiency (passive)
@@ -392,10 +392,10 @@ Bind Empower to another skill to permanently boost it: x1.272(+0.039/lv) damage 
 
 Your Faith proficiency. It levels on its own as you deal Faith damage, gates which Faith skills you can learn, and lifts your Faith damage as it grows. Caps at 99.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Character level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Familiar ===
-[[File:Familiar icon.png|32px]] '''Familiar''' (ID <code>103</code>)
+[[File:Familiar.png|32px]] '''Familiar''' (ID <code>103</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Buff / Toggle
@@ -407,10 +407,10 @@ Toggle. Summon up to two familiars (chosen when you activate the skill): Turtle 
 '''Known scaling (from description text):'''
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 26 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Feather Jump ===
-[[File:Feather Jump icon.png|32px]] '''Feather Jump''' (ID <code>74</code>)
+[[File:Feather Jump.png|32px]] '''Feather Jump''' (ID <code>74</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -422,10 +422,10 @@ Launch upward and drift down slowly, gaining 7(+2.31/lv)% global damage while Ai
 '''Known scaling (from description text):'''
 * <code>7(+2.31/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 15, Range (Skill #59) at level 15 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Flame Barrage ===
-[[File:Flame Barrage icon.png|32px]] '''Flame Barrage''' (ID <code>19</code>)
+[[File:Flame Barrage.png|32px]] '''Flame Barrage''' (ID <code>19</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -434,10 +434,10 @@ Launch upward and drift down slowly, gaining 7(+2.31/lv)% global damage while Ai
 
 Hold a jet of fire that spits out 7 fireballs while you steer the stream up and down. Each fireball hits as its own strike with heavy knockback.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 15 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Flare Arrow ===
-[[File:Flare Arrow icon.png|32px]] '''Flare Arrow''' (ID <code>92</code>)
+[[File:Flare Arrow.png|32px]] '''Flare Arrow''' (ID <code>92</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -446,10 +446,10 @@ Hold a jet of fire that spits out 7 fireballs while you steer the stream up and 
 
 Charge an arrow of holy flame that detonates on impact, then walks two more explosions across the pack. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 8, Faith (Skill #61) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Flash Strike ===
-[[File:Flash Strike icon.png|32px]] '''Flash Strike''' (ID <code>85</code>)
+[[File:Flash Strike.png|32px]] '''Flash Strike''' (ID <code>85</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -458,10 +458,10 @@ Charge an arrow of holy flame that detonates on impact, then walks two more expl
 
 Send out a mirage of yourself to blur between nearby enemies, striking 7 times in a flash of blades. You never move an inch and stay free to fight, completely invulnerable until the mirage fades.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 20, Melee (Skill #58) at level 15 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Focused Mind ===
-[[File:Focused Mind icon.png|32px]] '''Focused Mind''' (ID <code>102</code>)
+[[File:Focused Mind.png|32px]] '''Focused Mind''' (ID <code>102</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Buff / Toggle
@@ -476,10 +476,10 @@ Toggle. Sharpen your mind to a single edge: your highest damage stat rises 15(+2
 * <code>4.8(+0.22/lv)%</code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 21 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Force of Will ===
-[[File:Force of Will icon.png|32px]] '''Force of Will''' (ID <code>75</code>)
+[[File:Force of Will.png|32px]] '''Force of Will''' (ID <code>75</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -491,10 +491,10 @@ Channel a hunger that drags the four furthest enemies around you toward you twic
 '''Known scaling (from description text):'''
 * <code>15(+2.368/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 22, Melee (Skill #58) at level 16 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Grapple Strike ===
-[[File:Grapple Strike icon.png|32px]] '''Grapple Strike''' (ID <code>35</code>)
+[[File:Grapple Strike.png|32px]] '''Grapple Strike''' (ID <code>35</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -503,10 +503,10 @@ Channel a hunger that drags the four furthest enemies around you toward you twic
 
 Fling your hook at an enemy and yank yourself to it, stunning it on impact and riding it until you press jump to kick off.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 20 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Gravity Well ===
-[[File:Gravity Well icon.png|32px]] '''Gravity Well''' (ID <code>6</code>)
+[[File:Gravity Well.png|32px]] '''Gravity Well''' (ID <code>6</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -515,10 +515,10 @@ Fling your hook at an enemy and yank yourself to it, stunning it on impact and r
 
 Pin a gravity well onto the enemy you strike, dragging everything nearby toward its center and crushing whatever reaches the core 3 times a second. Bosses are too heavy to drag.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 35 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Gust ===
-[[File:Gust icon.png|32px]] '''Gust''' (ID <code>51</code>)
+[[File:Gust.png|32px]] '''Gust''' (ID <code>51</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -527,10 +527,10 @@ Pin a gravity well onto the enemy you strike, dragging everything nearby toward 
 
 Blast a sheet of wind that shoves everything in front of you with the hardest knockback in the game. Perfect for clearing a lane or pushing a pack off a ledge.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 4 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Heaven Arrow ===
-[[File:Heaven Arrow icon.png|32px]] '''Heaven Arrow''' (ID <code>72</code>)
+[[File:Heaven Arrow.png|32px]] '''Heaven Arrow''' (ID <code>72</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -539,10 +539,10 @@ Blast a sheet of wind that shoves everything in front of you with the hardest kn
 
 Summon a halo above your head that fires 25 homing arrows at nearby monsters while you keep fighting, dodging, or running.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 28 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Heavy Strike ===
-[[File:Heavy Strike icon.png|32px]] '''Heavy Strike''' (ID <code>1</code>)
+[[File:Heavy Strike.png|32px]] '''Heavy Strike''' (ID <code>1</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -551,10 +551,10 @@ Summon a halo above your head that fires 25 homing arrows at nearby monsters whi
 
 Bring your weapon down in one heavy overhead swing that sends enemies flying with about three times the knockback of a normal attack. Hold the button to keep swinging.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 4 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Holy Arrow ===
-[[File:Holy Arrow icon.png|32px]] '''Holy Arrow''' (ID <code>91</code>)
+[[File:Holy Arrow.png|32px]] '''Holy Arrow''' (ID <code>91</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Basic Attack
@@ -563,10 +563,10 @@ Bring your weapon down in one heavy overhead swing that sends enemies flying wit
 
 A basic attack: charge a blessed arrow that homes onto a monster and chains to the next with every hit. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 5, Faith (Skill #61) at level 5 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Holy Field ===
-[[File:Holy Field icon.png|32px]] '''Holy Field''' (ID <code>93</code>)
+[[File:Holy Field.png|32px]] '''Holy Field''' (ID <code>93</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -575,10 +575,10 @@ A basic attack: charge a blessed arrow that homes onto a monster and chains to t
 
 Charge and loose an arrow of light that erupts into a radiant field, searing everything inside once a second and slowing enemies by 40% while they stand in it. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 18, Faith (Skill #61) at level 23 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Life Line ===
-[[File:Life Line icon.png|32px]] '''Life Line''' (ID <code>109</code>)
+[[File:Life Line.png|32px]] '''Life Line''' (ID <code>109</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -591,10 +591,10 @@ Bind your fate to a chosen party member: each of you gains 3(+0.63/lv)% of the o
 * <code>3(+0.63/lv)%</code>
 * <code>5(+1.05/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 25, Range (Skill #59) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Lunar Step ===
-[[File:Lunar Step icon.png|32px]] '''Lunar Step''' (ID <code>84</code>)
+[[File:Lunar Step.png|32px]] '''Lunar Step''' (ID <code>84</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -603,10 +603,10 @@ Bind your fate to a chosen party member: each of you gains 3(+0.63/lv)% of the o
 
 Step through the moonlight to the farthest enemy ahead and land 5 rapid strikes, stepping onward to a new target if the first one dies.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 15, Melee (Skill #58) at level 15 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Magic ===
-[[File:Magic icon.png|32px]] '''Magic''' (ID <code>60</code>)
+[[File:Magic (Skill).png|32px]] '''Magic''' (ID <code>60</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Proficiency (passive)
@@ -615,10 +615,10 @@ Step through the moonlight to the farthest enemy ahead and land 5 rapid strikes,
 
 Your Magic proficiency. It levels on its own as you deal Magic damage, gates which Magic skills you can learn, and lifts your Magic damage as it grows. Caps at 99.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Character level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Magic Burst ===
-[[File:Magic Burst icon.png|32px]] '''Magic Burst''' (ID <code>41</code>)
+[[File:Magic Burst.png|32px]] '''Magic Burst''' (ID <code>41</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Basic Attack
@@ -627,10 +627,10 @@ Your Magic proficiency. It levels on its own as you deal Magic damage, gates whi
 
 A basic attack: loose a cone of raw magic that detonates on its targets nearest-first, rolling outward through the group.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Magic Slash ===
-[[File:Magic Slash icon.png|32px]] '''Magic Slash''' (ID <code>83</code>)
+[[File:Magic Slash.png|32px]] '''Magic Slash''' (ID <code>83</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Basic Attack
@@ -642,10 +642,10 @@ A basic attack: a magic-infused three-swing chain that throws a piercing crescen
 '''Known scaling (from description text):'''
 * <code>x1.35</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 5, Melee (Skill #58) at level 5 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Mana Shield ===
-[[File:Mana Shield icon.png|32px]] '''Mana Shield''' (ID <code>28</code>)
+[[File:Mana Shield.png|32px]] '''Mana Shield''' (ID <code>28</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Buff / Toggle
@@ -659,10 +659,10 @@ Toggle. Damage that would reach your HP is halved and billed to your MP instead.
 * <code>1.8(+0.3/lv) </code>
 * <code>3.48(+1.08/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 10 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Medishot ===
-[[File:Medishot icon.png|32px]] '''Medishot''' (ID <code>30</code>)
+[[File:Medishot.png|32px]] '''Medishot''' (ID <code>30</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -675,10 +675,10 @@ Fire a healing shot that seeks your most wounded party member, bursting into a h
 * <code>3(+1.5/lv)</code>
 * <code>18(+9/lv)</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 16, Range (Skill #59) at level 12 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Melee ===
-[[File:Melee icon.png|32px]] '''Melee''' (ID <code>58</code>)
+[[File:Melee (Skill).png|32px]] '''Melee''' (ID <code>58</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Proficiency (passive)
@@ -687,10 +687,10 @@ Fire a healing shot that seeks your most wounded party member, bursting into a h
 
 Your Melee proficiency. It levels on its own as you deal Melee damage, gates which Melee skills you can learn, and lifts your Melee damage as it grows. Caps at 99.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Character level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Messenger ===
-[[File:Messenger icon.png|32px]] '''Messenger''' (ID <code>98</code>)
+[[File:Messenger.png|32px]] '''Messenger''' (ID <code>98</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -703,10 +703,10 @@ Send a blessed arrow to your chosen party member, shielding them for 15(+5/lv) p
 * <code>15(+5/lv) </code>
 * <code>3(+0.5/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 25, Faith (Skill #61) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Nimble ===
-[[File:Nimble icon.png|32px]] '''Nimble''' (ID <code>108</code>)
+[[File:Nimble.png|32px]] '''Nimble''' (ID <code>108</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Passive Stance
@@ -719,10 +719,10 @@ Passive stance. Stay unhit for 12(-0.26/lv)s to prime a perfect dodge: while pri
 * <code>12(-0.26/lv)</code>
 * <code>3.48(+1.08/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 23, Range (Skill #59) at level 23 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Ninja Throw ===
-[[File:Ninja Throw icon.png|32px]] '''Ninja Throw''' (ID <code>2</code>)
+[[File:Ninja Throw.png|32px]] '''Ninja Throw''' (ID <code>2</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Basic Attack
@@ -731,10 +731,10 @@ Passive stance. Stay unhit for 12(-0.26/lv)s to prime a perfect dodge: while pri
 
 A basic attack: hurl a throwing knife with barely any knockback, perfect for kiting.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Nova ===
-[[File:Nova icon.png|32px]] '''Nova''' (ID <code>5</code>)
+[[File:Nova.png|32px]] '''Nova''' (ID <code>5</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Basic Attack
@@ -743,10 +743,10 @@ A basic attack: hurl a throwing knife with barely any knockback, perfect for kit
 
 A basic attack: release a pulse of spirit that hits everything in a circle around you, even enemies at your back.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Onslaught ===
-[[File:Onslaught icon.png|32px]] '''Onslaught''' (ID <code>50</code>)
+[[File:Onslaught.png|32px]] '''Onslaught''' (ID <code>50</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Basic Attack
@@ -755,10 +755,10 @@ A basic attack: release a pulse of spirit that hits everything in a circle aroun
 
 Explode into a flurry, striking the nearest enemy about 14 times a second for the duration. Free to cast while Slash is your basic attack.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 5, Melee (Skill #58) at level 35 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Perseverance ===
-[[File:Perseverance icon.png|32px]] '''Perseverance''' (ID <code>90</code>)
+[[File:Perseverance (Skill).png|32px]] '''Perseverance''' (ID <code>90</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -772,10 +772,10 @@ Swell with resolve: grow 1.5x in size, gain 8.6(+0.6/lv)% Max HP (healing for th
 * <code>6(+1.1/lv) </code>
 * <code>16.08(+1.68/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 28, Melee (Skill #58) at level 28 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Phasing ===
-[[File:Phasing icon.png|32px]] '''Phasing''' (ID <code>86</code>)
+[[File:Phasing.png|32px]] '''Phasing''' (ID <code>86</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Buff / Toggle
@@ -790,10 +790,10 @@ Toggle. Leave after-images behind as you move, gaining 18(+2.21/lv) Speed and gl
 * <code>10(+1.316/lv)%</code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 22, Melee (Skill #58) at level 22 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Punishment ===
-[[File:Punishment icon.png|32px]] '''Punishment''' (ID <code>97</code>)
+[[File:Punishment.png|32px]] '''Punishment''' (ID <code>97</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -802,10 +802,10 @@ Toggle. Leave after-images behind as you move, gaining 18(+2.21/lv) Speed and gl
 
 Drive your weapon into the ground, launching and stunning non-boss enemies, then erupt twice more at the impact point.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 8, Melee (Skill #58) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Range ===
-[[File:Range icon.png|32px]] '''Range''' (ID <code>59</code>)
+[[File:Range (Skill).png|32px]] '''Range''' (ID <code>59</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Proficiency (passive)
@@ -814,10 +814,10 @@ Drive your weapon into the ground, launching and stunning non-boss enemies, then
 
 Your Range proficiency. It levels on its own as you deal Range damage, gates which Range skills you can learn, and lifts your Range damage as it grows. Caps at 99.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Character level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Realm Piercing Arrow ===
-[[File:Realm Piercing Arrow icon.png|32px]] '''Realm Piercing Arrow''' (ID <code>77</code>)
+[[File:Realm Piercing Arrow.png|32px]] '''Realm Piercing Arrow''' (ID <code>77</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -826,10 +826,10 @@ Your Range proficiency. It levels on its own as you deal Range damage, gates whi
 
 Charge a massive arrow that tears through terrain and monsters alike until it leaves the map, dealing double damage to bosses. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 33 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Revitalize ===
-[[File:Revitalize icon.png|32px]] '''Revitalize''' (ID <code>4</code>)
+[[File:Revitalize.png|32px]] '''Revitalize''' (ID <code>4</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -838,10 +838,10 @@ Charge a massive arrow that tears through terrain and monsters alike until it le
 
 Pulse a wave of restoring light, healing yourself and the most wounded nearby players for this skill's power plus 1.5% (+0.5%/lv) of your max HP and 2.4% (+0.8%/lv) of your max MP, while searing enemies caught in the pulse.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 10 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Seirei ===
-[[File:Seirei icon.png|32px]] '''Seirei''' (ID <code>71</code>)
+[[File:Seirei.png|32px]] '''Seirei''' (ID <code>71</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -850,10 +850,10 @@ Pulse a wave of restoring light, healing yourself and the most wounded nearby pl
 
 Throw two spirit-charged knives that always trigger your element's effect on hit, no chance roll needed.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 22 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Shadow Step ===
-[[File:Shadow Step icon.png|32px]] '''Shadow Step''' (ID <code>49</code>)
+[[File:Shadow Step.png|32px]] '''Shadow Step''' (ID <code>49</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -867,10 +867,10 @@ Turn invisible, evading every attack, with 38(+2/lv) Speed and 7.1(+0.375/lv) Ju
 * <code>7.1(+0.375/lv) </code>
 * <code>6.48(+3.402/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 12 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Shadow Twin ===
-[[File:Shadow Twin icon.png|32px]] '''Shadow Twin''' (ID <code>46</code>)
+[[File:Shadow Twin.png|32px]] '''Shadow Twin''' (ID <code>46</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Buff / Toggle
@@ -882,10 +882,10 @@ Toggle. A shadow repeats every skill you cast for 7.2(+2.4/lv)% of your damage, 
 '''Known scaling (from description text):'''
 * <code>7.2(+2.4/lv)%</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 30 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Shield Bash ===
-[[File:Shield Bash icon.png|32px]] '''Shield Bash''' (ID <code>87</code>)
+[[File:Shield Bash.png|32px]] '''Shield Bash''' (ID <code>87</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Basic Attack
@@ -894,10 +894,10 @@ Toggle. A shadow repeats every skill you cast for 7.2(+2.4/lv)% of your damage, 
 
 A basic attack: rock back, then lunge shield-first, bulldozing enemies out of your way into a pile. Bosses bounce you off instead.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 5, Melee (Skill #58) at level 5 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Shield Slam ===
-[[File:Shield Slam icon.png|32px]] '''Shield Slam''' (ID <code>48</code>)
+[[File:Shield Slam.png|32px]] '''Shield Slam''' (ID <code>48</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -909,10 +909,10 @@ Charge shield-first at the nearest enemy, invulnerable on the way, sending it fl
 '''Known scaling (from description text):'''
 * <code>7(+2/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 12, Melee (Skill #58) at level 16 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Siphon ===
-[[File:Siphon icon.png|32px]] '''Siphon''' (ID <code>70</code>)
+[[File:Siphon.png|32px]] '''Siphon''' (ID <code>70</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -925,10 +925,10 @@ Throw a siphoning knife that tears life and mana out of its target and returns t
 * <code>1.5(+1.5/lv) </code>
 * <code>0.5(+0.5/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Slash ===
-[[File:Slash icon.png|32px]] '''Slash''' (ID <code>40</code>)
+[[File:Slash.png|32px]] '''Slash''' (ID <code>40</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Basic Attack
@@ -940,10 +940,10 @@ The default basic attack: a fast three-swing chain whose third swing lands for x
 '''Known scaling (from description text):'''
 * <code>x1.35</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 1 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Smite ===
-[[File:Smite icon.png|32px]] '''Smite''' (ID <code>52</code>)
+[[File:Smite.png|32px]] '''Smite''' (ID <code>52</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Active
@@ -952,10 +952,10 @@ The default basic attack: a fast three-swing chain whose third swing lands for x
 
 Call your wrath down on the nearest enemies, striking through walls and floors with no line of sight needed.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 30 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Soul Bomb ===
-[[File:Soul Bomb icon.png|32px]] '''Soul Bomb''' (ID <code>57</code>)
+[[File:Soul Bomb.png|32px]] '''Soul Bomb''' (ID <code>57</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -964,10 +964,10 @@ Call your wrath down on the nearest enemies, striking through walls and floors w
 
 Lob a soul-charged orb that detonates when a monster comes near, catching everything in the blast. Throw it into a clump.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 8 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Soul Shot ===
-[[File:Soul Shot icon.png|32px]] '''Soul Shot''' (ID <code>33</code>)
+[[File:Soul Shot.png|32px]] '''Soul Shot''' (ID <code>33</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -979,10 +979,10 @@ Draw back and loose a heavy bolt that punches through up to two enemies, hitting
 '''Known scaling (from description text):'''
 * <code>x1.3</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 5, Range (Skill #59) at level 5 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Star Fall ===
-[[File:Star Fall icon.png|32px]] '''Star Fall''' (ID <code>53</code>)
+[[File:Star Fall.png|32px]] '''Star Fall''' (ID <code>53</code>)
 
 * '''Branch:''' Magic
 * '''Type:''' Active
@@ -991,10 +991,10 @@ Draw back and loose a heavy bolt that punches through up to two enemies, hitting
 
 Hang a starfield over the nearest monster that rains 15 homing stars, each landing as its own strike.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 30 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Taunt ===
-[[File:Taunt icon.png|32px]] '''Taunt''' (ID <code>3</code>)
+[[File:Taunt.png|32px]] '''Taunt''' (ID <code>3</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -1006,10 +1006,10 @@ Roar and force nearby monsters to attack you, then keep roaring automatically ev
 '''Known scaling (from description text):'''
 * <code>3(+1/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 11 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Triple Throw ===
-[[File:Triple Throw icon.png|32px]] '''Triple Throw''' (ID <code>18</code>)
+[[File:Triple Throw.png|32px]] '''Triple Throw''' (ID <code>18</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -1018,10 +1018,10 @@ Roar and force nearby monsters to attack you, then keep roaring automatically ev
 
 Snap out three throwing knives in a tight fan, each landing as its own hit with its own crit and element roll.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Range (Skill #59) at level 20 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === True Shot ===
-[[File:True Shot icon.png|32px]] '''True Shot''' (ID <code>43</code>)
+[[File:True Shot.png|32px]] '''True Shot''' (ID <code>43</code>)
 
 * '''Branch:''' Range
 * '''Type:''' Active
@@ -1030,10 +1030,10 @@ Snap out three throwing knives in a tight fan, each landing as its own hit with 
 
 Charge and release to mark the target with an exposed bomb that feeds on all damage it takes. When full it detonates for 300% of your hit, and if the target dies the blast jumps to the nearest monster. Tap for a third of the damage, full draw for all of it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 11, Range (Skill #59) at level 11 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Undying ===
-[[File:Undying icon.png|32px]] '''Undying''' (ID <code>100</code>)
+[[File:Undying.png|32px]] '''Undying''' (ID <code>100</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Buff / Toggle
@@ -1046,10 +1046,10 @@ Toggle. Refuse to fall: 20(+3.68/lv)% of the damage you take does not land at on
 * <code>20(+3.68/lv)%</code>
 * <code>1(+0.15/lv) </code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 32 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Upward Strike ===
-[[File:Upward Strike icon.png|32px]] '''Upward Strike''' (ID <code>21</code>)
+[[File:Upward Strike.png|32px]] '''Upward Strike''' (ID <code>21</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -1058,10 +1058,10 @@ Toggle. Refuse to fall: 20(+3.68/lv)% of the damage you take does not land at on
 
 Swing skyward, launching non-boss enemies straight up and stunning them for the duration. Nothing resists the launch; bosses ignore it.
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Melee (Skill #58) at level 25 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Vanguard ===
-[[File:Vanguard icon.png|32px]] '''Vanguard''' (ID <code>88</code>)
+[[File:Vanguard.png|32px]] '''Vanguard''' (ID <code>88</code>)
 
 * '''Branch:''' Faith
 * '''Type:''' Buff / Toggle
@@ -1075,10 +1075,10 @@ Toggle. Project a protective bubble: party members inside take 21.25(+1.25/lv)% 
 * <code>1.042(+1.55%/lv) </code>
 * <code>x1.042(+1.55%/lv)</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Faith (Skill #61) at level 8, Melee (Skill #58) at level 12 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 
 === Whirlwind ===
-[[File:Whirlwind icon.png|32px]] '''Whirlwind''' (ID <code>55</code>)
+[[File:Whirlwind.png|32px]] '''Whirlwind''' (ID <code>55</code>)
 
 * '''Branch:''' Melee
 * '''Type:''' Active
@@ -1090,5 +1090,5 @@ Spin up a whirlwind you can walk with. Every hit drags enemies into your face in
 '''Known scaling (from description text):'''
 * <code>25(+5/lv)</code>
 
-'''Unlock requirement:''' Provided by the game server at runtime; not stored in the PCK <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
+'''Unlock requirement:''' Magic (Skill #60) at level 12, Melee (Skill #58) at level 28 <small>(assigned by the game server at runtime; not stored in the recovered client)</small>
 

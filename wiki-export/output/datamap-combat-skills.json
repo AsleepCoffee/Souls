@@ -1,0 +1,939 @@
+{
+  "$schema": "https://soulsremnant.wiki.gg/extensions/DataMaps/schemas/v17.3.json",
+  "settings": {
+    "showCoordinates": false
+  },
+  "crs": {
+    "order": "xy",
+    "topLeft": [
+      0,
+      0
+    ],
+    "bottomRight": [
+      576,
+      546
+    ]
+  },
+  "background": {
+    "image": "CombatSkillTree.png",
+    "at": [
+      [
+        0,
+        0
+      ],
+      [
+        576,
+        546
+      ]
+    ]
+  },
+  "groups": {
+    "melee": {
+      "name": "Melee",
+      "icon": "Melee (Skill).png",
+      "size": 40,
+      "static": true,
+      "isSwitchable": true
+    },
+    "range": {
+      "name": "Range",
+      "icon": "Range (Skill).png",
+      "size": 40,
+      "static": true,
+      "isSwitchable": true
+    },
+    "magic": {
+      "name": "Magic",
+      "icon": "Magic (Skill).png",
+      "size": 40,
+      "static": true,
+      "isSwitchable": true
+    },
+    "faith": {
+      "name": "Faith",
+      "icon": "Faith (Skill).png",
+      "size": 40,
+      "static": true,
+      "isSwitchable": true
+    }
+  },
+  "markers": {
+    "melee": [
+      {
+        "id": "skill-76",
+        "x": 334,
+        "y": 89,
+        "name": "Bloodlust",
+        "description": "[[File:Bloodlust.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 27\n<div style=\"clear:both\"></div>\n----\nEmbrace pain: every 5 damage you take adds a stack worth +1.34% global damage and +1 HP regen per tick, up to 5(+2.5/lv) stacks, but you take 35% more damage while it lasts. Multiplies with your other buff bonuses. Nearby party members gain 25% of your current damage bonus.\n\n'''Known scaling (from description text):'''\n* <code>5(+2.5/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 40100ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 40000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Bloodlust Melee Active",
+        "icon": "Bloodlust.png"
+      },
+      {
+        "id": "skill-101",
+        "x": 108,
+        "y": 117,
+        "name": "Blue Moon",
+        "description": "[[File:Blue Moon.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 25, Melee (Skill #58) at level 25\n<div style=\"clear:both\"></div>\n----\nHowl at the blue moon: you shrug off 90% of incoming damage, party members within range a quarter of that, and everyone gains 80 Speed for 5(+0.37/lv) seconds. Attack speed does not reduce this cooldown.\n\n'''Known scaling (from description text):'''\n* <code>5(+0.37/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 50000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Blue Moon Melee Active",
+        "icon": "Blue Moon.png"
+      },
+      {
+        "id": "skill-56",
+        "x": 187,
+        "y": 196,
+        "name": "Crescent Slash",
+        "description": "[[File:Crescent Slash.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 8, Melee (Skill #58) at level 8\n<div style=\"clear:both\"></div>\n----\nThrow your sword arc forward as a travelling crescent of energy that cuts through the enemies in its path.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 24 (+12.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3900ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 2.7039999961853 (+1.37279999256134/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 1.5 (+1.10749995708466/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Crescent Slash Melee Active",
+        "icon": "Crescent Slash.png"
+      },
+      {
+        "id": "skill-96",
+        "x": 184,
+        "y": 117,
+        "name": "Crimson Moon",
+        "description": "[[File:Crimson Moon.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 25, Melee (Skill #58) at level 25\n<div style=\"clear:both\"></div>\n----\nLeap beneath a crimson moon and hang in the air, raining 15 homing crescents across the pack in a single second.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 10 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 16000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1250ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 1.60000002384186 (+0.800000011920929/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 1.60000002384186 (+0.800000011920929/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Crimson Moon Melee Active",
+        "icon": "Crimson Moon.png"
+      },
+      {
+        "id": "skill-85",
+        "x": 163,
+        "y": 141,
+        "name": "Flash Strike",
+        "description": "[[File:Flash Strike.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 20, Melee (Skill #58) at level 15\n<div style=\"clear:both\"></div>\n----\nSend out a mirage of yourself to blur between nearby enemies, striking 7 times in a flash of blades. You never move an inch and stay free to fight, completely invulnerable until the mirage fades.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 10 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 8000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 1.10000002384186 (+0.620000004768372/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 1.10000002384186 (+0.620000004768372/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Flash Strike Melee Active",
+        "icon": "Flash Strike.png"
+      },
+      {
+        "id": "skill-35",
+        "x": 365,
+        "y": 98,
+        "name": "Grapple Strike",
+        "description": "[[File:Grapple Strike.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 20\n<div style=\"clear:both\"></div>\n----\nFling your hook at an enemy and yank yourself to it, stunning it on impact and riding it until you press jump to kick off.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 35 (+18/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3900ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 3000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 2.68205595016479 (+1.51215994358063/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.505834996700287 (+0.71663498878479/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.505834996700287 (+0.775624990463257/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Grapple Strike Melee Active",
+        "icon": "Grapple Strike.png"
+      },
+      {
+        "id": "skill-1",
+        "x": 270,
+        "y": 149,
+        "name": "Heavy Strike",
+        "description": "[[File:Heavy Strike.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 4\n<div style=\"clear:both\"></div>\n----\nBring your weapon down in one heavy overhead swing that sends enemies flying with about three times the knockback of a normal attack. Hold the button to keep swinging.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 28 (+14/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 2600ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 2.07999992370605 (+1.23599994182587/lv); <span style=\"color:#9592FF\">faith_damage</span>: 1.17850005626678 (+0.564999997615814/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Heavy Strike Melee Active",
+        "icon": "Heavy Strike.png"
+      },
+      {
+        "id": "skill-84",
+        "x": 211,
+        "y": 172,
+        "name": "Lunar Step",
+        "description": "[[File:Lunar Step.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 15, Melee (Skill #58) at level 15\n<div style=\"clear:both\"></div>\n----\nStep through the moonlight to the farthest enemy ahead and land 5 rapid strikes, stepping onward to a new target if the first one dies.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 18 (+8/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 4500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 1 (+0.449999988079071/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 1 (+0.449999988079071/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Lunar Step Melee Active",
+        "icon": "Lunar Step.png"
+      },
+      {
+        "id": "skill-83",
+        "x": 248,
+        "y": 226,
+        "name": "Magic Slash",
+        "description": "[[File:Magic Slash.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Basic Attack &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 5, Melee (Skill #58) at level 5\n<div style=\"clear:both\"></div>\n----\nA basic attack: a magic-infused three-swing chain that throws a piercing crescent wave; the third swing lands for x1.35 damage and every hit grants a little Shield.\n\n'''Known scaling (from description text):'''\n* <code>x1.35</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 5.5 (+3.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 600ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.600000023841858 (+0.293999999761581/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.600000023841858 (+0.293999999761581/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Magic Slash Melee Basic Attack",
+        "icon": "Magic Slash.png"
+      },
+      {
+        "id": "skill-58",
+        "x": 295,
+        "y": 243,
+        "name": "Melee",
+        "description": "[[File:Melee (Skill).png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Proficiency (passive) &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Character level 1\n<div style=\"clear:both\"></div>\n----\nYour Melee proficiency. It levels on its own as you deal Melee damage, gates which Melee skills you can learn, and lifts your Melee damage as it grows. Caps at 99.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Melee Melee Proficiency (passive)",
+        "icon": "Melee (Skill).png"
+      },
+      {
+        "id": "skill-50",
+        "x": 252,
+        "y": 88,
+        "name": "Onslaught",
+        "description": "[[File:Onslaught.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Basic Attack &bull; Range, Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 5, Melee (Skill #58) at level 35\n<div style=\"clear:both\"></div>\n----\nExplode into a flurry, striking the nearest enemy about 14 times a second for the duration. Free to cast while Slash is your basic attack.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 2 (+1/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1200ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 700ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 14\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.140919998288155 (+0.0536639988422394/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.0885699987411499 (+0.0239000003784895/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.0801550000905991 (+0.0239000003784895/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.0885699987411499 (+0.0239000003784895/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Onslaught Melee Basic Attack",
+        "icon": "Onslaught.png"
+      },
+      {
+        "id": "skill-48",
+        "x": 365,
+        "y": 166,
+        "name": "Shield Slam",
+        "description": "[[File:Shield Slam.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 12, Melee (Skill #58) at level 16\n<div style=\"clear:both\"></div>\n----\nCharge shield-first at the nearest enemy, invulnerable on the way, sending it flying with the hardest knockback in the game. Every slam grants 7(+2/lv) Shield plus 8% of your max HP, even past your Shield cap.\n\n'''Known scaling (from description text):'''\n* <code>7(+2/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 60 (+30/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3900ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 3.0310800075531 (+1.52152001857758/lv); <span style=\"color:#9592FF\">faith_damage</span>: 2.43199992179871 (+1.37950003147125/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.0843200013041496 (+0.851350009441376/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Shield Slam Melee Active",
+        "icon": "Shield Slam.png"
+      },
+      {
+        "id": "skill-40",
+        "x": 295,
+        "y": 209,
+        "name": "Slash",
+        "description": "[[File:Slash.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Basic Attack &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 1\n<div style=\"clear:both\"></div>\n----\nThe default basic attack: a fast three-swing chain whose third swing lands for x1.35 damage.\n\n'''Known scaling (from description text):'''\n* <code>x1.35</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 8 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 450ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.519999980926514 (+0.233999997377396/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Slash Melee Basic Attack",
+        "icon": "Slash.png"
+      },
+      {
+        "id": "skill-3",
+        "x": 302,
+        "y": 146,
+        "name": "Taunt",
+        "description": "[[File:Taunt.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 11\n<div style=\"clear:both\"></div>\n----\nRoar and force nearby monsters to attack you, then keep roaring automatically every 3 seconds for 90 seconds. Every monster hit stacks Berserk: +2 Speed, +2.5 Defense and +1.35% global damage per stack, up to 3(+1/lv) stacks. The damage multiplies with your other buff bonuses.\n\n'''Known scaling (from description text):'''\n* <code>3(+1/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 1 (+0.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 45000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 6000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#61D679\">max_hp</span>: 0.0297999996691942",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Taunt Melee Active",
+        "icon": "Taunt.png"
+      },
+      {
+        "id": "skill-100",
+        "x": 334,
+        "y": 117,
+        "name": "Undying",
+        "description": "[[File:Undying.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Buff / Toggle &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 32\n<div style=\"clear:both\"></div>\n----\nToggle. Refuse to fall: 20(+3.68/lv)% of the damage you take does not land at once, instead bleeding out of you over 4 seconds. Killing an enemy cleanses 25% of your remaining bleed, and every hit on a boss cleanses 2%. Lowers your MP regen by 1(+0.15/lv) per tick. Healing past full health mends the bleed by the excess.\n\n'''Known scaling (from description text):'''\n* <code>20(+3.68/lv)%</code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Undying Melee Buff / Toggle",
+        "icon": "Undying.png"
+      },
+      {
+        "id": "skill-21",
+        "x": 293,
+        "y": 85,
+        "name": "Upward Strike",
+        "description": "[[File:Upward Strike.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 25\n<div style=\"clear:both\"></div>\n----\nSwing skyward, launching non-boss enemies straight up and stunning them for the duration. Nothing resists the launch; bosses ignore it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 55 (+27.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 2600ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1200ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.502900004386902 (+0.25789999961853/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Upward Strike Melee Active",
+        "icon": "Upward Strike.png"
+      },
+      {
+        "id": "skill-55",
+        "x": 214,
+        "y": 101,
+        "name": "Whirlwind",
+        "description": "[[File:Whirlwind.png|30x30px|left|link=]]\n<span style=\"color:#e28080\">'''Melee'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 12, Melee (Skill #58) at level 28\n<div style=\"clear:both\"></div>\n----\nSpin up a whirlwind you can walk with. Every hit drags enemies into your face instead of scattering them, and casting grants +18 Speed, +5 Jump and 25(+5/lv)(+0.15 per INT) Shield.\n\n'''Known scaling (from description text):'''\n* <code>25(+5/lv)</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 20 (+10/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 9000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 3050ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 2\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.800000011920929 (+0.389999985694885/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.419640004634857 (+0.180000007152557/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.800000011920929 (+0.389999985694885/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Whirlwind Melee Active",
+        "icon": "Whirlwind.png"
+      }
+    ],
+    "range": [
+      {
+        "id": "skill-94",
+        "x": 399,
+        "y": 435,
+        "name": "Arrow Infusion",
+        "description": "[[File:Arrow Infusion.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Buff / Toggle &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 12, Faith (Skill #61) at level 12\n<div style=\"clear:both\"></div>\n----\nToggle. Your projectile hits weaken monsters, cutting their damage and shredding their armor, while all of your Crit Rate becomes Elemental Chance and all of your Crit Damage becomes Elemental Potency. Lowers your MP regen by 1(+0.15/lv) per tick. Trains from your projectile hits while it is on.\n\n'''Known scaling (from description text):'''\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Arrow Infusion Range Buff / Toggle",
+        "icon": "Arrow Infusion.png"
+      },
+      {
+        "id": "skill-34",
+        "x": 194,
+        "y": 353,
+        "name": "Arrow Rain",
+        "description": "[[File:Arrow Rain.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Faith, Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 8, Range (Skill #59) at level 8\n<div style=\"clear:both\"></div>\n----\nLoose a volley of five magic arrows that curve toward monsters ahead. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 8.10000038146973 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 4500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.0850000008940697 (+0.212500005960464/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.0850000008940697 (+0.212500005960464/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.639999985694885 (+0.319999992847443/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Arrow Rain Range Active",
+        "icon": "Arrow Rain.png"
+      },
+      {
+        "id": "skill-44",
+        "x": 146,
+        "y": 396,
+        "name": "Arrow Storm",
+        "description": "[[File:Arrow Rain.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 18, Range (Skill #59) at level 18\n<div style=\"clear:both\"></div>\n----\nRelease a standing barrage of eight arrows that curve toward monsters ahead. Your draw at release sets the power of the whole barrage, from a third on a tap to full.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 17 (+8.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 6000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 4\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.0850000008940697 (+0.203999996185303/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.579999983310699 (+0.28999999165535/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Arrow Storm Range Active",
+        "icon": "Arrow Rain.png"
+      },
+      {
+        "id": "skill-73",
+        "x": 264,
+        "y": 465,
+        "name": "Bullseye",
+        "description": "[[File:Bullseye.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 15\n<div style=\"clear:both\"></div>\n----\nSteady your aim, adding 9(+2/lv) Crit Rate plus a bonus from your LUK and DEX. Nearby party members gain half of the crit rate bonus while it lasts.\n\n'''Known scaling (from description text):'''\n* <code>9(+2/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 7 (+2/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 10000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 60000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> luk: 0.200000002980232; dex: 0.5",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Bullseye Range Active",
+        "icon": "Bullseye.png"
+      },
+      {
+        "id": "skill-95",
+        "x": 423,
+        "y": 414,
+        "name": "Clarity",
+        "description": "[[File:Clarity.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Buff / Toggle &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 28, Faith (Skill #61) at level 28\n<div style=\"clear:both\"></div>\n----\nToggle. Monsters suffering from any status effect take x1.1008(+1.68%/lv) damage from you. Lowers your MP regen by 2(+0.15/lv) per tick. Trains from hits on monsters suffering a status effect.\n\n'''Known scaling (from description text):'''\n* <code>1.1008(+1.68%/lv) </code>\n* <code>2(+0.15/lv) </code>\n* <code>x1.1008(+1.68%/lv)</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Clarity Range Buff / Toggle",
+        "icon": "Clarity.png"
+      },
+      {
+        "id": "skill-104",
+        "x": 201,
+        "y": 442,
+        "name": "Companion",
+        "description": "[[File:Companion.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Buff / Toggle &bull; Magic, Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 29, Range (Skill #59) at level 29\n<div style=\"clear:both\"></div>\n----\nToggle. A hawk companion flies at your side: your attacks have a 6(+1.74/lv)% chance to strike again at full strength (shadow clones never trigger it), and you and nearby party members gain 1(+0.32/lv) Accuracy and 1(+0.37/lv) Damage Balance. Lowers your MP regen by 1(+0.15/lv) per tick.\n\n'''Known scaling (from description text):'''\n* <code>6(+1.74/lv)%</code>\n* <code>1(+0.32/lv) </code>\n* <code>1(+0.37/lv) </code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Companion Range Buff / Toggle",
+        "icon": "Companion.png"
+      },
+      {
+        "id": "skill-45",
+        "x": 330,
+        "y": 397,
+        "name": "Cursed Throw",
+        "description": "[[File:Cursed Throw.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 4\n<div style=\"clear:both\"></div>\n----\nThrow a cursed kunai that chains between monsters, cursing each one. Whenever anyone hits a cursed enemy, every enemy you cursed takes 50% of a Cursed Throw hit (5x on bosses), up to 3 times. Death spreads the curse.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 11.5 (+6/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 15000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.317999988794327 (+0.25/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.899999976158142 (+0.449999988079071/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Cursed Throw Range Active",
+        "icon": "Cursed Throw.png"
+      },
+      {
+        "id": "skill-69",
+        "x": 295,
+        "y": 401,
+        "name": "Dash",
+        "description": "[[File:Dash.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 8\n<div style=\"clear:both\"></div>\n----\nDash in the direction you hold, untouchable for the whole dash, phasing through terrain when safe ground waits on the far side. Release early to stop short.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Dash Range Active",
+        "icon": "Dash.png"
+      },
+      {
+        "id": "skill-9",
+        "x": 333,
+        "y": 151,
+        "name": "Dash Strike",
+        "description": "[[File:Dash Strike.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Melee, Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Melee at level 8\n<div style=\"clear:both\"></div>\n----\nBurst forward, damaging enemies you pass through, invulnerable for the whole dash. Release early to cut the dash short.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 18 (+9/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 2600ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 450ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 1.89999997615814 (+0.941999971866608/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.735700011253357 (+0.677999973297119/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Dash Strike Range Active",
+        "icon": "Dash Strike.png"
+      },
+      {
+        "id": "skill-74",
+        "x": 237,
+        "y": 392,
+        "name": "Feather Jump",
+        "description": "[[File:Feather Jump.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 15, Range (Skill #59) at level 15\n<div style=\"clear:both\"></div>\n----\nLaunch upward and drift down slowly, gaining 7(+2.31/lv)% global damage while Airborne. Multiplies with your other buff bonuses.\n\n'''Known scaling (from description text):'''\n* <code>7(+2.31/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 8000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 6500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Feather Jump Range Active",
+        "icon": "Feather Jump.png"
+      },
+      {
+        "id": "skill-92",
+        "x": 384,
+        "y": 371,
+        "name": "Flare Arrow",
+        "description": "[[File:Flare Arrow.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 8, Faith (Skill #61) at level 8\n<div style=\"clear:both\"></div>\n----\nCharge an arrow of holy flame that detonates on impact, then walks two more explosions across the pack. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 30 (+15/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 6000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.600000023841858 (+0.349999994039536/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.10000002384186 (+0.5/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Flare Arrow Range Active",
+        "icon": "Flare Arrow.png"
+      },
+      {
+        "id": "skill-75",
+        "x": 396,
+        "y": 109,
+        "name": "Force of Will",
+        "description": "[[File:Force of Will.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Faith, Melee\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 22, Melee (Skill #58) at level 16\n<div style=\"clear:both\"></div>\n----\nChannel a hunger that drags the four furthest enemies around you toward you twice a second, damaging them as it pulls. You stay free to move; bosses are untouched. Your will hardens you for 15(+2.368/lv) Defense while it lasts.\n\n'''Known scaling (from description text):'''\n* <code>15(+2.368/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 7 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 9000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 2\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.101999998092651 (+0.0552500002086163/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.0425000004470348 (+0.0552500002086163/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Force of Will Range Active",
+        "icon": "Force of Will.png"
+      },
+      {
+        "id": "skill-72",
+        "x": 232,
+        "y": 459,
+        "name": "Heaven Arrow",
+        "description": "[[File:Heaven Arrow.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 28\n<div style=\"clear:both\"></div>\n----\nSummon a halo above your head that fires 25 homing arrows at nearby monsters while you keep fighting, dodging, or running.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 21 (+10.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 9500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 5\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.0850000008940697 (+0.0850000008940697/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.0850000008940697 (+0.0850000008940697/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.300000011920929 (+0.119999997317791/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Heaven Arrow Range Active",
+        "icon": "Heaven Arrow.png"
+      },
+      {
+        "id": "skill-91",
+        "x": 341,
+        "y": 323,
+        "name": "Holy Arrow",
+        "description": "[[File:Holy Arrow.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Basic Attack &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 5, Faith (Skill #61) at level 5\n<div style=\"clear:both\"></div>\n----\nA basic attack: charge a blessed arrow that homes onto a monster and chains to the next with every hit. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 12 (+6.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1400ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.75 (+0.449999988079071/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.75 (+0.449999988079071/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Holy Arrow Range Basic Attack",
+        "icon": "Holy Arrow.png"
+      },
+      {
+        "id": "skill-93",
+        "x": 400,
+        "y": 349,
+        "name": "Holy Field",
+        "description": "[[File:Holy Field.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 18, Faith (Skill #61) at level 23\n<div style=\"clear:both\"></div>\n----\nCharge and loose an arrow of light that erupts into a radiant field, searing everything inside once a second and slowing enemies by 40% while they stand in it. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 16 (+8/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 12000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 1\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 1.5 (+0.75/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.5 (+0.75/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Holy Field Range Active",
+        "icon": "Holy Field.png"
+      },
+      {
+        "id": "skill-98",
+        "x": 460,
+        "y": 368,
+        "name": "Messenger",
+        "description": "[[File:Messenger.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 25, Faith (Skill #61) at level 25\n<div style=\"clear:both\"></div>\n----\nSend a blessed arrow to your chosen party member, shielding them for 15(+5/lv) plus 3(+0.5/lv)% of your Range and Faith damage for 4 seconds, and lacing their next 10 hits with true damage drawn from your power. Casting it with no ally to receive it shields you for a quarter as much. The experience returns to you.\n\n'''Known scaling (from description text):'''\n* <code>15(+5/lv) </code>\n* <code>3(+0.5/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 8 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 8000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 30000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 1.79999995231628 (+0.899999976158142/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.79999995231628 (+0.899999976158142/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Messenger Range Active",
+        "icon": "Messenger.png"
+      },
+      {
+        "id": "skill-108",
+        "x": 127,
+        "y": 366,
+        "name": "Nimble",
+        "description": "[[File:Nimble.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Passive Stance &bull; Range, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 23, Range (Skill #59) at level 23\n<div style=\"clear:both\"></div>\n----\nPassive stance. Stay unhit for 12(-0.26/lv)s to prime a perfect dodge: while primed your Range and Magic damage rise 3.48(+1.08/lv)% (multiplying with your other buff bonuses), and the dodge negates the next hit, granting 1.5s of invisibility and a 3s Ambush. Nearby party members gain 15% Dodge Chance.\n\n'''Known scaling (from description text):'''\n* <code>12(-0.26/lv)</code>\n* <code>3.48(+1.08/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Nimble Range Passive Stance",
+        "icon": "Nimble.png"
+      },
+      {
+        "id": "skill-2",
+        "x": 294,
+        "y": 352,
+        "name": "Ninja Throw",
+        "description": "[[File:Ninja Throw.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Basic Attack &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 1\n<div style=\"clear:both\"></div>\n----\nA basic attack: hurl a throwing knife with barely any knockback, perfect for kiting.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 16 (+8/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 400ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#cecd80\">range_damage</span>: 0.388799995183945 (+0.196559995412827/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Ninja Throw Range Basic Attack",
+        "icon": "Ninja Throw.png"
+      },
+      {
+        "id": "skill-86",
+        "x": 142,
+        "y": 166,
+        "name": "Phasing",
+        "description": "[[File:Phasing.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Buff / Toggle &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 22, Melee (Skill #58) at level 22\n<div style=\"clear:both\"></div>\n----\nToggle. Leave after-images behind as you move, gaining 18(+2.21/lv) Speed and global damage that grows with how fast you are, up to 8.1(+1.94/lv)%. Your Dodge Chance grows the same way, up to 10(+1.316/lv)% at full speed. Lowers your MP regen by 1(+0.15/lv) per tick. Multiplies with your other buff bonuses. Trains as you travel with it on, faster the faster you move, and only over ground you have not crossed recently. Nearby party members gain half of the Speed while you have it on.\n\n'''Known scaling (from description text):'''\n* <code>18(+2.21/lv) </code>\n* <code>8.1(+1.94/lv)%</code>\n* <code>10(+1.316/lv)%</code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Phasing Range Buff / Toggle",
+        "icon": "Phasing.png"
+      },
+      {
+        "id": "skill-59",
+        "x": 294,
+        "y": 312,
+        "name": "Range",
+        "description": "[[File:Range (Skill).png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Proficiency (passive) &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Character level 1\n<div style=\"clear:both\"></div>\n----\nYour Range proficiency. It levels on its own as you deal Range damage, gates which Range skills you can learn, and lifts your Range damage as it grows. Caps at 99.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Range Range Proficiency (passive)",
+        "icon": "Range (Skill).png"
+      },
+      {
+        "id": "skill-77",
+        "x": 172,
+        "y": 424,
+        "name": "Realm Piercing Arrow",
+        "description": "[[File:Realm Piercing Arrow.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 33\n<div style=\"clear:both\"></div>\n----\nCharge a massive arrow that tears through terrain and monsters alike until it leaves the map, dealing double damage to bosses. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 25 (+12.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 12000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 7 (+3.5/lv); <span style=\"color:#cecd80\">range_damage</span>: 7 (+3.5/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Realm Piercing Arrow Range Active",
+        "icon": "Realm Piercing Arrow.png"
+      },
+      {
+        "id": "skill-71",
+        "x": 336,
+        "y": 460,
+        "name": "Seirei",
+        "description": "[[File:Seirei.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 22\n<div style=\"clear:both\"></div>\n----\nThrow two spirit-charged knives that always trigger your element's effect on hit, no chance roll needed.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 25 (+15/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 2200ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.36719998717308 (+0.18359999358654/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.36719998717308 (+0.18359999358654/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.540000021457672 (+0.270000010728836/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Seirei Range Active",
+        "icon": "Seirei.png"
+      },
+      {
+        "id": "skill-49",
+        "x": 263,
+        "y": 399,
+        "name": "Shadow Step",
+        "description": "[[File:Shadow Step.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 12\n<div style=\"clear:both\"></div>\n----\nTurn invisible, evading every attack, with 38(+2/lv) Speed and 7.1(+0.375/lv) Jump while hidden. When you reappear, Ambush grants 6.48(+3.402/lv)% global damage. Multiplies with your other buff bonuses.\n\n'''Known scaling (from description text):'''\n* <code>38(+2/lv) </code>\n* <code>7.1(+0.375/lv) </code>\n* <code>6.48(+3.402/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 12000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 2500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Shadow Step Range Active",
+        "icon": "Shadow Step.png"
+      },
+      {
+        "id": "skill-46",
+        "x": 300,
+        "y": 468,
+        "name": "Shadow Twin",
+        "description": "[[File:Shadow Twin.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Buff / Toggle &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 30\n<div style=\"clear:both\"></div>\n----\nToggle. A shadow repeats every skill you cast for 7.2(+2.4/lv)% of your damage, and if a blow would kill you the twin dies in your place, leaving you at 1 HP.\n\n'''Known scaling (from description text):'''\n* <code>7.2(+2.4/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 4000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 15000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Shadow Twin Range Buff / Toggle",
+        "icon": "Shadow Twin.png"
+      },
+      {
+        "id": "skill-70",
+        "x": 358,
+        "y": 386,
+        "name": "Siphon",
+        "description": "[[File:Siphon.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 8\n<div style=\"clear:both\"></div>\n----\nThrow a siphoning knife that tears life and mana out of its target and returns them to you as drifting wisps, restoring 1.5(+1.5/lv) HP plus 5% of your max HP, and 0.5(+0.5/lv) MP plus 3% of your max MP.\n\n'''Known scaling (from description text):'''\n* <code>1.5(+1.5/lv) </code>\n* <code>0.5(+0.5/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 60 (+30/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3200ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 1.19340002536774 (+0.596700012683868/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.62000000476837 (+0.810000002384186/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Siphon Range Active",
+        "icon": "Siphon.png"
+      },
+      {
+        "id": "skill-33",
+        "x": 251,
+        "y": 325,
+        "name": "Soul Shot",
+        "description": "[[File:Soul Shot.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 5, Range (Skill #59) at level 5\n<div style=\"clear:both\"></div>\n----\nDraw back and loose a heavy bolt that punches through up to two enemies, hitting harder the farther it flies, up to x1.3. Tap for a third of the damage, full draw for all of it.\n\n'''Known scaling (from description text):'''\n* <code>x1.3</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 16 (+8.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1200ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.0850000008940697 (+0.280000001192093/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.899999976158142 (+0.449999988079071/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Soul Shot Range Active",
+        "icon": "Soul Shot.png"
+      },
+      {
+        "id": "skill-18",
+        "x": 372,
+        "y": 452,
+        "name": "Triple Throw",
+        "description": "[[File:Triple Throw.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Range at level 20\n<div style=\"clear:both\"></div>\n----\nSnap out three throwing knives in a tight fan, each landing as its own hit with its own crit and element roll.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 13 (+7/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1200ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.150000005960464 (+0.109999999403954/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.349999994039536 (+0.155000001192093/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Triple Throw Range Active",
+        "icon": "Triple Throw.png"
+      },
+      {
+        "id": "skill-43",
+        "x": 210,
+        "y": 378,
+        "name": "True Shot",
+        "description": "[[File:True Shot.png|30x30px|left|link=]]\n<span style=\"color:#cecd80\">'''Range'''</span> &bull; Active &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 11, Range (Skill #59) at level 11\n<div style=\"clear:both\"></div>\n----\nCharge and release to mark the target with an exposed bomb that feeds on all damage it takes. When full it detonates for 300% of your hit, and if the target dies the blast jumps to the nearest monster. Tap for a third of the damage, full draw for all of it.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 8 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 15000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.675000011920929 (+0.340000003576279/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.1599999666214 (+0.519999980926514/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "True Shot Range Active",
+        "icon": "True Shot.png"
+      }
+    ],
+    "magic": [
+      {
+        "id": "skill-54",
+        "x": 119,
+        "y": 343,
+        "name": "Arcane Surge",
+        "description": "[[File:Arcane Surge.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 20\n<div style=\"clear:both\"></div>\n----\nRoll a hunting ball of raw magic that rumbles forward, homing onto enemies and battering everything it touches every 0.4 seconds.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 7 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 7500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 2.5\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.111078001558781 (+0.119999997317791/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.556280016899109 (+0.230000004172325/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Arcane Surge Magic Active",
+        "icon": "Arcane Surge.png"
+      },
+      {
+        "id": "skill-42",
+        "x": 162,
+        "y": 279,
+        "name": "Blink",
+        "description": "[[File:Blink.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 9\n<div style=\"clear:both\"></div>\n----\nTeleport a short distance in the direction you hold, even straight up or down, phasing clean through walls.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Blink Magic Active",
+        "icon": "Blink.png"
+      },
+      {
+        "id": "skill-62",
+        "x": 240,
+        "y": 156,
+        "name": "Blood Sacrifice",
+        "description": "[[File:Blood Sacrifice.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Buff / Toggle &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 12, Melee (Skill #58) at level 8\n<div style=\"clear:both\"></div>\n----\nToggle. Skill costs you cannot afford with MP are paid in HP instead, damage you take converts to MP, every MP cost you pay rebounds as Shield, and 30% of your max HP becomes max Shield. Your Melee and Magic damage rise 3.48(+1.08/lv)%, multiplying with your other buff bonuses. The 2 closest party members nearby also gain half of the MP you convert and half of the Shield rebound. Nearby party members also gain half of that Shield capacity.\n\n'''Known scaling (from description text):'''\n* <code>3.48(+1.08/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 10 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Blood Sacrifice Magic Buff / Toggle",
+        "icon": "Blood Sacrifice.png"
+      },
+      {
+        "id": "skill-63",
+        "x": 126,
+        "y": 192,
+        "name": "Empower",
+        "description": "[[File:Empower.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 25\n<div style=\"clear:both\"></div>\n----\nBind Empower to another skill to permanently boost it: x1.272(+0.039/lv) damage and 1.25x size.\n\n'''Known scaling (from description text):'''\n* <code>1.272(+0.039/lv) </code>\n* <code>x1.272(+0.039/lv)</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 4000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 3000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Empower Magic Active",
+        "icon": "Empower.png"
+      },
+      {
+        "id": "skill-103",
+        "x": 107,
+        "y": 309,
+        "name": "Familiar",
+        "description": "[[File:Familiar.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Buff / Toggle &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 26\n<div style=\"clear:both\"></div>\n----\nToggle. Summon up to two familiars (chosen when you activate the skill): Turtle grants Shield and Defense, Cat grants Speed and attack speed, Rabbit gathers nearby drops and finds more soul crystals, Bat bites enemies and steals their life and mana, Snake spits poison clouds. Familiars grow with the skill's level. Lowers your MP regen by 1(+0.15/lv) per tick.\n\n'''Known scaling (from description text):'''\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 11 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 1.05359995365143 (+0.419999986886978/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Familiar Magic Buff / Toggle",
+        "icon": "Familiar.png"
+      },
+      {
+        "id": "skill-19",
+        "x": 173,
+        "y": 332,
+        "name": "Flame Barrage",
+        "description": "[[File:Flame Barrage.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 15\n<div style=\"clear:both\"></div>\n----\nHold a jet of fire that spits out 7 fireballs while you steer the stream up and down. Each fireball hits as its own strike with heavy knockback.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 13 (+6.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 6000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1050ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 7\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.100979998707771 (+0.222057998180389/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 0.660239994525909 (+0.335119992494583/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Flame Barrage Magic Active",
+        "icon": "Flame Barrage.png"
+      },
+      {
+        "id": "skill-102",
+        "x": 102,
+        "y": 274,
+        "name": "Focused Mind",
+        "description": "[[File:Focused Mind.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Buff / Toggle &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 21\n<div style=\"clear:both\"></div>\n----\nToggle. Sharpen your mind to a single edge: your highest damage stat rises 15(+2.368/lv)%, and your other damage stats fall 10(+1.05/lv)%. Nearby party members gain 4.8(+0.22/lv)% to their own highest damage stat. Lowers your MP regen by 1(+0.15/lv) per tick.\n\n'''Known scaling (from description text):'''\n* <code>15(+2.368/lv)%</code>\n* <code>10(+1.05/lv)%</code>\n* <code>4.8(+0.22/lv)%</code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Focused Mind Magic Buff / Toggle",
+        "icon": "Focused Mind.png"
+      },
+      {
+        "id": "skill-6",
+        "x": 106,
+        "y": 242,
+        "name": "Gravity Well",
+        "description": "[[File:Gravity Well.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 35\n<div style=\"clear:both\"></div>\n----\nPin a gravity well onto the enemy you strike, dragging everything nearby toward its center and crushing whatever reaches the core 3 times a second. Bosses are too heavy to drag.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 7 (+3.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 10500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 3\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.437599986791611 (+0.216424003243446/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Gravity Well Magic Active",
+        "icon": "Gravity Well.png"
+      },
+      {
+        "id": "skill-51",
+        "x": 174,
+        "y": 219,
+        "name": "Gust",
+        "description": "[[File:Gust.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 4\n<div style=\"clear:both\"></div>\n----\nBlast a sheet of wind that shoves everything in front of you with the hardest knockback in the game. Perfect for clearing a lane or pushing a pack off a ledge.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 20 (+10/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 4500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.900979995727539 (+1/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 3 (+1.45000004768372/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Gust Magic Active",
+        "icon": "Gust.png"
+      },
+      {
+        "id": "skill-60",
+        "x": 259,
+        "y": 277,
+        "name": "Magic",
+        "description": "[[File:Magic (Skill).png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Proficiency (passive) &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Character level 1\n<div style=\"clear:both\"></div>\n----\nYour Magic proficiency. It levels on its own as you deal Magic damage, gates which Magic skills you can learn, and lifts your Magic damage as it grows. Caps at 99.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Magic Magic Proficiency (passive)",
+        "icon": "Magic (Skill).png"
+      },
+      {
+        "id": "skill-41",
+        "x": 225,
+        "y": 277,
+        "name": "Magic Burst",
+        "description": "[[File:Magic Burst.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Basic Attack &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 1\n<div style=\"clear:both\"></div>\n----\nA basic attack: loose a cone of raw magic that detonates on its targets nearest-first, rolling outward through the group.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 11 (+5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 1.05359995365143 (+0.419999986886978/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Magic Burst Magic Basic Attack",
+        "icon": "Magic Burst.png"
+      },
+      {
+        "id": "skill-28",
+        "x": 163,
+        "y": 304,
+        "name": "Mana Shield",
+        "description": "[[File:Mana Shield.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Buff / Toggle &bull; Faith, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 10\n<div style=\"clear:both\"></div>\n----\nToggle. Damage that would reach your HP is halved and billed to your MP instead. Also grants 6(+3.5/lv)(+0.25 per INT) Shield, 1.8(+0.3/lv) MP regen per tick, and 3.48(+1.08/lv)% Magic and Faith damage. The damage bonus multiplies with your other buff bonuses. Nearby party members gain the full Shield bonus while you have it on.\n\n'''Known scaling (from description text):'''\n* <code>6(+3.5/lv)</code>\n* <code>1.8(+0.3/lv) </code>\n* <code>3.48(+1.08/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0.400000005960464 (+0.0500000007450581/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> int: 1.18799996376038 (+0.11879999935627/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Mana Shield Magic Buff / Toggle",
+        "icon": "Mana Shield.png"
+      },
+      {
+        "id": "skill-57",
+        "x": 163,
+        "y": 247,
+        "name": "Soul Bomb",
+        "description": "[[File:Soul Bomb.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Melee, Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 8\n<div style=\"clear:both\"></div>\n----\nLob a soul-charged orb that detonates when a monster comes near, catching everything in the blast. Throw it into a clump.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 30 (+15/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 0.400000005960464 (+0.649999976158142/lv); <span style=\"color:#80d9e2\">magic_damage</span>: 2 (+1/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Soul Bomb Magic Active",
+        "icon": "Soul Bomb.png"
+      },
+      {
+        "id": "skill-53",
+        "x": 117,
+        "y": 216,
+        "name": "Star Fall",
+        "description": "[[File:Star Fall.png|30x30px|left|link=]]\n<span style=\"color:#80d9e2\">'''Magic'''</span> &bull; Active &bull; Magic\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Magic at level 30\n<div style=\"clear:both\"></div>\n----\nHang a starfield over the nearest monster that rains 15 homing stars, each landing as its own strike.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 16 (+8/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 7500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 3\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#80d9e2\">magic_damage</span>: 0.601599991321564 (+0.314999997615814/lv); <span style=\"color:#cecd80\">range_damage</span>: 0.292842000722885 (+0.166420996189117/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Star Fall Magic Active",
+        "icon": "Star Fall.png"
+      }
+    ],
+    "faith": [
+      {
+        "id": "skill-27",
+        "x": 422,
+        "y": 271,
+        "name": "Armor Link",
+        "description": "[[File:Armor Link.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 12\n<div style=\"clear:both\"></div>\n----\nPick a party member on your map: they take 35% less damage and you take that damage for them, rising to 45% at 100 CON, while half of every heal you receive flows to them too. The link never expires and follows them between maps, though it only works while you're together.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 2000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 600000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Armor Link Faith Active",
+        "icon": "Armor Link.png"
+      },
+      {
+        "id": "skill-29",
+        "x": 408,
+        "y": 325,
+        "name": "Burst Shield",
+        "description": "[[File:Burst Shield.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 4\n<div style=\"clear:both\"></div>\n----\nShield yourself and nearby party members for a moment: the next hit is cut by 30(+2.5/lv)% and the damage prevented is hurled back at the attacker five-fold, splashing nearby monsters.\n\n'''Known scaling (from description text):'''\n* <code>30(+2.5/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 12 (+6/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 2500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.121742740273476 (+0.263000011444092/lv); <span style=\"color:#9592FF\">faith_damage</span>: 1.00258719921112 (+0.327499985694885/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Burst Shield Faith Active",
+        "icon": "Burst Shield.png"
+      },
+      {
+        "id": "skill-89",
+        "x": 440,
+        "y": 154,
+        "name": "Cross Strike",
+        "description": "[[File:Cross Strike.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 20, Melee (Skill #58) at level 25\n<div style=\"clear:both\"></div>\n----\nSlam a blazing cross into the ground, stunning everything it hits, bosses included, and dealing x1.6 damage to bosses. Your melee and faith attack speed multiply its damage instead of shortening its cooldown.\n\n'''Known scaling (from description text):'''\n* <code>x1.6</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 55 (+26/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 9000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 3 (+1.64999997615814/lv); <span style=\"color:#9592FF\">faith_damage</span>: 3 (+1.64999997615814/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Cross Strike Faith Active",
+        "icon": "Cross Strike.png"
+      },
+      {
+        "id": "skill-82",
+        "x": 468,
+        "y": 207,
+        "name": "Dark Fire",
+        "description": "[[File:Dark Fire.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 35\n<div style=\"clear:both\"></div>\n----\nWreathe yourself in dark flame that scorches the nearest enemies twice a second, gaining +3% damage per enemy in the circle (up to +15%). It burns 5% of your max HP and 7% of your max Shield every second, but can never kill you; while Undying is lit the health burn bleeds out over 4 seconds like any other hit. Stays lit until you use the skill again, which you can only do once its cooldown is ready; putting it out starts the cooldown too. While it is lit, your Shield does not recover on its own and your HP regen no longer speeds up while resting.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 7.5 (+3.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 2\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.340000003576279 (+0.209999993443489/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.569999992847443 (+0.280000001192093/lv); <span style=\"color:#61D679\">max_hp</span>: 0.200000002980232 (+0.0949999988079071/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Dark Fire Faith Active",
+        "icon": "Dark Fire.png"
+      },
+      {
+        "id": "skill-106",
+        "x": 483,
+        "y": 315,
+        "name": "Dedication",
+        "description": "[[File:Dedication.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Passive Stance &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 29\n<div style=\"clear:both\"></div>\n----\nPassive stance. Your devotion magnifies your care: everything you heal or shield is 25(+5/lv)% stronger.\n\n'''Known scaling (from description text):'''\n* <code>25(+5/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Dedication Faith Passive Stance",
+        "icon": "Dedication.png"
+      },
+      {
+        "id": "skill-105",
+        "x": 468,
+        "y": 107,
+        "name": "Divine Benevolence",
+        "description": "[[File:Divine Benevolence.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Passive Stance &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 22, Melee (Skill #58) at level 22\n<div style=\"clear:both\"></div>\n----\nPassive stance. Suffering becomes succor: when you take damage, party members within range are healed for 7(+0.95/lv)% of the blow before your defenses soften it. Lowers your MP regen by 1(+0.15/lv) per tick.\n\n'''Known scaling (from description text):'''\n* <code>7(+0.95/lv)%</code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Divine Benevolence Faith Passive Stance",
+        "icon": "Divine Benevolence.png"
+      },
+      {
+        "id": "skill-64",
+        "x": 416,
+        "y": 242,
+        "name": "Divine Blessing",
+        "description": "[[File:Divine Blessing.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 11\n<div style=\"clear:both\"></div>\n----\nBless yourself with 2.5(+1.75/lv)% EXP, 1.5(+1.5/lv)% Skill EXP and 2.369(+0.79/lv)% Faith damage. Nearby party members share the EXP and Skill EXP bonuses at half strength. The Faith damage multiplies with your other buff bonuses.\n\n'''Known scaling (from description text):'''\n* <code>2.5(+1.75/lv)%</code>\n* <code>1.5(+1.5/lv)%</code>\n* <code>2.369(+0.79/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 60000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Divine Blessing Faith Active",
+        "icon": "Divine Blessing.png"
+      },
+      {
+        "id": "skill-47",
+        "x": 482,
+        "y": 288,
+        "name": "Divine Protection",
+        "description": "[[File:Divine Protection.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 25\n<div style=\"clear:both\"></div>\n----\nWard yourself and nearby party members: the first killing blow each of you takes is cancelled, leaving 13.11(+5.24/lv)% of max HP instead.\n\n'''Known scaling (from description text):'''\n* <code>13.11(+5.24/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 120000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 20000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#61D679\">max_hp</span>: 0.131099998950958 (+0.0524399988353252/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Divine Protection Faith Active",
+        "icon": "Divine Protection.png"
+      },
+      {
+        "id": "skill-107",
+        "x": 419,
+        "y": 129,
+        "name": "Divine Thorn",
+        "description": "[[File:Divine Thorn.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Passive Stance &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 17, Melee (Skill #58) at level 17\n<div style=\"clear:both\"></div>\n----\nPassive stance. Thorns of light answer every wound: your attacker and up to 2 other nearby monsters take 50(+25/lv)% of the blow before your defenses soften it, plus 4(+2/lv)% of your max HP. The thorns can crit, carry your element, and answer even the blood price of your own dark flames. Lowers your MP regen by 1(+0.15/lv) per tick.\n\n'''Known scaling (from description text):'''\n* <code>50(+25/lv)%</code>\n* <code>4(+2/lv)%</code>\n* <code>1(+0.15/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 5 (+3/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#61D679\">max_hp</span>: 0.600000023841858 (+0.300000011920929/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Divine Thorn Faith Passive Stance",
+        "icon": "Divine Thorn.png"
+      },
+      {
+        "id": "skill-22",
+        "x": 479,
+        "y": 260,
+        "name": "Elemental Charge",
+        "description": "[[File:Elemental Charge.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Buff / Toggle &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 28\n<div style=\"clear:both\"></div>\n----\nToggle. Arms your weapon's element, adding 10(+3/lv)% Elemental Effect Chance, and every proc deals bonus elemental damage that grows with the hit. Lowers your MP regen by 2.88(+0.48/lv) per tick while active. Nearby party members gain half of the elemental chance while you have it on.\n\n'''Known scaling (from description text):'''\n* <code>10(+3/lv)%</code>\n* <code>2.88(+0.48/lv) </code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> spr: 1.31099998950958",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Elemental Charge Faith Buff / Toggle",
+        "icon": "Elemental Charge.png"
+      },
+      {
+        "id": "skill-61",
+        "x": 330,
+        "y": 276,
+        "name": "Faith",
+        "description": "[[File:Faith (Skill).png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Proficiency (passive) &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Character level 1\n<div style=\"clear:both\"></div>\n----\nYour Faith proficiency. It levels on its own as you deal Faith damage, gates which Faith skills you can learn, and lifts your Faith damage as it grows. Caps at 99.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Faith Faith Proficiency (passive)",
+        "icon": "Faith (Skill).png"
+      },
+      {
+        "id": "skill-109",
+        "x": 443,
+        "y": 391,
+        "name": "Life Line",
+        "description": "[[File:Life Line.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith, Range\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 25, Range (Skill #59) at level 25\n<div style=\"clear:both\"></div>\n----\nBind your fate to a chosen party member: each of you gains 3(+0.63/lv)% of the other's damage stats and 5(+1.05/lv)% of their Defense and Max HP. If your partner would die, they are saved at 15% HP and you take half your Max HP instead, breaking the link. The bond cannot coexist with Armor Link.\n\n'''Known scaling (from description text):'''\n* <code>3(+0.63/lv)%</code>\n* <code>5(+1.05/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 5000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Life Line Faith Active",
+        "icon": "Life Line.png"
+      },
+      {
+        "id": "skill-30",
+        "x": 473,
+        "y": 341,
+        "name": "Medishot",
+        "description": "[[File:Medishot.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Range, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 16, Range (Skill #59) at level 12\n<div style=\"clear:both\"></div>\n----\nFire a healing shot that seeks your most wounded party member, bursting into a heal for nearby allies, damage to nearby monsters, and a mending field that follows them, pulsing every second for 6 seconds. Each pulse heals 3(+1.5/lv), raised 5% for every 10% Elemental Effect Potency you have, so a full field is 18(+9/lv). The burst heals 1.4 times a pulse, or 2.5 times when it lands on you. Charge it for up to three times the healing.\n\n'''Known scaling (from description text):'''\n* <code>3(+1.5/lv)</code>\n* <code>18(+9/lv)</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 35 (+17.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 7500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 6000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 1.60000002384186 (+0.75/lv); <span style=\"color:#cecd80\">range_damage</span>: 1.60000002384186 (+0.75/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Medishot Faith Active",
+        "icon": "Medishot.png"
+      },
+      {
+        "id": "skill-5",
+        "x": 364,
+        "y": 276,
+        "name": "Nova",
+        "description": "[[File:Nova.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Basic Attack &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 1\n<div style=\"clear:both\"></div>\n----\nA basic attack: release a pulse of spirit that hits everything in a circle around you, even enemies at your back.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 19 (+9.5/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1700ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#9592FF\">faith_damage</span>: 1.60000002384186 (+0.800000011920929/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Nova Faith Basic Attack",
+        "icon": "Nova.png"
+      },
+      {
+        "id": "skill-90",
+        "x": 453,
+        "y": 179,
+        "name": "Perseverance",
+        "description": "[[File:Perseverance (Skill).png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 28, Melee (Skill #58) at level 28\n<div style=\"clear:both\"></div>\n----\nSwell with resolve: grow 1.5x in size, gain 8.6(+0.6/lv)% Max HP (healing for the gain) and 6(+1.1/lv) Defense, plus Melee and Faith damage that rises the healthier you are, up to 16.08(+1.68/lv)%. Multiplies with your other buff bonuses. Trains from the damage you deal while it is up. Nearby party members gain half the Max HP you gained and a quarter of your damage bonus.\n\n'''Known scaling (from description text):'''\n* <code>8.6(+0.6/lv)%</code>\n* <code>6(+1.1/lv) </code>\n* <code>16.08(+1.68/lv)%</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 30000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 12000ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Perseverance Faith Active",
+        "icon": "Perseverance (Skill).png"
+      },
+      {
+        "id": "skill-97",
+        "x": 406,
+        "y": 212,
+        "name": "Punishment",
+        "description": "[[File:Punishment.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 8, Melee (Skill #58) at level 8\n<div style=\"clear:both\"></div>\n----\nDrive your weapon into the ground, launching and stunning non-boss enemies, then erupt twice more at the impact point.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 12 (+6/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 3500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 1500ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 0.5 (+0.25/lv); <span style=\"color:#9592FF\">faith_damage</span>: 0.5 (+0.25/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Punishment Faith Active",
+        "icon": "Punishment.png"
+      },
+      {
+        "id": "skill-4",
+        "x": 418,
+        "y": 300,
+        "name": "Revitalize",
+        "description": "[[File:Revitalize.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 10\n<div style=\"clear:both\"></div>\n----\nPulse a wave of restoring light, healing yourself and the most wounded nearby players for this skill's power plus 1.5% (+0.5%/lv) of your max HP and 2.4% (+0.8%/lv) of your max MP, while searing enemies caught in the pulse.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 50 (+25/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 8500ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#63a5e0\">max_mp</span>: 0.0241224002093077 (+0.0120612001046538/lv); <span style=\"color:#e28080\">melee_damage</span>: 1.12174272537231 (+1.21825695037842/lv); <span style=\"color:#9592FF\">faith_damage</span>: 5.59360504150391 (+2.60816502571106/lv); <span style=\"color:#61D679\">max_hp</span>: 0.0150765003636479 (+0.00753825018182397/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Revitalize Faith Active",
+        "icon": "Revitalize.png"
+      },
+      {
+        "id": "skill-87",
+        "x": 340,
+        "y": 227,
+        "name": "Shield Bash",
+        "description": "[[File:Shield Bash.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Basic Attack &bull; Melee, Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 5, Melee (Skill #58) at level 5\n<div style=\"clear:both\"></div>\n----\nA basic attack: rock back, then lunge shield-first, bulldozing enemies out of your way into a pile. Bosses bounce you off instead.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 8 (+4/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1400ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 1 (+0.5/lv); <span style=\"color:#9592FF\">faith_damage</span>: 1 (+0.5/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Shield Bash Faith Basic Attack",
+        "icon": "Shield Bash.png"
+      },
+      {
+        "id": "skill-52",
+        "x": 477,
+        "y": 235,
+        "name": "Smite",
+        "description": "[[File:Smite.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Active &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 30\n<div style=\"clear:both\"></div>\n----\nCall your wrath down on the nearest enemies, striking through walls and floors with no line of sight needed.\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 42 (+21/lv)\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 12000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Scaling:'''</span> <span style=\"color:#e28080\">melee_damage</span>: 2.34999990463257 (+2.51134300231934/lv); <span style=\"color:#9592FF\">faith_damage</span>: 6.34999990463257 (+4.41134309768677/lv)",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Smite Faith Active",
+        "icon": "Smite.png"
+      },
+      {
+        "id": "skill-88",
+        "x": 387,
+        "y": 188,
+        "name": "Vanguard",
+        "description": "[[File:Vanguard.png|30x30px|left|link=]]\n<span style=\"color:#9592FF\">'''Faith'''</span> &bull; Buff / Toggle &bull; Faith\n<span style=\"color:#ffd166\">'''Unlock:'''</span> Faith at level 8, Melee (Skill #58) at level 12\n<div style=\"clear:both\"></div>\n----\nToggle. Project a protective bubble: party members inside take 21.25(+1.25/lv)% less damage (you absorb it for them), everything caught inside raises your Defense, and monsters in the bubble take x1.042(+1.55%/lv) damage from you. Trains from damage you deal to monsters inside the bubble, and from damage you absorb for allies.\n\n'''Known scaling (from description text):'''\n* <code>21.25(+1.25/lv)%</code>\n* <code>1.042(+1.55%/lv) </code>\n* <code>x1.042(+1.55%/lv)</code>\n----\n* <span style=\"color:#4fd1c5\">'''Base power:'''</span> 0\n* <span style=\"color:#4fd1c5\">'''Cooldown:'''</span> 1000ms\n* <span style=\"color:#4fd1c5\">'''Duration:'''</span> 0ms\n* <span style=\"color:#4fd1c5\">'''Attacks/sec:'''</span> 0",
+        "isWikitext": true,
+        "canSearchFor": true,
+        "searchKeywords": "Vanguard Faith Buff / Toggle",
+        "icon": "Vanguard.png"
+      }
+    ]
+  }
+}
